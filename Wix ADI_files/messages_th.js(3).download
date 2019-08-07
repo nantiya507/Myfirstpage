@@ -1,0 +1,48 @@
+'use strict';
+
+try {
+  angular.module('thankYouPageTranslations');
+} catch (e) {
+  angular.module('thankYouPageTranslations', ['pascalprecht.translate']);
+}
+
+angular.module('thankYouPageTranslations').config(['$translateProvider',
+  function ($translateProvider) {
+    var translations = {
+      'thankYou': {
+        'TOTAL_LABEL': 'รวมทั้งสิ้น:',
+        'DELIVERY_ADDRESS_FULL': '{{fullName}}\n{{company}}\n{{addressLine}}\n{{city}}, {{state}} {{zipCode}}\n{{country}}\n{{phone}}',
+        'DOWNLOAD_LINKS_LABEL': 'ดาวน์โหลดของคุณ:',
+        'FOOTER_DOWNLOADS_CONFIRMATION_TEXT': 'ดาวน์โหลดเหล่านี้ใช้ได้ 30 วัน คอยตรวจเมลบ็อกซ์ของคุณ เพราะเราได้ส่งดาวน์โหลดไปทางอีเมลเช่นกัน…',
+        'SHIPPING_LABEL': 'จัดส่งไปที่:',
+        'DOWNLOAD_LINK_LABEL': 'ดาวน์โหลด',
+        'TITLE_WITH_NAME': 'ขอขอบคุณ คุณ {{fullName}} สำหรับคำสั่งซื้อ',
+        'FOOTER_LINK': 'ซื้อสินค้าต่อ',
+        'FOOTER_CONFIRMATION_TEXT': 'คอยตรวจเมลบ็อกซ์ของคุณ เพราะอีเมลยืนยันกำลังจะไปถึง…',
+        'PENDING_ORDER_MESSAGE': 'กำลังดำเนินการรายการสั่งซื้อของคุณ\nเราจะแจ้งให้คุณทราบเมื่อระบบรองรับรายการสั่งซื้อนี้ โดยส่งอีเมลไปที่ {{buyerMail}}',
+        'SUBTITLE': 'คุณจะได้รับอีเมลยืนยันการสั่งซื้อในอีกสักครู่',
+        'DELIVERY_ADDRESS_FULL_INCLUDING_ADDRESS_LINE_2': '{{fullName}}\n{{company}}\n{{addressLine}}, {{addressLine2}}\n{{city}}, {{state}} {{zipCode}}\n{{country}}\n{{phone}}',
+        'LOADING_TITLE': 'กำลังดำเนินการชำระเงิน...',
+        'STORE_PICKUP_LABEL': 'มารับสินค้า',
+        'OFFLINE_PAYMENT_LABEL': 'ชำระเงินด้วยตนเอง',
+        'DELIVERY_ADDRESS': '{{addressLine}}\n{{city}}, {{state}} {{zipCode}}\n{{country}}',
+        'ORDER_NUMBER_LABEL': 'คำสั่งซื้อหมายเลข:',
+        'TITLE': 'ขอบคุณสำหรับรายการสั่งซื้อ',
+        'STORE_PICKUP_TIME': 'พร้อมให้มารับสินค้า: {{deliveryTime}}'
+      },
+      'SHIPPING_TO': '{{city}}, {{state}} {{zipCode}} {{country}}',
+      'SEND_EMAIL_TEXT': '',
+      'THANK_YOU_MSG_WITHOUT_NAME': 'ขอบคุณที่ซื้อสินค้า!',
+      'THANK_YOU_MSG': 'ขอบคุณที่ซื้อสินค้ากับเรา คุณ{{username}}!',
+      'ORDER_NUMBER_TITLE': 'หมายเลขสั่งสินค้าของคุณ:',
+      'CONTINUE_SHOPPING_BUTTON': 'ซื้อสินค้าต่อ',
+      'SHIPPING_TO_TITLE': 'ส่งไปที่:',
+      'TOTAL_COST_TITLE': 'ราคารวมทั้งสิ้น:',
+      'SUMMARY_TITLE': 'สรุป',
+      'LIKE_YOUR_STYLE_TITLE': 'หวังว่าจะได้เจอกันอีกเร็วๆ นี้'
+    };
+    $translateProvider.translations('th', translations);
+    $translateProvider.translations(translations);
+    $translateProvider.preferredLanguage('th');
+  }
+]);

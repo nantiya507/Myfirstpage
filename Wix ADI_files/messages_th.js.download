@@ -1,0 +1,4231 @@
+'use strict';
+
+try {
+  angular.module('siteGeneratorStaticsConsumerTranslations');
+} catch (e) {
+  angular.module('siteGeneratorStaticsConsumerTranslations', ['pascalprecht.translate']);
+}
+
+angular.module('siteGeneratorStaticsConsumerTranslations').config(['$translateProvider',
+  function ($translateProvider) {
+    var translations = {
+      'popups': {
+        'after-tpa-deviantart-add': {
+          'button': 'Got It',
+          'heading': 'You’ve Added a DeviantArt Feed'
+        },
+        'after-tpa-deviantart-add-section': {
+          'text': 'Connect an account to display your art.'
+        },
+        'after-tpa-progallery-add': {
+          'heading': 'Wix Pro Gallery<br/>มีให้บริการบนไซต์ของคุณแล้ว',
+          'text': 'อัพโหลด และแสดงรูปและวิดีโอของคุณในแกลเลอรีเริ่ดๆ บนไซต์ของคุณ',
+          'button': 'รับทราบ'
+        },
+        'after-tpa-restaurantsmenus-add': {
+          'heading': 'TBD: Restaurants',
+          'text': 'TBD: Restaurants'
+        },
+        'welcome-to-mobile-editor-existing': {
+          'heading': 'ใหม่! แก้ไขเว็บไซต์ของคุณบนมือถือ',
+          'heading-next': 'การเปลี่ยนแปลงของคุณจะถูกเก็บไว้ที่นี่',
+          'text-next': 'การเปลี่ยนแปลงที่คุณทำจะไม่มีผลกระทบกับหน้าตาของไซต์บนเดสก์ท็อป',
+          'text': 'ลองดูดีไซน์ใหม่ๆ ซ่อนส่วนประกอบ และอีกมากมาย'
+        },
+        'publish-congrats': {
+          'action': {
+            'dashboard': {
+              'description': 'ให้ธุรกิจของคุณเติบโตและให้คนเข้าไซต์ของคุณ',
+              'linkText': 'ไปที่ Wix Home ของคุณ'
+            },
+            'facebook': {
+              'description': 'เพิ่มจำนวนผู้เข้าชมด้วยการแชร์เว็บไซต์ของคุณ',
+              'linkText': 'แชร์ลง Facebook',
+              'socialText': 'เว็บไซต์ของฉันเอง! สร้างโดยฉัน'
+            },
+            'twitter': {
+              'socialHashTags': 'MyProWebsite, StartStunning',
+              'linkText': 'ทวีตลง Twitter',
+              'description': 'ทวีตเว็บไซต์ของคุณและสร้างผู้ติดตามที่ภักดี',
+              'socialText': 'เว็บไซต์ของฉันเอง! สร้างโดยฉัน - ทำด้วย @Wix'
+            },
+            'seowiz': {
+              'description': 'ให้ Google หาคุณพบ',
+              'linkText': 'ทำตามแพลน SEO ของคุณ'
+            },
+            'shoutout': {
+              'linkText': 'ส่งอีเมล',
+              'description': 'โปรโมทเว็บไซต์ของคุณด้วยอีเมลแคมเปญ'
+            },
+            'email': {
+              'linkText': 'รับเมลบ็อกซ์ของคุณ',
+              'description': 'รับที่อยู่อีเมลที่โดเมนของคุณ'
+            }
+          },
+          'right': {
+            'subtitle': 'เชื่อมต่อโดเมนที่เป็นแบรนด์ของคุณเอง',
+            'text': 'ให้เว็บไซต์ของคุณดูเป็นมืออาชีพมากขึ้นด้วยโดเมน เช่น: www.mystunningwebsite.com',
+            'sale-text': 'อัพเกรดตอนนี้ และรับโดเมนฟรี <span class=\'-sale-accent\'>+ ส่วนลด {{text}}%</span> กับแพลนพรีเมียมที่เป็นที่นิยมมากที่สุดของเรา',
+            'button': 'เชื่อมต่อโดเมน',
+            'heading': 'ขั้นตอนต่อไป'
+          },
+          'heading': 'ยินดีด้วย!',
+          'three-actions-promote': {
+            'subtitle': 'โปรโมทเว็บไซต์และธุรกิจของคุณ'
+          },
+          'left': {
+            'button': 'ดูเว็บไซต์',
+            'heading-first-publish': 'เราได้เผยแพร่ไซต์ของคุณที่ที่อยู่นี้:',
+            'heading': 'หน้าเว็บไซต์ของคุณเผยแพร่และออนไลน์:'
+          },
+          'connect-your-own-domain': {
+            'button': 'เชื่อมต่อโดเมนของคุณเอง'
+          },
+          'three-actions-social': {
+            'subtitle': 'เพิ่มปริมาณผู้เข้าชมเว็บไซต์ของคุณให้มากขึ้น'
+          },
+          'heading-first-publish': 'ยินดีด้วย! เผยแพร่ไซต์ของคุณแล้ว',
+          'button': 'เสร็จแล้ว'
+        },
+        'unfitmode': {
+          'text': 'เลือกดีไซน์ที่แสดงภาพที่ครอบตัด',
+          'heading': 'เลือกดีไซน์ใหม่'
+        },
+        'mobile-editor': {
+          'Chat_Widget': 'To customize Chat,<br>switch to desktop mode.'
+        },
+        'import-page-failed': {
+          'text': 'ADI can’t add this page to your site.<br/>Try again later or choose another page.',
+          'heading': 'We’re Unable to Add This Page'
+        },
+        'after-tpa-stickysocialbar-add': {
+          'heading': 'คุณได้ติดตั้งแถบเครือข่ายโซเชียลแล้ว',
+          'text': 'เชื่อมต่อไปยังบัญชีโซเชียลของคุณเพื่อให้ผู้เข้าชมเว็บไซต์เข้าไปติดตาม',
+          'button': 'รับทราบ'
+        },
+        'page-delete-confirmation': {
+          'text': 'ทุกส่วนและลักษณะทั้งหมดบนหน้าเพจนี้จะถูกลบออกจากไซต์ของคุณ',
+          'heading': 'Delete page'
+        },
+        'after-tpa-video-add-section': {
+          'text': 'เพิ่ม สตรีม และขายเพลงของคุณได้ง่ายๆ - จากไซต์ของคุณโดยตรง!'
+        },
+        'publish-failed': {
+          'heading': 'ลองดูอีกครั้ง',
+          'text': 'คลิกเผยแพร่เพื่อดูออนไลน์',
+          'accept': 'เผยแพร่เว็บไซต์'
+        },
+        'save-your-site': {
+          'heading': 'Save your website!',
+          'text': 'สมัครใช้งาน Wix.com เพื่อบันทึก<br/>และดำเนินการต่อ'
+        },
+        'publish-choose-domain': {
+          'option1': {
+            'text': 'ใช้โดเมน Wix.com ฟรี'
+          },
+          'option2': {
+            'text': 'เชื่อมต่อโดเมนที่กำหนดเองของคุณ'
+          },
+          'button': 'เผยแพร่และดำเนินการต่อ',
+          'subtitle': 'โดเมนที่คุณเลือกจะเป็นที่อยู่เว็บไซต์ของคุณ',
+          'heading': 'เลือกโดเมนเพื่อเผยแพร่ไซต์ของคุณ'
+        },
+        'change-to-editor': {
+          'bullets': {
+            '1': 'ลากและวางได้ง่ายๆ',
+            '2': 'คุณสมบัติดีไซน์ขั้นสูงกว่า 1000 แบบ',
+            '3': 'แอ็พเฉพาะทางสำหรับร้านอาหาร โรงแรม อีเวนท์ และอีกมากมาย',
+            '3-new': 'แอ็พเฉพาะทางสำหรับร้านอาหาร โรงแรม อีเวนท์ และอีกมากมาย',
+            '2-new': 'คุณสมบัติดีไซน์ขั้นสูงกว่า 1000 แบบ'
+          },
+          'go-to-editor': 'ไปที่เครื่องมือแก้ไข',
+          'warning-new': 'หากคุณต้องการกลับไปที่ Wix ADI ทุกการเปลี่ยนแปลงที่คุณบันทึกใน Wix Editor จะไม่ไปกับคุณด้วย',
+          'cancel': 'แก้ไขต่อไปได้ที่นี่',
+          'warning': 'หากคุณบันทึกไซต์ของคุณใน Wix Editor คุณจะไม่สามารถดำเนินการแก้ไขเว็บไซต์นี้ใน Wix ADI ได้',
+          'title': 'แก้ไขไซต์ของคุณใน Wix Editor',
+          'subtitle': ''
+        },
+        'delete-chat': {
+          'heading': 'ต้องการลบแช็ท?',
+          'text': 'คุณจะไม่สามารถแช็ทกับ<br/>ผู้เข้าชมไซต์ออนไลน์ได้'
+        },
+        'publish-connect-domain': {
+          'heading': 'เชื่อมต่อโดเมนของคุณ',
+          'button': 'ไว้คราวหน้า',
+          'subtitle': 'อัพเกรดไซต์ของคุณเพื่อเชื่อมต่อโดเมนที่คุณกำหนดเอง',
+          'option2': {
+            'text': 'เชื่อมต่อโดเมนที่คุณเป็นเจ้าของอยู่แล้ว'
+          },
+          'option1': {
+            'text': 'รับโดเมนเนมใหม่'
+          }
+        },
+        'after-page-add': {
+          'heading': 'ยินดีด้วย!',
+          'text': 'คุณได้เพิ่มหน้าเพจใหม่บนเว็บไซต์ของคุณ',
+          'accept': 'ดำเนินการต่อ'
+        },
+        'after-tpa-stores-add': {
+          'text': 'เลือกแกลเลอรีเริ่ดๆ เพิ่มสินค้า เชื่อมต่อการชำระเงิน และอีกมากมาย',
+          'heading': 'คุณมีร้านค้าออนไลน์'
+        },
+        'cant-delete-header': {
+          'heading': 'นี่คือส่วนหัว<br/>ไม่สามารถซ่อนได้',
+          'text': 'ส่วนหัวจะปรากฏอยู่ทุกหน้าเพจ <br/>ดังนั้นคุณต้องเลือกให้แสดงอย่างน้อยหนึ่งอย่าง'
+        },
+        'import-page-success': {
+          'text': 'ADI added this page to your new site.<br/>Go ahead and customize it.',
+          'heading': 'Nice! This Page Was Added'
+        },
+        'autosave': {
+          'text': 'Wix ADI บันทึกดีไซน์ของเว็บไซต์ของคุณโดยอัตโนมัติ คุณไม่ต้องทำเอง',
+          'heading': 'ไซต์ของคุณถูกบันทึกโดยอัตโนมัติแล้ว!'
+        },
+        'after-tpa-music-add-section': {
+          'text': 'เพิ่ม สตรีม และขายเพลงของคุณได้ง่ายๆ —<br/> จากไซต์ของคุณโดยตรง!'
+        },
+        'after-tpa-music-add': {
+          'heading': 'ทุกสิ่งที่คุณต้องการ<br/>สำหรับเพลงของคุณ',
+          'text': 'เพิ่ม สตรีม และขายเพลงของคุณได้ง่ายๆ —<br/> จากไซต์ของคุณโดยตรง!'
+        },
+        'after-tpa-video-add': {
+          'heading': 'ยินดีต้อนรับสู่ Wix Video Player'
+        },
+        'tpa-delete-confirmation': {
+          'heading': 'ต้องการลบ {{TPA}}?',
+          'text': 'ฟีเจอร์ทั้งหมดของแอปพลิเคชันนี้<br/>จะถูกลบออกจากเว็บไซต์ของคุณ'
+        },
+        'after-tpa-blog2-add': {
+          'text': 'Now you can create and schedule posts, add comments, get followers and more.',
+          'heading': 'คุณมีบล็อกแล้ว'
+        },
+        'after-tpa-blog-add': {
+          'heading': 'คุณมีบล็อก',
+          'text': 'ตอนนี้คุณสามารถสร้าง และตั้งเวลาโพสต์ เพิ่มคำติชม รับผู้ติดตาม และอีกมากมาย'
+        },
+        'after-tpa-blog-add-section': {
+          'text': 'เราได้เพิ่มหน้าเพจเว็บไซต์ใหม่สำหรับบล็อกของคุณ เขียน แก้ไขและตั้งเวลาโพสต์ จัดแสดงรูปภาพและวิดีโอ <br/>เพิ่มส่วนสำหรับคำติชมและอีกมากมายได้ง่ายๆ'
+        },
+        'after-tpa-getsubscribers-add-section': {
+          'text': 'ตอนนี้ผู้เข้าชมเว็บสามารถสมัครเว็บไซต์ของคุณได้แล้ว เราจะส่งอีเมลหาคุณทุกครั้งที่มีใครสมัครเข้ามา <br/> <br/>'
+        },
+        'edit-now': 'แก้ไขเลย',
+        'after-tpa-add': {
+          'text': 'คุณได้เพิ่ม {{TPA}} เรียบร้อยแล้ว'
+        },
+        'after-tpa-bookings-add': {
+          'text': 'คลิก "จัดการ" เพื่อเพิ่มบริการของคุณ',
+          'heading': 'รับจองออนไลน์'
+        },
+        'tpa-delete-all-widgets-confirmation': {
+          'text': 'คุณลักษณะทั้งหมดของแอ็พนี้<br/>จะถูกลบออกจากเว็บไซต์ของคุณ'
+        },
+        'time-to-publish': {
+          'heading': 'เวลานี้เหมาะจะเผยแพร่ไซต์ของคุณ',
+          'text': 'คุณได้เพิ่มสิ่งที่คุณ<br/>ต้องการได้รับออนไลน์แล้ว ตอนนี้ก็แค่คลิก <br/> \'เผยแพร่\' มุมขวาบน'
+        },
+        'page-add-initiation': {
+          'text': 'ดูวิธีการทำงานของเมนูด้วยการคลิก \'ดูตัวอย่าง\' มุมขวาบน',
+          'heading': 'นี่คือเมนูเว็บไซต์ของคุณ',
+          'accept': 'เข้าใจละ'
+        },
+        'add-app': {
+          'heading': 'เพิ่ม {{TPA}}',
+          'accept-button': 'เพิ่มไปที่หน้าเพจ',
+          'description': 'จะแสดงเหนือส่วนล่างในหน้าเพจของคุณ'
+        },
+        'after-tpa-bookings-add-section': {
+          'text': 'คลิก "จัดการ" เพื่อเพิ่มบริการของคุณ'
+        },
+        'cant-delete-footer': {
+          'heading': 'นี่คือส่วนท้าย<br/>ไม่สามารถซ่อนได้',
+          'text': 'ส่วนท้ายจะปรากฏอยู่ทุกหน้าเพจ <br/>ดังนั้นคุณต้องเลือกให้แสดงอย่างน้อยหนึ่งอย่าง'
+        },
+        'welcome-to-mobile-editor-new': {
+          'heading': 'ตรวจดูหน้าตาไซต์ของคุณบนมือถือ',
+          'text': 'คุณสามารถเปลี่ยนแปลงการจัดวาง ซ่อนส่วนประกอบ และอีกมากมาย การเปลี่ยนแปลงที่คุณทำจะไม่มีผลกระทบกับหน้าตาของไซต์บนเดสก์ท็อป'
+        },
+        'form-builder-upgrade': {
+          'heading': 'อัปเกรดแบบฟอร์มของคุณ<br/>เป็น Ascend by Wix',
+          'text': 'ให้คุณเพิ่มช่องข้อความแบบไม่จำกัด อัปโหลดไฟล์<br/>คุณสมบัติการแชทขั้นสูง และอีกมากมาย'
+        },
+        'movesection': {
+          'heading': 'ย้ายส่วนนี้',
+          'text': 'Select a page from the list:'
+        },
+        'deleteitem': {
+          'heading': 'ลบรายการ',
+          'text': 'คุณแน่ใจหรือว่าต้องการลบรายการนี้?'
+        },
+        'after-tpa-getsubscribers-learn-more': 'ศึกษาเพิ่มเติม',
+        'after-tpa-restaurantsorders-add': {
+          'text': 'TBD: Restaurants',
+          'heading': 'TBD: Restaurants'
+        },
+        'delete-list-item': {
+          'heading': 'ลบรายการ',
+          'text': 'คุณแน่ใจหรือว่าต้องการลบรายการนี้?'
+        },
+        'delete-sticky-social-bar': {
+          'heading': 'คุณต้องการลบแถบสื่อโซเชียลหรือไม่?',
+          'text': 'ฟีเจอร์นี้จะถูกลบออกจากเว็บไซต์ของคุณ'
+        },
+        'after-tpa-paidplans-add': {
+          'heading': 'คุณได้เพิ่ม Paid Plans เรียบร้อยแล้ว',
+          'text': 'สร้าง "รายละเอียดราคาแพ็กเกจ"เพื่อเริ่มขาย เนื้อหา สินค้า และบริการของคุณ'
+        },
+        'after-tpa-chat_widget-add': {
+          'heading': 'สุดยอด! เพิ่มแช็ทแล้ว',
+          'text': 'เผยแพร่ไซต์ของคุณ เพื่อจะสามารถแช็ทกับผู้เข้าชมไซต์จากเดสก์ท็อปและมือถือ',
+          'button': 'เข้าใจละ'
+        },
+        'after-tpa-bandsintown-add-section': {
+          'text': 'เชื่อมต่อบัญชีของคุณเพื่อแสดงวันทัวร์คอนเสิร์ต ขายตั๋ว และอีกมากมาย'
+        },
+        'fitmode': {
+          'text': 'เลือกการจัดวางรูปแบบใดรูปแบบหนึ่งเพื่อแสดงภาพเต็ม',
+          'heading': 'ดีไซน์ส่วน'
+        },
+        'after-tpa-stores-add-section': {
+          'text': 'เลือกแกลเลอรีสวยตระการตา เพิ่มสินค้า เชื่อมต่อระบบชำระเงิน และอีกมากมาย'
+        },
+        'after-tpa-forum-add': {
+          'heading': 'คุณมีฟอรัม',
+          'text': 'คลิก \'ดูตัวอย่าง\' เพื่อเพิ่มหมวดหมู่และเขียนโพสต์'
+        },
+        'delete-form': {
+          'text': 'Your form will be removed from your site',
+          'heading': 'ลบแบบฟอร์ม'
+        },
+        'welcome-to-mobile-editor-campaign': {
+          'text': 'To get the latest design features for your site on mobile, switch to the Wix mobile Editor',
+          'buttons': {
+            'ok': 'Go to Wix Editor'
+          },
+          'title-text': 'Get More Design Options<br/>for Mobile'
+        },
+        'new-publish-connect-domain': {
+          'option1': {
+            'text': 'Get a new domain name like <strong>{{domain}}</strong>'
+          }
+        },
+        'after-tpa-blog2-add-section': {
+          'text': 'We’ve added a new website page dedicated to your blog. Easily write, edit and schedule posts, showcase photos & videos,<br/> add a comments section & more.'
+        },
+        'after-tpa-bandsintown-add': {
+          'text': 'เชื่อมต่อบัญชีของคุณเพื่อแสดงวันทัวร์คอนเสิร์ต ขายตั๋ว และอีกมากมาย',
+          'heading': 'ดีเลย! คุณได้ทำการเพิ่ม Bandsintown'
+        },
+        'after-tpa-progallery-add-section': {
+          'text': 'อัพโหลด และแสดงรูปและวิดีโอของคุณในแกลเลอรีเริ่ดๆ บนไซต์ของคุณ'
+        },
+        'after-tpa-instagram-add-section': {
+          'text': 'เชื่อมต่อบัญชี Instagram เพื่อแสดงภาพและวิดีโอในฟีดบนเว็บไซต์ของคุณ'
+        },
+        'deletesection': {
+          'text': 'หมวดข้อมูลนี้จะถูกลบออกจากไซต์ของคุณ',
+          'heading': 'ลบหมวดข้อมูล?'
+        },
+        'after-tpa-instagram-add': {
+          'heading': 'เยี่ยม! คุณมี<br/>Instagram Feed'
+        },
+        'after-tpa-events-add': {
+          'heading': 'เยี่ยม! เพิ่มอีเวน์แล้ว'
+        },
+        'after-tpa-events-add-section': {
+          'text': 'ตั้งค่าและจัดการอีเวนท์ของคุณ เพิ่มรายละเอียดทั้งหมด รวบรวมจำนวนคนตอบรับ ขายตั๋ว และอีกมากมาย'
+        },
+        'welcome-to-apps-panel': {
+          'paid-plans': {
+            'text': 'Install the Paid Plans app to create Membership Plans and Packages.'
+          }
+        },
+        'after-tpa-restaurantsreservations-add': {
+          'heading': 'TBD: Restaurants'
+        },
+        'after-tpa-getsubscribers-add': {
+          'text': 'ตอนนี้ผู้เข้าเยี่ยมสามารถลงทะเบียนสมัครเว็บไซต์ได้แล้ว คุณจะได้รับอีเมลทุกครั้งที่มีการสมัครใหม่ <br/> <br/>',
+          'heading': 'ดีใจด้วย! คุณมีแบบฟอร์มการสมัครแล้ว'
+        },
+        'after-tpa-restaurantsreservations-add-section': {
+          'text': 'TBD: Restaurants'
+        }
+      },
+      'overlay': {
+        'actions': {
+          'duplicate': 'ทำซ้ำ',
+          'edit-seo': 'SEO',
+          'scroll-effect': 'เอฟเฟกต์ scroll',
+          'open-media': 'แทนที่',
+          'toggle-paragraphs': 'แยก',
+          'link-to': 'เชื่อมต่อไปยัง...',
+          'navigate-to': 'นำไปยัง',
+          'toggle-paragraphs-off': 'ผสาน',
+          'move-down': 'เลื่อนลง',
+          'manage': 'ตั้งค่าการส่ง',
+          'colors': 'สี',
+          'edit-address': 'ที่อยู่',
+          'settings': 'การตั้งค่า',
+          'delete-chat': 'ลบ',
+          'move-up': 'เลื่อนขึ้น',
+          'focus': 'โฟกัส',
+          'toggle-header-menu': 'เปิดเมนู',
+          'rename': 'ตั้งชื่อใหม่',
+          'inbox': 'เปิดกล่องจดหมาย',
+          'edit-media': 'ปรับ',
+          'design': 'ดีไซน์',
+          'edit-pages': 'แก้ไขหน้าเพจ',
+          'hide': 'ซ่อน',
+          'designs': 'ดีไซน์',
+          'change-opacity': 'ความทึบแสง',
+          'edit': 'แก้ไข',
+          'copy': 'คัดลอก',
+          'styles': 'ดีไซน์',
+          'change-opacity-other': 'เพิ่มเติม...',
+          'set-map-style': 'ตั้งค่าสไตล์ของแผนผังไซต์',
+          'delete': 'ลบ',
+          'edit-menu': 'จัดการ',
+          'override-font-size': 'ปรับขนาดข้อความ',
+          'crop': 'ครอบตัด',
+          'list-item-to-page': 'รายการที่เพจ',
+          'organize-gallery': 'จัดระเบียบมีเดีย',
+          'gallery-type': 'เปลี่ยนแกลเลอรี',
+          'override-color': 'ยกเลิกสี',
+          'logo-size': 'ขนาด',
+          'upgrade-chat': 'อัพเกรดแชท',
+          'edit-tooltip': 'เริ่มปรับแต่งเว็บไซต์ของคุณ',
+          'move': 'ย้ายไปยัง...'
+        },
+        'messages': {
+          'color-not-readable': '<p>ไม่สามารถอ่านส่วนนี้ได้ <br/><a ng-click=\'$ctrl.setColor(action, -1)\' href="">ยกเลิก</a></p>',
+          'apply-to-all': 'Apply to all list items',
+          'reset-item': {
+            'message': 'This item is not readable.',
+            'click': 'รีเซ็ตสี'
+          },
+          'reset-section': {
+            'message': 'Text in this section is not readable.'
+          },
+          'edit-site-color': 'แก้ไขสีของเว็บไซต์'
+        },
+        'main-button-edit': 'แก้ไขหมวด',
+        'main-button-edit-footer': 'แก้ไขฟุตเตอร์',
+        'main-button-tpa-settings': 'การตั้งค่า',
+        'main-button-manage-tpa': 'จัดการ {{tpa}}',
+        'main-button-designs': 'เปลี่ยนดีไซน์',
+        'main-button-edit-header': 'แก้ไขเฮดเดอร์'
+      },
+      'design': {
+        'kit': {
+          'type': {
+            'maison': 'บ้านหลังเล็ก',
+            'organic': 'อินทรีย์',
+            'fuse': 'ฟิวส์',
+            'fun': 'สนุก',
+            'midnight': 'เที่ยงคืน',
+            'playground-2': 'สนามเด็กเล่น',
+            'black-ice 2': 'น้ำแข็งสีดำ',
+            'chic': 'ชิค',
+            'classic': 'คลาสสิค',
+            'soho': 'โซโฮ',
+            'bouquet': 'ช่อดอกไม้',
+            'breeze-2': 'ลมโชย',
+            'upbeat': 'มองโลกในแง่ดี',
+            'clean': 'สะอาด',
+            'delight': 'ยินดี',
+            'playground': 'สนามเด็กเล่น',
+            'delight-2': 'ยินดี',
+            'smart': 'เนี้ยบ',
+            'funky': 'ติดดิน',
+            'evolution': 'วิวัฒนาการ',
+            'wild-rose': 'กุหลาบป่า',
+            'agency': 'หน่วยงาน',
+            'bounce': 'เด้งดึ๋ง',
+            'cadenza-2': 'คาเดนซ่า',
+            'grand': 'อลัง',
+            'chic-2': 'ชิค',
+            'spark': 'เปล่งประกาย',
+            'agile': 'ว่องไว',
+            'breeze': 'ลมโชย',
+            'hi-rise': 'ระฟ้า',
+            'retro': 'เรโทร',
+            'skyscraper': 'ตึกระฟ้า',
+            'innovative': 'สร้างสรรค์',
+            'horizon': 'ขอบฟ้า',
+            'bold': 'กล้า',
+            'unplugged': 'ไม่นึ่ง',
+            'merlot': 'เมอร์โลต์',
+            'hype': 'ฮอตฮิต',
+            'play': 'เล่น',
+            'sophisticated': 'เจนโลก',
+            'minimal': 'มินิมอล',
+            'inspire': 'บันดาลใจ',
+            'sugar': 'น้ำตาล',
+            'fresh-2': 'สด',
+            'bold-2': 'กล้า',
+            'sincere': 'จริงใจ',
+            'luxury': 'หรูหรา',
+            'vogue': 'ตามสมัย',
+            'deep-forest': 'ป่าลึก',
+            'rustic': 'เรียบง่าย',
+            'lush': 'อิ่มเอิบ',
+            'serene': 'สงบเงียบ',
+            'royal': 'ยิ่งใหญ่',
+            'dynamic': 'ไดนามิก',
+            'timeless': 'เหนือกาลเวลา',
+            'charming': 'มีเสน่ห์',
+            'indulge': 'ดื่มด่ำ',
+            'pure': 'บริสุทธิ์',
+            'sophisticated-new': 'เจนโลก ใหม่',
+            'sugar-2': 'น้ำตาล',
+            'clean-2': 'สะอาด',
+            'vivid': 'สดใส',
+            'intensity': 'ความเข้มข้น',
+            'indie': 'อินดี้',
+            'fresh': 'สด',
+            'rosewater-new': 'น้ำกุหลาบ ใหม่',
+            'horizon-2': 'ขอบฟ้า',
+            'rosewater': 'น้ำกุหลาบ',
+            'fuse-new': 'ฟิวส์ ใหม่',
+            'intensity-new': 'ความเข้มข้น ใหม่',
+            'elegant': 'สง่างาม',
+            'army': 'กองทัพ',
+            'jet-black': 'สีดำเจ็ทแบล็ค',
+            'tender': 'อ่อนโยน',
+            'black-ice': 'น้ำแข็งสีดำ',
+            'lovely': 'น่ารัก',
+            'sky-high': 'สูงเสียดฟ้า',
+            'cadenza': 'คาเดนซ่า',
+            'vintage': 'วินเทจ'
+          },
+          'customize-design': 'ปรับแต่งดีไซน์',
+          'font': {
+            'title': 'ชุดแบบอักษร',
+            'edit': 'แก้ไข'
+          },
+          'customize': 'ปรับแต่ง',
+          'reset': {
+            'button': 'รีเซ็ต'
+          },
+          'title': {
+            'suffix': 'ชุด'
+          }
+        },
+        'header': {
+          'type': {
+            'solid': 'ปกติ',
+            'fixed': 'ตายตัว',
+            'transparent': 'โปร่งใส',
+            'easter-egg-url': 'https://www.youtube.com/embed/Qkuu0Lwb5EM?rel=0&autoplay=1&showinfo=0',
+            'title': 'ประเภทของเฮดเดอร์'
+          },
+          'bgcolor': {
+            'description': 'เลือกสีพื้นหลังสำหรับ {{ sitePart }} ของคุณ <br/>หากต้องการตัวเลือกอื่น ไปที่ <a ng-click="$ctrl.goToColorationPanel()" class="go-to-site-color" data-hook="goto-site-colors">สีของไซต์</a>',
+            'title': 'สีพื้นหลัง',
+            'transparent': 'เฮดเดอร์เป็นแบบโปร่งใสในหน้าโฮมเพจ <br/>เลือกสีสำหรับหน้าเพจด้านใน'
+          },
+          'logo-size-': {
+            '0': 'กลาง',
+            '1': 'ใหญ่',
+            '2': 'ใหญ่มาก',
+            '-1': 'เล็ก',
+            '-2': 'เล็กมาก'
+          },
+          'logo-size': {
+            'label': 'ขนาด: {{ sizeLabel }}'
+          }
+        },
+        'font-data': {
+          'bold-2': {
+            'name': 'กล้า',
+            'description': 'จิตวิญญาณแห่งการผจญภัย ที่กล้าตะโกนบอกอย่างภาคภูมิใจ'
+          },
+          'retro': {
+            'description': 'กลิ่นอายวินเทจ เหมือนของโบราณทรงคุณค่าที่นำกลับมาใช้ใหม่',
+            'name': 'เรโทร'
+          },
+          'horizon-2': {
+            'name': 'ขอบฟ้า',
+            'description': 'เรียบง่ายแต่เริ่ด เหมือนพระอาทิตย์ตกดินที่ขอบมหาสมุทร'
+          },
+          'evolution': {
+            'name': 'วิวัฒนาการ',
+            'description': 'มีวิสัยทัศน์และหัวก้าวหน้า แต่ยังมีความคิดร่วมสมัย'
+          },
+          'upbeat': {
+            'description': 'สดใส มองโลกในแง่ดี เปี่ยมด้วยพลังงานที่น่าหลงใหบ',
+            'name': 'มองโลกในแง่ดี'
+          },
+          'unplugged': {
+            'name': 'ไม่นึ่ง',
+            'description': 'ไม่หยุดนิ่ง จริงใจ และพร้อมรับสิ่งใหม่'
+          },
+          'breeze-2': {
+            'description': 'กระแสลมพร้อมกลิ่นอายเย็นๆ ของภูเขา ดูคล่องแคล่วและสดชื่น',
+            'name': 'ลมโชย'
+          },
+          'sugar-2': {
+            'description': 'อ่อนหวานและมีชีวิตชีวา ร้อนแรงนิดๆ และดูดี',
+            'name': 'น้ำตาล'
+          },
+          'clean': {
+            'name': 'สะอาด',
+            'description': 'เรียบร้อยสมดุล ดั่งกระดานที่ว่างเปล่า'
+          },
+          'sophisticated': {
+            'name': 'เจนโลก',
+            'description': 'นักเดินทางท่องโลกที่เจนจัด มีการศึกษาและมีวัฒนธรรม'
+          },
+          'royal': {
+            'description': 'สง่างามอย่างขุนนาง ให้อารมณ์ทันสมัยและมั่นใจในตัวเอง',
+            'name': 'ยิ่งใหญ่'
+          },
+          'luxury': {
+            'name': 'หรูหรา',
+            'description': 'ชนชั้นสูง พร้อมบรรยากาศที่งดงามและสง่างาม'
+          },
+          'innovative': {
+            'name': 'สร้างสรรค์',
+            'description': 'มีความคิดสร้างสรรค์และทันสมัย พร้อมออกไปค้นหาเทรนด์ล่าสุด'
+          },
+          'serene': {
+            'name': 'สงบเงียบ',
+            'description': 'โทนเบาๆ สงบๆ ที่น่ารื่นรมย์และผ่อนคลาย'
+          },
+          'funky': {
+            'name': 'ติดดิน',
+            'description': 'คิดนอกกรอบ ไม่เหมือนใคร และมีสีสัน'
+          },
+          'army': {
+            'description': 'ดูมีอำนาจ ทั้งแข็งแกร่งและมั่นคง',
+            'name': 'กองทัพ'
+          },
+          'fresh-2': {
+            'description': 'เหมือนหญ้าที่เพิ่งตัดใหม่กลางฤดูร้อน สดชื่นและมีชีวิตชีวา',
+            'name': 'สด'
+          },
+          'smart': {
+            'description': 'เป็นมืออาชีพและฉลาดหลักแหลม ตรึงตาน่ามอง',
+            'name': 'เนี้ยบ'
+          },
+          'maison': {
+            'name': 'บ้านหลังเล็ก',
+            'description': 'เหมือนที่ดินผืนใหญ่ในชนบทฝรั่งเศส สง่างามและดูดี'
+          },
+          'vogue': {
+            'name': 'ตามสมัย',
+            'description': 'ความสง่างามที่สะดุดตา พร้อมสัมผัสที่ไม่แคร์ใคร'
+          },
+          'fun': {
+            'name': 'สนุก',
+            'description': 'กล้าหาญ สดใส และเต็มเปี่ยมด้วยการมองโลกในแง่ดี'
+          },
+          'black-ice-2': {
+            'description': 'น่าค้นหาและเอาจริงเอาจัง น่าดึงดูด',
+            'name': 'น้ำแข็งสีดำ'
+          },
+          'elegant': {
+            'name': 'สง่างาม',
+            'description': 'ความงามที่ไม่เคยจางหาย ทั้งหรูหราและประณีต'
+          },
+          'hype': {
+            'description': 'น่าค้นหาและเอาจริงเอาจัง น่าดึงดูด',
+            'name': 'ฮอตฮิต'
+          },
+          'vintage': {
+            'description': 'กลิ่นอายย้อนยุค เหมือนของโบราณทรงคุณค่าที่นำกลับมาใช้ใหม่',
+            'name': 'วินเทจ'
+          },
+          'charming': {
+            'description': 'บุคลิกเป็นผู้นำ ทั้งมีเสน่ห์และนุ่มละมุน',
+            'name': 'มีเสน่ห์'
+          },
+          'cadenza': {
+            'name': 'คาเดนซ่า',
+            'description': 'เข้มข้นแต่กลมกลืน เฉกเช่นเสียงดนตรีซิมโฟนีอันทรงพลัง'
+          },
+          'spark': {
+            'description': 'หลักแหลมและมีมนต์เสน่ห์ของความน่าตื่นเต้น',
+            'name': 'เปล่งประกาย'
+          },
+          'fresh': {
+            'name': 'สด',
+            'description': 'เหมือนหญ้าที่เพิ่งตัดใหม่กลางฤดูร้อน สดชื่นและมีชีวิตชีวา'
+          },
+          'chic-2': {
+            'name': 'ชิค',
+            'description': 'สไตล์ที่ไม่ต้องใช้ความพยายาม พร้อมการวางตัวที่มีเสน่ห์'
+          },
+          'wild-rose': {
+            'name': 'กุหลาบป่า',
+            'description': 'น่าหลงใหล แบบบาง และน่าค้นหา'
+          },
+          'tender': {
+            'description': 'อ่อนโยนและนุ่มนวล พร้อมบุคลิกที่อบอุ่นและเป็นกันเอง',
+            'name': 'อ่อนโยน'
+          },
+          'sky-high': {
+            'name': 'สูงเสียดฟ้า',
+            'description': 'สไตล์คนเมือง พร้อมอารมณ์แบบผู้ทรงอิทธิพลและทันสมัย'
+          },
+          'play': {
+            'name': 'เล่น',
+            'description': 'กล้าหาญ สดใส และเต็มเปี่ยมด้วยการมองโลกในแง่ดี'
+          },
+          'dynamic': {
+            'description': 'ค้นหาความตื่นเต้นเร้าใจ ทรงพลัง และกล้าหาญ',
+            'name': 'ไดนามิก'
+          },
+          'cadenza-2': {
+            'name': 'คาเดนซ่า',
+            'description': 'เข้มข้นแต่กลมกลืน เฉกเช่นเสียงดนตรีซิมโฟนีอันทรงพลัง'
+          },
+          'soho': {
+            'description': 'รสนิยมร่วมสมัย เปี่ยมด้วยสัมผัสของคนเมือง',
+            'name': 'โซโฮ'
+          },
+          'lush': {
+            'description': 'เต็มรส มีรสนิยม และบริบูรณ์ ประหนึ่งไวน์แดงชั้นเลิศ',
+            'name': 'อิ่มเอิบ'
+          },
+          'inspire': {
+            'name': 'บันดาลใจ',
+            'description': 'ทรงอิทธิพลและมีอำนาจ พร้อมเสน่ห์ที่อบอุ่นเป็นกันเอง'
+          },
+          'organic': {
+            'description': 'บุคลิกร่าเริง ไม่เหมือนใคร และเป็นมิตร',
+            'name': 'อินทรีย์'
+          },
+          'merlot': {
+            'name': 'เมอร์โลต์',
+            'description': 'เต็มรส มีรสนิยม และบริบูรณ์ ประหนึ่งไวน์แดงชั้นเลิศ'
+          },
+          'delight-2': {
+            'name': 'ยินดี',
+            'description': 'น่าหลงใหล ร่าเริง พร้อมประกายแห่งความยินดี'
+          },
+          'chic': {
+            'description': 'สไตล์ที่ไม่ต้องใช้ความพยายาม พร้อมการวางตัวที่มีเสน่ห์',
+            'name': 'ชิค'
+          },
+          'sincere': {
+            'description': 'ดูดีและตรงไปตรงมา ให้ความรู้สึกจริงจัง',
+            'name': 'จริงใจ'
+          },
+          'minimal': {
+            'name': 'มินิมอล',
+            'description': 'มีสมดุลและเรียบง่าย มีระดับ'
+          },
+          'pure': {
+            'name': 'บริสุทธิ์',
+            'description': 'สุขภาพดี เป็นธรรมชาติ ใจดีจากเนื้อใน'
+          },
+          'vivid': {
+            'name': 'สดใส',
+            'description': 'เข้มข้นแต่กลมกลืน เฉกเช่นเสียงดนตรีซิมโฟนีอันทรงพลัง'
+          },
+          'delight': {
+            'description': 'น่าหลงใหล ร่าเริง พร้อมประกายแห่งความยินดี',
+            'name': 'ยินดี'
+          },
+          'bold': {
+            'name': 'กล้า',
+            'description': 'จิตวิญญาณแห่งการผจญภัย ที่กล้าตะโกนบอกอย่างภาคภูมิใจ'
+          },
+          'playground': {
+            'description': 'อ่อนเยาว์ ร่าเริง เปี่ยมด้วยความสุขใจที่บริสุทธิ์',
+            'name': 'สนามเด็กเล่น'
+          },
+          'playground-2': {
+            'description': 'อ่อนเยาว์ ร่าเริง เปี่ยมด้วยความสุขใจที่บริสุทธิ์',
+            'name': 'สนามเด็กเล่น'
+          },
+          'black-ice': {
+            'description': 'น่าค้นหาและเอาจริงเอาจัง น่าดึงดูด',
+            'name': 'น้ำแข็งสีดำ'
+          },
+          'agile': {
+            'description': 'ร่าเริงและคล่องแคล่ว บางครั้งก็ทำตามสัญชาตญาณ',
+            'name': 'ว่องไว'
+          },
+          'skyscraper': {
+            'name': 'ตึกระฟ้า',
+            'description': 'สไตล์คนเมือง พร้อมอารมณ์แบบผู้ทรงอิทธิพลและทันสมัย'
+          },
+          'rustic': {
+            'name': 'เรียบง่าย',
+            'description': 'เสน่ห์เรียบง่ายแบบชนบท เติมแต่งด้วยความเป็นคนเมือง'
+          },
+          'timeless': {
+            'description': 'หน้าตาอ่อนเยาว์ เป็นที่นิยมตลอดกาล',
+            'name': 'เหนือกาลเวลา'
+          },
+          'midnight': {
+            'name': 'เที่ยงคืน',
+            'description': 'เรื่องลึกลับที่ยังหาคำตอบไม่ได้ ทั้งตื่นตาและน่าหลงใหล'
+          },
+          'sugar': {
+            'name': 'น้ำตาล',
+            'description': 'อ่อนหวานและมีชีวิตชีวา ร้อนแรงนิดๆ และดูดี'
+          },
+          'grand': {
+            'description': 'เหมือนที่ดินมั่งคั่งในชนบทฝรั่งเศส สง่างามและดูดี',
+            'name': 'อลัง'
+          },
+          'indie': {
+            'name': 'อินดี้',
+            'description': 'ไม่ติดอยู่ในกฎเกณฑ์ พร้อมนิสัยที่ชวนให้น่าค้นพบ'
+          },
+          'classic': {
+            'name': 'คลาสสิค',
+            'description': 'บุคลิกสง่างาม มีรสนิยมและมารยาท'
+          },
+          'fuse': {
+            'description': 'มุ่งมั่น เข้มแข็ง กับจุดหมายที่ไม่ไหวเอน',
+            'name': 'ฟิวส์'
+          },
+          'hi-rise': {
+            'description': 'เป็นที่รู้จักดีและเป็นมืออาชีพ ให้ความรู้สึกที่เข้าถึงได้',
+            'name': 'ระฟ้า'
+          },
+          'clean-2': {
+            'name': 'สะอาด',
+            'description': 'เรียบร้อยสมดุล ดั่งกระดานที่ว่างเปล่า'
+          },
+          'intensity': {
+            'description': 'กลิ่นอายรุนแรง ทรงพลัง เปี่ยมด้วยความมุ่งมั่น',
+            'name': 'ความเข้มข้น'
+          },
+          'horizon': {
+            'description': 'เรียบง่ายแต่เริ่ด เหมือนพระอาทิตย์ตกดินที่ขอบมหาสมุทร',
+            'name': 'ขอบฟ้า'
+          },
+          'jet-black': {
+            'description': 'จริงจัง ดูดี โดดเด่น เปี่ยมด้วยพลังสร้างสรรค์',
+            'name': 'สีดำเจ็ทแบล็ค'
+          },
+          'bounce': {
+            'name': 'เด้งดึ๋ง',
+            'description': 'การระเบิดของพลังงานที่เก็บอยู่ภายใน สดใสและมีชีวิตชีวา'
+          },
+          'rosewater': {
+            'description': 'น่าหลงใหล แบบบาง เปี่ยมด้วยมนต์เสน่ห์แห่งโรแมนซ์',
+            'name': 'น้ำกุหลาบ'
+          },
+          'agency': {
+            'description': 'ฉลาดและเป็นมืออาชีพ พกความมั่นใจมาเต็มเปี่ยม',
+            'name': 'หน่วยงาน'
+          },
+          'breeze': {
+            'description': 'กระแสลมพร้อมกลิ่นอายเย็นๆ ของทะเล ดูคล่องแคล่วและสดชื่น',
+            'name': 'ลมโชย'
+          },
+          'deep-forest': {
+            'name': 'ป่าลึก',
+            'description': 'กลิ่นอายของป่าเขา รักอิสระ มีเสน่ห์ และสนุกสนาน'
+          },
+          'lovely': {
+            'description': 'มีเสน่ห์ อ่อนโยน และอบอุ่นเป็นกันเอง',
+            'name': 'น่ารัก'
+          },
+          'indulge': {
+            'description': 'หรูหรามีรสนิยม พร้อมบรรยากาศของความมีระดับ',
+            'name': 'ดื่มด่ำ'
+          },
+          'bouquet': {
+            'name': 'ช่อดอกไม้',
+            'description': 'น่ารักและน่าหลงใหล พร้อมอารมณ์แห่งการเฉลิมฉลอง'
+          }
+        },
+        'coloration': {
+          'customize-palette': {
+            'title': 'สี {{ colorTypeName }}'
+          },
+          'basic': {
+            'change-palette-colors': 'แก้ไขสีในจานสี',
+            'advanced': 'การแก้ไขขั้นสูง',
+            'palettes': {
+              'title': 'จานสีแนะนำ'
+            },
+            'loader': {
+              'text': 'กำลังสร้างจานสีของคุณ...'
+            },
+            'palettetitle': 'สีหลัก',
+            'panelheader': 'สีของเว็บไซต์',
+            'panelheadernew': 'สีของเว็บไซต์',
+            'logoPalette': {
+              'title': 'จานสีโลโก้'
+            },
+            'hex-value': 'ค่าสี HEX'
+          },
+          'advanced': {
+            'readability': {
+              'learn': {
+                'more': 'ศึกษาเพิ่มเติม'
+              },
+              'fix': 'ปรับแต่งสี',
+              'positive': 'สามารถอ่านข้อความของคุณได้ง่าย',
+              'negative': 'อ่านข้อความบนเว็บไซต์ของคุณได้ยาก',
+              'loader': 'กำลังปรับสี...'
+            },
+            'dark': {
+              'color': 'สีเข้ม'
+            },
+            'fourth': {
+              'color': 'สีที่สี่'
+            },
+            'title': 'แก้ไขจานสี',
+            'light': {
+              'color': 'สีอ่อน'
+            },
+            'reset': 'รีเซ็ต',
+            'third': {
+              'color': 'สีที่สาม'
+            },
+            'panelheader': 'สีในจานสี',
+            'secondary': {
+              'color': 'สีรอง'
+            },
+            'description': 'เลือกสีเพื่อใช้กับทั้งเว็บไซต์ จากนั้นตรวจสอบให้แน่ใจว่าสามารถอ่านข้อความได้ง่าย',
+            'main': {
+              'color': 'สีหลัก'
+            }
+          },
+          'generic': {
+            'main': 'หน้าหลัก',
+            'fourth': 'ที่สี่',
+            'light': 'สว่าง',
+            'third': 'ที่สาม',
+            'dark': 'มืด',
+            'secondary': 'รอง'
+          },
+          'palette': {
+            'title': 'จานสี',
+            'edit': 'แก้ไข'
+          },
+          'color-mode-selector-new': {
+            'dialog': {
+              'coloration-level': {
+                'drop-down': {
+                  'colorful': 'มีสีสัน',
+                  'tinted': 'สว่าง',
+                  'plain': 'เรียบๆ',
+                  'vibrant': 'ตื่นตา'
+                }
+              },
+              'coloration-mode': {
+                'radio-buttons': {
+                  'dark': 'มืด',
+                  'light': 'สว่าง',
+                  'mix': 'ผสม'
+                }
+              },
+              'coloration-level-title': 'ระดับสี',
+              'title': 'การตั้งค่าสี',
+              'mode-title': 'โหมด'
+            },
+            'mode-title': 'โหมดสี',
+            'button-edit': 'แก้ไข'
+          },
+          'coloration-mode-selector': {
+            'dropdown': {
+              'light-mode': 'โหมดสว่าง',
+              'dark-mode': 'โหมดมืด'
+            },
+            'title': 'โหมดจานสี'
+          },
+          'palettecolordialog': {
+            'paragrpah': 'เพื่อให้แน่ใจว่าทุกคนจะอ่านเว็บไซต์ได้ กรุณาเลือกสี {{colorType}}'
+          }
+        },
+        'animations': {
+          'scroll-type': {
+            'title': 'เอฟเฟกต์แบบ scroll'
+          },
+          'slideshow-animation': {
+            'title': 'เอฟเฟกต์ในการเปลี่ยนผ่าน'
+          },
+          'title': 'ภาพเคลื่อนไหว',
+          'page-transition': {
+            'title': 'การเปลี่ยนผ่านหน้าเพจ'
+          },
+          'preview': 'ให้สไลด์โชว์ของคุณเคลื่อนไหวด้วยเอฟเฟกต์การเปลี่ยนผ่าน <br />เลือกสักหนึ่งแบบ จากนั้น <a ng-click="$ctrl.goToPreview()" data-hook="goto-preview">ดูตัวอย่าง</a> ไซต์ของคุณเพื่อดูการทำงาน',
+          'panel-title': 'ภาพเคลื่อนไหวของไซต์',
+          'slideshow-transition-time': {
+            'label': 'ระยะเวลาของสไลด์: {{ transitionTime }} วินาที'
+          },
+          'component-animation': {
+            'title': 'ประเภทของภาพเคลื่อนไหว'
+          },
+          'section-tip': 'เลือกภาพเคลื่อนไหวเพื่อใช้กับส่วนที่คุณเลือก <br />ไปที่ <a ng-click=\'$ctrl.goToAnimationPanel()\' data-hook="goto-animation-panel">ภาพเคลื่อนไหวของไซต์</a> เพื่อเปลี่ยนภาพเคลื่อนไหวของไซต์',
+          'section-panel-title': 'ภาพเคลื่อนไหวของส่วน'
+        },
+        'fonts': {
+          'font-size': {
+            'label': 'ขนาด: {{ sizeLabel }}'
+          },
+          'spacing': {
+            'medium': 'กลาง',
+            'title': 'Spacing between elements',
+            'small': 'เล็ก',
+            'large': 'ใหญ่'
+          },
+          'position-on-media': 'ตำแหน่ง',
+          'site-tip': 'เลือกชุดแบบอักษรสำหรับชื่อเรื่องและข้อความของคุณ ใช้แถบเลื่อนเพื่อปรับขนาด',
+          'text-alignment': {
+            'right': 'ขวา',
+            'left': 'ซ้าย',
+            'label': 'การจัดเรียงแนว',
+            'center': 'กลาง'
+          },
+          'paragraph-columns': {
+            'split': 'แยก',
+            'merge': 'ผสาน'
+          },
+          'panel-title': 'แบบอักษรของไซต์',
+          'split-parapraph': {
+            'title': 'คอลัมน์ย่อหน้า',
+            'merge': 'ข้อความผสาน',
+            'split': 'คอลัมน์ '
+          },
+          'font-size-': {
+            '0': 'กลาง',
+            '1': 'ใหญ่',
+            '2': 'ใหญ่มาก',
+            '3': 'ใหญ่โต',
+            '-3': 'จิ๋ว',
+            '-1': 'เล็ก',
+            '-2': 'เล็กมาก'
+          },
+          'section-tip-alignment': 'เลือกขนาดแบบอักษรสำหรับส่วนและการจัดวางข้อความ<br />ไปที่ <a ng-click=\'$ctrl.goToFontsPanel()\' data-hook="goto-fonts-panel">แบบอักษรของไซต์</a> เพื่อเปลี่ยนชุดแบบอักษรของไซต์ของคุณ',
+          'section-tip': 'เลือกขนาดแบบอักษรเพื่อใช้กับส่วนที่คุณเลือก <br />ไปที่ <a ng-click=\'$ctrl.goToFontsPanel()\' data-hook="goto-fonts-panel">แบบอักษรของไซต์</a> เพื่อเปลี่ยนชุดแบบอักษรของไซต์ของคุณ',
+          'size-notice': 'ขนาดของชุดแบบอักษร',
+          'section-panel-title-alignment': 'การตั้งค่าข้อความ',
+          'section-panel-title': 'ขนาดแบบอักษร',
+          'title': 'แบบอักษร'
+        },
+        'page-design': {
+          'title': 'ดีไซน์หน้าเพจ'
+        },
+        'themes': {
+          'title': 'ธีม'
+        },
+        'colors': {
+          'title': 'สี'
+        }
+      },
+      'tooltips': {
+        'media-settings': {
+          'size-button': {
+            'cropped': 'ครอบตัดรูปภาพนี้ด้วยตัวเอง<br/>เพื่อให้ได้รูปที่คุณต้องการ',
+            'backgroundheader': 'จัดวางตำแหน่งรูปภาพ<br>เพื่อให้เหมาะกับกรอบ<br/>ตามที่่คุณต้องการ',
+            'backgroundlist': 'จัดวางตำแหน่งรูปภาพ<br>เพื่อให้เหมาะกับกรอบ<br/>ตามที่่คุณต้องการ',
+            'backgroundfull': 'จัดวางตำแหน่งรูปภาพ<br>เพื่อให้เหมาะกับกรอบ<br/>ตามที่่คุณต้องการ',
+            'column': 'จัดวางตำแหน่งรูปภาพ<br>เพื่อให้เหมาะกับกรอบ<br/>ตามที่่คุณต้องการ',
+            'strip': 'จัดวางตำแหน่งรูปภาพ<br>เพื่อให้เหมาะกับกรอบ<br/>ตามที่่คุณต้องการ',
+            'croppedheader': 'ครอบตัดรูปภาพนี้ด้วยตัวเอง<br/>เพื่อให้ได้รูปที่คุณต้องการ',
+            'background': 'จัดวางตำแหน่งรูปภาพ<br>เพื่อให้เหมาะกับกรอบ<br/>ตามที่่คุณต้องการ',
+            'uncropped': 'ดูการจัดวางเพิ่ม<br/>สำหรับแสดงภาพเต็ม',
+            'gallery': 'เลือกแกลเลอรีเพื่อแสดงภาพของคุณ',
+            'stripheader': 'จัดวางตำแหน่งรูปภาพ<br>เพื่อให้เหมาะกับกรอบ<br/>ตามที่่คุณต้องการ'
+          },
+          'disabled-tab-gallery': 'สำหรับตัวเลือกแกลเลอรี<br /> ไปที่ <span class="cc-tooltip-link"><a href="" ng-click="$ctrl.onTooltipClick()">ดีไซน์</a></span>',
+          'disabled-tab-video': 'สำหรับตัวเลือกวิดีโอ<br /> ไปที่ <span class="cc-tooltip-link"><a href="" ng-click="$ctrl.onTooltipClick()">ดีไซน์</a></span>'
+        },
+        'drag_section': 'ลากส่วนที่ต้องการ',
+        'user_web_address': '',
+        'design_header_type_fixed': 'เฮดเดอร์ที่ถูกตรึงไว้จะ<br/>มองเห็นได้เสมอ แม้เมื่อ<br/>ผู้เข้าชมเลื่อนหน้าเพจลง',
+        'floating-go-to-editor-link': 'ไปที่ Wix Editor เพื่อดูตัวเลือกการปรับแต่งไซต์อื่น',
+        'mobile_media_edit_disabled': 'ต้องการแทนที่สื่อ? ไปที่ <span class="cc-tooltip-link"><a ng-click="$ctrl.onTooltipLinkClick()" href="">เดสก์ท็อป</a></span>',
+        'crop_apply': 'ใช้',
+        'publish_error_site_name_already_exists': 'ชื่อนี้มีผู้ใช้แล้ว',
+        'menu_preview': 'ดูหน้าตาเว็บไซต์ของคุณบนเดสก์ท็อปและมือถือ',
+        'intro_card_url_invalid': 'URL ไม่ถูกต้อง',
+        'mobile_text_field_disabled': 'ต้องการแก้ไขข้อความ?<br/>ไปที่ <span class="cc-tooltip-link"><a ng-click="$ctrl.onTooltipLinkClick()" href="">เดสก์ท็อป</a></span>',
+        'color_picker_edit_colors': 'แก้ไขสีของเว็บไซต์',
+        'text-manager-link-imported': 'ใช้ข้อความที่นำเข้าจากเว็บไซต์ของคุณ',
+        'section_background_categories_color': 'สีพื้นหลังจากจานสีของคุณ',
+        'publish_error_site_name_too_short': 'ชื่อไซต์ของคุณต้องมีความยาว<br/>ระหว่าง 4 - 20 ตัวอักษร',
+        'section_background_categories_media': 'รูปภาพ วิดีโอ และแกลเลอรีที่เข้ากันกับเว็บไซต์ของคุณที่สุด',
+        'edit_mode_toggle_mobile': 'แก้ไขสำหรับมือถือ',
+        'overlay_edit': 'แก้ไขเนื้อหา',
+        'overlay_image_fit_section': 'สลับรูปภาพเพื่อให้เหมาะ',
+        'pattern': 'แบบ',
+        'overlay_plus': 'เพิ่มหมวดใหม่ที่นี่',
+        'overlay_reset_font_section': 'ตั้งค่าแบบอักษรใหม่',
+        'video': 'วิดีโอ',
+        'previous_item': 'ก่อนหน้า',
+        'overlay_move_page': 'ย้าย',
+        'animation_animation_type_help': 'เพิ่มภาพเคลื่อนไหวที่มีชีวิตชีวาให้ส่วนประกอบในไซต์ของคุณ',
+        'slideshow-transition-help': 'คลิกแต่ละสไลด์เพื่อเพิ่มเนื้อหาของคุณเอง <br/> หากต้องการเปลี่ยนลำดับการสไลด์ ให้เลื่อนสไลด์ขึ้น<br/>หรือลง',
+        'section_name_in_menu': 'ป้ายชื่อนี้จะปรากฏบนเมนูหน้าเว็บไซต์คุณด้วยเช่นกัน',
+        'seo_description_tooltip': 'คำบรรยายไซต์ของคุณควรมีตัวอักษรระหว่าง 50-160 ตัว (รวมช่องว่าง)',
+        'design_coloration_readability_positive': 'สีในจานสีทำให้สามารถอ่านข้อความบนเว็บไซต์ของคุณได้ง่าย',
+        'seo_title_validation': 'หัวเรื่องมีความยาวได้ไม่เกิน 70 ตัวอักษร (รวมช่องว่าง)',
+        'overlay_delete': 'ลบ',
+        'link-details-paypal': {
+          'fixed': 'ทูลทิป',
+          'toggle': {
+            'on': 'ปิดการใช้งานเพื่อให้ผู้เข้าชมสามารถบริจาคได้ตามต้องการ',
+            'off': 'กำหนดจำนวนที่คุณต้องการให้ผู้เข้าชมบริจาค'
+          }
+        },
+        'email_to_form_builder_settings_panel': 'To get notified by email when someone submits your form, add your email address again in <span class="cc-tooltip-link"><a href="" ng-click="$parent.$parent.$parent.$parent.$ctrl.goToFormSettingsPanel()" >Form Settings</a></span>',
+        'design_coloration_palette_list': 'โทนสีเหล่านี้อ้างอิงจากสีหลักที่คุณใช้ เราแนะนำให้ใช้โทนสีนี้กับเนื้อหาเว็บทั้งหมด',
+        'animation_page_transition_help': 'เพิ่มการเปลี่ยนหน้าเพจที่สนุกๆ เพื่อให้ไซต์ของคุณมีชีวิตชีวาขึ้น! คลิก \'ดูตัวอย่าง\' เพื่อดูการทำงานจริง',
+        'design_header_type_transparent_non_home': 'พื้นหลังเฮดเดอร์<br/>จะเป็นแบบโปร่งใสบน<br/>หน้าโฮมเพจเท่านั้น',
+        'overlay_move_down': 'ย้ายลง',
+        'menu_home': 'เพิ่มและจัดการหน้าเพจ',
+        'overlay_change_preset': 'เปลี่ยนดีไซน์',
+        'next_item': 'ถัดไป',
+        'overlay_shrink_font_section': 'ลดขนาดแบบอักษร',
+        'seo_keywords_validation': 'สามารถรองรับคำสำคัญได้ถึง 10 คำและ 250 ตัวอักษร (รวมช่องว่าง)',
+        'overlay_print_additional_height': 'พิมพ์ส่วนสูงเพิ่มเติม',
+        'design_coloration_main_color': 'เลือกสีหลักสำหรับเว็บไซต์ของคุณ ADI จะสร้างจานสีที่แนะนำเพื่อให้เข้ากัน',
+        'menu_add_dropdown': 'เพิ่มหน้าเพจหรือส่วน',
+        'publish_error_site_name_ends_with_hyphen': 'ชื่อไม่สามารถลงท้ายขีด',
+        'design_coloration_palette_edit': 'แก้ไขการตั้งค่าสี',
+        'members-area': {
+          'info-popup': 'หน้าเพจเหล่านี้สำหรับสมาชิกไซต์ของคุณเท่านั้น <br/>สมาชิกจะเห็นเมื่อล็อกอินไปยังบัญชี <br/><span class="cc-tooltip-link"><a href="" ng-click="$ctrl.onTooltipClick(item)">ศึกษาเพิ่มเติม</a></span>',
+          'field-editor': {
+            'button': 'สมาชิกสามารถสมัครใช้งาน<br>และล็อกอินไปยังบัญชีของตน<br>ได้จากที่นี่ <span class="cc-tooltip-link"><a href="" ng-click="$parent.$parent.$ctrl.onTooltipClick()">ศึกษาเพิ่มเติม</a></span>'
+          },
+          'signup-settings-panel': {
+            'termsOfUse': {
+              'link': 'สร้างหน้าข้อกำหนดการใช้งานและลิงก์มาที่นี่เมื่อมีคนลงชื่อเข้าใช้ คู่มือการสร้างหน้าข้อกำหนดการใช้งาน <span class="cc-tooltip-link"><a href="" ng-click="$parent.$parent.$parent.$ctrl.onTooltipClick($parent.$parent.$parent.policy)">อ่านเพิ่มเติม</a></span>'
+            },
+            'privacyPolicy': {
+              'link': 'สร้างหน้านโยบายส่วนบุคคลและลิงก์มาที่นี่เมื่อมีคนลงชื่อเข้าใช้ สำหรับคู่มือในการสร้างนโยบายส่วนบุคคล <span class="cc-tooltip-link"><a href="" ng-click="$parent.$parent.$parent.$ctrl.onTooltipClick($parent.$parent.$parent.policy)">อ่านเพิ่มเติม</a></span>'
+            },
+            'codeOfConduct': {
+              'link': 'สร้างหน้า "แนวทางปฏิบัติ"? เชื่อมโยงหน้าดังกล่าวที่นี่เพื่อให้สมาชิกเห็นเมื่อสมัครใช้งาน'
+            }
+          }
+        },
+        'publish_error_site_name_is_not_string': 'ไม่สามารถปล่อยว่างได้',
+        'close_preview': 'ย้อนกลับไปที่โหมดแก้ไข',
+        'html_settings_edit_html': 'คุณสามารถเพิ่มรหัส HTML<br>หากที่อยู่เว็บไซต์เป็น https://',
+        'shape': 'รูปทรง',
+        'design_kit_reset': 'รีเซ็ตเป็นการตั้งค่าเริ่มต้น',
+        'menu_add_section': 'เพิ่มหมวดใหม่',
+        'design_coloration_help': 'ช่วยเหลือ',
+        'overlay_enlarge_font_section': 'ขยายแบบอักษร',
+        'menu_publish': 'เผยแพร่ไซต์เพื่อให้ผู้คนเห็น <br />ทางออนไลน์',
+        'focal-point': {
+          'hint': 'ลากเพื่อเลือก<br/>ศูนย์กลางของรูปภาพ'
+        },
+        'seo_title_tooltip': 'Your site name, page name. and an idea of what you do in 55-70 characters (including spaces)',
+        'intro_card_email_invalid': 'กรอกอีเมลที่ถูกต้อง',
+        'design_change_font': 'เปลี่ยนแบบอักษร',
+        'menu_redo': 'ทำซ้ำ',
+        'design_header_type_transparent_disabled': 'Transparent header is not supported.',
+        'publish_error_site_name_too_long': 'ชื่อไซต์ของคุณต้องมีความยาว<br/>ระหว่าง 4 - 20 ตัวอักษร',
+        'menu_saved_text': 'การเปลี่ยนแปลงของคุณจะถูก<br/> บันทึกโดยอัตโนมัติ',
+        'overlay_rotate_color_section': 'หมุนสี',
+        'brightness': 'เลือกให้พื้นหลังไซต์<br/>เข้มหรืออ่อน',
+        'design_coloration_mode_toggle': 'กำหนดพื้นหลัง<br/>อ่อนหรือเข้มจาก<br/>จานสีของคุณ',
+        'preview_toggle_mobile': 'ตัวอย่างบนมือถือ',
+        'menu_undo': 'ยกเลิก',
+        'preview_toggle_desktop': 'ดูตัวอย่างบนเดสก์ท็อป',
+        'crop_cancel': 'ยกเลิก',
+        'overlay_shrink_section_height': 'ลดขนาดส่วน',
+        'overlay_change_column_position': 'เปลี่ยนตำแหน่งคอลัมน์',
+        'seo_url_validation': 'หน้าเพจ URL ต้องมีความยาว 1 ตัวอักษร หรือมากกว่า และต้องไม่มีอักขระพิเศษ (%, &, # เป็นต้น)',
+        'richtext_alignment': 'จัดเป็นแนว',
+        'edit_mode_toggle_desktop': 'แก้ไขสำหรับเดสก์ท็อป',
+        'overlay_move_up': 'ย้ายขึ้น',
+        'gallery': 'แกลเลอรี',
+        'section_background_categories_pattern': 'นำสีของแพทเทิร์น<br/> มาจากจานสีของไซต์ของคุณ เปลี่ยนสีของไซต์เพื่อดูตัวเลือกอื่น',
+        'design_coloration_logo_palette': 'ADI สร้างจากสีนี้จากสีในโลโก้ของคุณโดยอัตโนมัติ',
+        'saturation': 'กำหนดให้ไซต์ของคุณ<br/>มีสีสัน<br/>มากน้อยขนาดไหน',
+        'overlay_connect_domain': 'เชื่อมต่อโดเมน:<br/> การใช้ชื่อโดเมนที่เป็นแบรนด์สินค้าของคุณจะทำให้เว็บไซต์ดูเป็นมืออาชีพมากขึ้น',
+        'tpa_stores_settings': 'จัดการร้านค้า',
+        'intro_card_website_address_invalid': 'ที่อยู่เว็บไม่ถูกต้อง',
+        'import-site': {
+          'import-page': {
+            'already-imported': 'นำเข้าหน้าเพจนี้<br/>เรียบร้อยแล้ว<br/><span class=\'link-button\' ng-click=\'$ctrl.handleImport(item)\'>นำเข้าหน้าเพจนี้อีกครั้ง</span>'
+          }
+        },
+        'design_change_animation': 'แก้ไขการตั้งค่าภาพเคลื่อนไหว',
+        'overlay_settings': 'เปลี่ยนการตั้งค่า',
+        'best_match': 'ADI ได้สแกนข้อความที่คุณนำเข้าแล้ว<br/>เพื่อหาข้อความที่เหมาะกับย่อหน้านี้ที่สุด',
+        'overlay_enlarge_section_height': 'ขยายส่วน',
+        'publish_error_site_name_invalid_chars': 'ตัวอักษรไม่ถูกต้อง',
+        'intro_card_url_default': 'เปลี่ยนลิงก์เพื่อให้สามารถไปที่หน้าเพจโซเชียล (ไม่ใช่หน้าเพจ Wix)',
+        'seo_description_validation': 'คำบรรยายมีความยาวได้ไม่เกิน 160 ตัวอักษร (รวมช่องว่าง)',
+        'zoom_out': 'ซูมออก',
+        'seo_keywords_tooltip': 'เพิ่มคำสำคัญหรือวลีได้ไม่เกิน 10 คำ คั่นด้วยเครื่องหมายจุลภาค',
+        'design_coloration_readability_negative': 'สีเหล่านี้ทำให้อ่านข้อความบนเว็บไซต์ของคุณได้ยาก',
+        'seo_url_tooltip': 'นี่คือที่อยู่หน้าเพจบนเว็บของคุณ ซึ่งจะช่วยให้ผู้คนหาและจดจำเพจได้ เพราะฉะนั้นควรทำให้ดึงดูดใจและมีเนื้อหาเกี่ยวโยงมากที่สุด',
+        'suggest_layout_change': 'รูปภาพของคุณจะดูดีขึ้นในการจัดวางที่ต่างออกไป เลือกการจัดการอื่น',
+        'site_menu_clicked': 'เพื่อเปลี่ยนชื่อและจัดการไอเทมของคุณ <span class="cc-tooltip-link"><a ng-click="$ctrl.onMenuTooltipLinkClick()" href=""> ไปที่เมนู</a></span>',
+        'design_header_type_transparent_home': 'เพื่อให้ดู<br/>ทันสมัยอย่างไร้รอยต่อ ตั้งพื้นหลัง<br/>ของหน้าโฮมเพจเป็นแบบโปร่งใส',
+        'fake-browser-bar-url': 'ที่อยู่เว็บของคุณคือ <br><a class="fake_browser_bar_tooltip_url" href="{{URL}}" target="_blank">{{shortUrl}}</a>',
+        'intro_delete': 'ลบ',
+        'page_menu_clicked': 'Manage your menu and navigate between pages in the <span class="cc-tooltip-link"><a ng-click="$ctrl.onPageTooltipLinkClick()" href="">pages manager</a></span>.',
+        'zoom_in': 'ซูมเข้า',
+        'animation_scroll_effects_help': 'เพิ่มเอฟเฟกต์แบบ scrool ที่น่าจดจำให้รูปภาพพื้นหลังของไซต์ หากต้องการดูการทำงานจริง คลิก \'ดูตัวอย่างและเลื่อน\'',
+        'tpa_bookings_settings': 'จัดการบริการ',
+        'publish_error_site_name_invalid': 'ชื่อไซต์ไม่ถูกต้อง',
+        'section_menu_clicked': 'หากต้องการตั้งชื่อใหม่หรือซ่อนส่วนที่ต้องการ ให้แก้ไขส่วนนั้น <span class="cc-tooltip-link"><a ng-click="$ctrl.onSectionTooltipLinkClick()" href="">ศึกษาเพิ่มเติม</a></span>',
+        'html_settings_edit_link': 'คุณสามารถเชื่อมต่อเว็บไซต์นอกหรือหน้าเพจในเว็บไซต์หนึ่งๆ หากที่อยู่เริ่มต้นด้วย https://',
+        'menu_add_page': 'เพิ่มหน้าเพจใหม่',
+        'social_validation': 'อัพเดตลิงก์โซเชียลไปยังโปรไฟล์ของคุณ!',
+        'text-manager-link-adi': 'ดูตัวเลือกอื่นเพิ่มเติมสำหรับข้อความนี้',
+        'overlay_duplicate_section': 'ทำซ้ำ',
+        'tpa_blog_settings': 'จัดการบล็อก',
+        'richtext_font-size': 'Font Size',
+        'mobile_html_edit_disabled': 'หากต้องการแก้ไข HTML กรุณา <span class="cc-tooltip-link"><a ng-click="$ctrl.onActionTooltip()" href="">สลับไปที่เดสก์ท็อป</a></span>',
+        'web-address-is-not-valid': 'กรุณากรอกที่อยู่เว็บที่ถูกต้อง',
+        'image': 'รูปภาพ',
+        'header_fixed_header': 'ทำให้เห็นเฮดเดอร์ได้เสมอ <br/>แม้เมื่อผู้เข้าชมเลื่อนหน้าเพจลงด้านล่าง <br/>ดูตัวอย่างไซต์ของคุณเพื่อ <br/>ดูการทำงาน',
+        'design_advanced_colors_reset': 'รีเซ็ตสี',
+        'overlay_gear': 'การดำเนินการเฉพาะส่วน',
+        'design_coloration_add_color': 'เพิ่มสีที่คุณกำหนดเอง'
+      },
+      'tip_content': {
+        'projects-tip': {
+          'edit-mode': {
+            'footer_button': 'เข้าใจละ',
+            'content_template': '✓ Name of your project\n✓ Beautiful images\n✓ Short description \n✓ A button to learn more',
+            'title': 'What does a great Projects section include?\n'
+          },
+          'add-mode': {
+            'title': 'You’re about to add your Projects section.',
+            'footer_button': 'เข้าใจละ',
+            'content_template': 'This is where you display the projects you’re proudest of. Show potential clients what you\'re capable of.'
+          }
+        },
+        'volunteer-tip': {
+          'edit-mode': {
+            'content_template': '✓ Position\n✓ Short description with relevant information\n✓ A button to get in touch',
+            'footer_button': 'เข้าใจละ',
+            'title': 'What does a great Volunteer section include?'
+          },
+          'add-mode': {
+            'content_template': 'This is where you add your volunteer opportunities. People want to know how they can get involved.',
+            'footer_button': 'เข้าใจละ',
+            'title': 'You’re about to add your Volunteer section.'
+          }
+        },
+        'products-tip': {
+          'add-mode': {
+            'content_template': 'This is where you list the products you offer. People want to know you have what they’re looking for.',
+            'title': 'You’re about to add your Products section.\r',
+            'footer_button': 'เข้าใจละ'
+          },
+          'edit-mode': {
+            'title': 'What does a great Products section include?\r\n',
+            'footer_button': 'เข้าใจละ',
+            'content_template': '✓ Name of each product\r\n✓ Beautiful product shots\r\n✓ Benefits for your customer\r\n✓ Your best features\r\n✓ Pricing information\r\n✓ A button so customers can sign up, learn more or get in touch'
+          }
+        },
+        'faq-tip': {
+          'add-mode': {
+            'footer_button': 'เข้าใจละ',
+            'title': 'You’re about to add your FAQ section.',
+            'content_template': 'This is where you answer your audience’s most frequently asked questions. People want to find answers to their questions as quickly as possible. '
+          },
+          'edit-mode': {
+            'title': 'What does a great FAQ section include?',
+            'footer_button': 'เข้าใจละ',
+            'content_template': '✓ A list of 6-10 questions and answers\n✓ Simple layout with easy-to read font, color & size\n✓ A button so people can easily get in touch'
+          }
+        },
+        'opening hours-tip': {
+          'add-mode': {
+            'title': 'You’re about to add an Opening Hours section.\r\n',
+            'footer_button': 'เข้าใจละ',
+            'content_template': 'Make sure you tell your visitors when you’re open for business. This makes it easier for them to plan their visit and know when to call. \r\n'
+          }
+        },
+        'about-tip': {
+          'edit-mode': {
+            'content_template': '✓ Your story\r\n✓ Photos of the workplace or team\r\n✓ A button to contact you',
+            'title': 'What should you include?\r\n',
+            'footer_button': 'เข้าใจละ'
+          },
+          'add-mode': {
+            'content_template': 'This is where you tell people a little about your business. Give them a behind-the-scenes peek into who you are and how you got started. Feel free to keep it short or go into more detail about your mission, values and philosophy.\r\n',
+            'footer_button': 'เข้าใจละ',
+            'title': 'You’re about to add your About section.\n'
+          }
+        },
+        'careers-tip': {
+          'edit-mode': {
+            'title': 'What does a great Careers section include?',
+            'footer_button': 'เข้าใจละ',
+            'content_template': '✓ Job position\n✓ Responsibilities & requirements\n✓ A button for candidates to apply'
+          },
+          'add-mode': {
+            'content_template': 'This is where you show all your open positions. Potential candidates want to know what job opportunities you have and why it’s such a great place to work.',
+            'footer_button': 'เข้าใจละ',
+            'title': 'You’re about to add your Careers section.'
+          }
+        },
+        'special offers-tip': {
+          'edit-mode': {
+            'content_template': '✓ Special offer name\n✓ Beautiful photos\n✓ Features & Benefits\n✓ A button to learn more',
+            'footer_button': 'เข้าใจละ',
+            'title': 'What does a great Special Offers section include?'
+          },
+          'add-mode': {
+            'title': 'You’re about to add your Special Offers section.',
+            'content_template': 'This is where you tell people about your latest deals. Everyone loves a good sale!',
+            'footer_button': 'เข้าใจละ'
+          }
+        },
+        'tips-tip': {
+          'add-mode': {
+            'content_template': 'This is where you add all your Tips. Show visitors that you’re a knowledgeable professional - and keep them coming back with interesting & helpful content.',
+            'footer_button': 'เข้าใจละ',
+            'title': 'You’re about to add your Tips section.'
+          },
+          'edit-mode': {
+            'title': 'What does a great Tips section include?',
+            'footer_button': 'เข้าใจละ',
+            'content_template': '✓ Attention-grabbing title\n✓ Short, catchy description\n✓ A link to read more'
+          }
+        },
+        'news-tip': {
+          'edit-mode': {
+            'title': 'What does a great News section include?',
+            'content_template': '✓ Attention-grabbing title\n✓ Short, catchy description\n✓ A link to read more',
+            'footer_button': 'เข้าใจละ'
+          },
+          'add-mode': {
+            'footer_button': 'เข้าใจละ',
+            'title': 'You’re about to add your News section.',
+            'content_template': 'This is where you add all your News. Show visitors that you’re a knowledgeable professional - and keep them coming back with interesting & helpful content.'
+          }
+        },
+        'team-tip': {
+          'edit-mode': {
+            'content_template': '✓ Name of each employee and their title\r\n✓ Employee photos\r\n✓ Short descriptions including special honors, awards, degrees or what makes them excellent',
+            'footer_button': 'เข้าใจละ',
+            'title': 'What does a great Team section include?\r\n'
+          },
+          'add-mode': {
+            'content_template': 'This is where you introduce your team. Helping people get to know you and your team is a great way to build trust.',
+            'title': 'You’re about to add your Team section.\r\n',
+            'footer_button': 'เข้าใจละ'
+          }
+        },
+        'first-time-preview-go-to-edit': 'หากต้องการทำงานบนไซต์นี้ต่อ คลิก \'กลับไปที่ ADI Editor\'',
+        'resources-tip': {
+          'add-mode': {
+            'title': 'You’re about to add your Resources section.',
+            'footer_button': 'เข้าใจละ',
+            'content_template': 'This is where you add all your Resources. Show visitors that you’re a knowledgeable professional - and keep them coming back with interesting & helpful content.'
+          },
+          'edit-mode': {
+            'content_template': '✓ Attention-grabbing title\n✓ Short, catchy description\n✓ A link to read more',
+            'title': 'What does a great Resources section include?',
+            'footer_button': 'เข้าใจละ'
+          }
+        },
+        'articles-tip': {
+          'edit-mode': {
+            'footer_button': 'เข้าใจละ',
+            'title': 'What does a great Articles section include?',
+            'content_template': '✓ Attention-grabbing title\n✓ Short, catchy description\n✓ A link to read more'
+          },
+          'add-mode': {
+            'footer_button': 'เข้าใจละ',
+            'content_template': 'This is where you add all your Articles. Show visitors that you’re a knowledgeable professional - and keep them coming back with interesting & helpful content.',
+            'title': 'You’re about to add your Articles section.'
+          }
+        },
+        'services-tip': {
+          'edit-mode': {
+            'footer_button': 'เข้าใจละ',
+            'title': 'What does a great Services section include?\n',
+            'content_template': '✓ Name of each Service\n✓ Benefits for your customer\n✓ Your best features\n✓ Information about pricing\n✓ A button so customers can sign up, learn more or get in touch'
+          },
+          'add-mode': {
+            'footer_button': 'เข้าใจละ',
+            'title': 'You’re about to add your Services section.\n',
+            'content_template': 'This is where you list your Services.\nPeople want to know you have what they’re looking for. '
+          }
+        },
+        'testimonial-tip': {
+          'edit-mode': {
+            'content_template': '✓ Name of each client or customer\r\n✓ Beautiful photo\r\n✓ Short, honest quote',
+            'footer_button': 'เข้าใจละ',
+            'title': 'What does a great Testimonial section include?\r\n'
+          },
+          'add-mode': {
+            'title': 'You’re about to add your Testimonial section.\r\n',
+            'footer_button': 'เข้าใจละ',
+            'content_template': 'This is where you show people what others are saying about your business. Build credibility with short, honest quotes.'
+          }
+        },
+        'classes-tip': {
+          'edit-mode': {
+            'title': 'What does a great Classes section include?\n',
+            'footer_button': 'เข้าใจละ',
+            'content_template': '✓ Name of each Class\n✓ Benefits for your customer\n✓ Your best features\n✓ Information about pricing\n✓ A button so customers can sign up, learn more or get in touch'
+          },
+          'add-mode': {
+            'title': 'You’re about to add your Classes section.\n',
+            'content_template': 'This is where you list your Classes. \nPeople want to know you have what they’re looking for. ',
+            'footer_button': 'เข้าใจละ'
+          }
+        },
+        'features-tip': {
+          'edit-mode': {
+            'content_template': '✓ Name of feature\r\n✓ Benefits for your customer\r\n✓ A button so customers can sign up, learn more or get in touch',
+            'title': 'What does a great Features section include?\r\n',
+            'footer_button': 'เข้าใจละ'
+          },
+          'add-mode': {
+            'content_template': 'This is where you describe the distinguishing characteristics of your business. Feel free to list as many features as you want - include both the basics and ones that set you apart from the competition.\r\n',
+            'footer_button': 'เข้าใจละ',
+            'title': 'You’re about to add a Features section.\r\n'
+          }
+        },
+        'contact': {
+          'name': 'Rachel',
+          'profession': 'Wix Specialist'
+        },
+        'section_height': 'คุณสามารถเปลี่ยนความสูงของส่วนได้ที่นี่',
+        'resume-tip': {
+          'add-mode': {
+            'content_template': 'This is where you show your relevant experience. Keep it concise and double-check for spelling errors.',
+            'title': 'You’re about to add your Resume section.',
+            'footer_button': 'เข้าใจละ'
+          },
+          'edit-mode': {
+            'title': 'What does a great Resume section include?',
+            'content_template': '✓ Work experience - include your job title, employers’ names & start-end dates\n✓ Educational background\n✓ Special accomplishments & achievements\n✓ A button so people can easily get in touch',
+            'footer_button': 'เข้าใจละ'
+          }
+        },
+        'first-time-mobile-menu-toggle': 'Switch \'Show Menu\' in order to see the changes you\'ve made.',
+        'welcome-tip': {
+          'edit-mode': {
+            'content_template': '✓ Your business name\n✓ Your logo \n✓ Beautiful image\n✓ Impact statement- Let everyone know in a breath what is great about your business. \ni.e The Most Delicious & Healthy Cupcakes Ever!\n✓ A button so customers can learn more',
+            'title': 'What does a great Welcome section include?',
+            'footer_button': 'เข้าใจละ'
+          },
+          'add-mode': {
+            'content_template': 'This is where you tell people what you or your business does. Be yourself, keep it simple, and show how you’re unique from everyone else. \r\n',
+            'footer_button': 'เข้าใจละ',
+            'title': 'You’re about to add your Welcome section.'
+          }
+        },
+        'events-tip': {
+          'edit-mode': {
+            'title': 'What does a great Events section include?\r',
+            'footer_button': 'เข้าใจละ',
+            'content_template': '✓ Event details - including name, date, time & location\r\n✓ Short, engaging description\r\n✓ Beautiful calendar\r\n✓ A button so people can RSVP'
+          },
+          'add-mode': {
+            'content_template': 'This is where you promote your upcoming events. Give people a sense of what the event’s about and make them feel like they can’t miss out. \r\n',
+            'title': 'You’re about to add your Events section.\r\n',
+            'footer_button': 'เข้าใจละ'
+          }
+        },
+        'contact-tip': {
+          'add-mode': {
+            'title': 'You’re about to add a Contact section.\n',
+            'content_template': 'This is where people go to get your contact information. We recommend giving customers a few different ways to reach you. \r',
+            'footer_button': 'เข้าใจละ'
+          },
+          'edit-mode': {
+            'footer_button': 'เข้าใจละ',
+            'title': 'What does a great Contact section include?',
+            'content_template': '✓ Contact details - including email address, phone number & physical address\r\n✓ Contact form \r\n✓ Map'
+          }
+        },
+        'facilities-tip': {
+          'add-mode': {
+            'content_template': 'This is where you tell people about your facilities. People want to know if you have everything they need, so be sure to describe the features and benefits.',
+            'title': 'You’re about to add your Facilities section.',
+            'footer_button': 'เข้าใจละ'
+          },
+          'edit-mode': {
+            'content_template': '✓ Facility name\n✓ Short description + opening hours (if relevant)\n✓ Beautiful photos\n✓ Features & benefits\n✓ A button to learn more',
+            'title': 'What does a great Facility section include?',
+            'footer_button': 'เข้าใจละ'
+          }
+        },
+        'practices-tip': {
+          'add-mode': {
+            'footer_button': 'เข้าใจละ',
+            'title': 'You’re about to add your Practices section.\n',
+            'content_template': 'This is where you list your Practices. \nPeople want to know you have what they’re looking for. '
+          },
+          'edit-mode': {
+            'footer_button': 'เข้าใจละ',
+            'content_template': '✓ Name of each Practice\n✓ Benefits for your customer\n✓ Your best features\n✓ Information about pricing\n✓ A button so customers can sign up, learn more or get in touch',
+            'title': 'What does a great Practices section include?\n'
+          }
+        },
+        'first-time-desktop-content-panel': 'แสดงหรือซ่อนส่วนประกอบโดยคลิกหรือเอาเครื่องหมายวงกลมออก',
+        'notify_by_email_form_builder': 'Add your email to get notified every time a visitors submits a form',
+        'first-time-mobile-content-panel': 'แสดงหรือซ่อนส่วนประกอบโดยคลิกหรือเอาเครื่องหมายวงกลมออก การเปลี่ยนแปลงที่คุณทำจะไม่มีผลกระทบกับหน้าตาของไซต์บนเดสก์ท็อป',
+        'subscribe-tip': {
+          'add-mode': {
+            'title': 'You’re about to add a Subscribe section.\r\n',
+            'content_template': 'Let visitors sign up to get your email updates. This is an important step in growing your contact list and building strong relationships with your customers.\r\n',
+            'footer_button': 'เข้าใจละ'
+          }
+        },
+        'first_time_hide_field': 'สิ่งนี้ยังไม่แสดงบนไซต์สำหรับมือถือตอนนี้ <br/>ต้องการให้แสดงหรือไม่? คลิกเลย'
+      },
+      'help': {
+        'link': {
+          'menu': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/bf86bff2-440c-43b4-8a9b-878a889562b7',
+          'phone': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/269ee4ca-ac26-40a4-b982-b120e84c75d4'
+        },
+        'section': {
+          'sectionMedia': {
+            'patternsPanel': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/9e4ab889-b475-4ea2-906b-1004fce4a14f',
+            'editSection': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/4c375801-504b-49e4-b7fb-9641c58a34fb',
+            'mediaSettingsPanel': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/1df3e92f-b84f-4a29-80b9-d62c57509459',
+            'editListPageSection': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/4c5f6517-fd48-4a3d-be10-e532b2b18b44'
+          },
+          'editListPageSection': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/307fbba8-2bb4-4c2c-af8e-36ca448f783b',
+          'editMobileSection': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/0e672c8a-d881-4d70-b56f-cd109b06a9f4',
+          'edit-html': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/e2d98786-3a2c-45be-a32b-bd1b287aba58',
+          'edit(TeamMember)': '',
+          'editSlideShow': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/4c375801-504b-49e4-b7fb-9641c58a34fb',
+          'animations': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/1c7b6cc2-300c-4b5d-8d27-7eb8e8c3d6df',
+          'edit(GeneralDescription)': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/a355cea5-c7d8-4cc2-94db-5a01a9036b40',
+          'editSection': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/5c2f21df-f168-429a-9854-775a45e1f249',
+          'font': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/7ea7311e-55dc-4a70-9605-44752d3311b5',
+          'replace': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/2597032c-8945-4d17-877f-088f205def92',
+          'editListItem': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/b07cea50-6826-4b12-9d6b-e23cf109e4f3',
+          'edit(Testimonial)': '',
+          'edit(Footer)': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/43b8f6ca-bab0-4757-b695-fcbe815d5dc8',
+          'edit(Contact)': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/9efe4a0c-478f-46b7-a395-e73a9f39aa26',
+          'colors': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/e5132ef4-36d7-48d4-ac0a-fe5a142e3fc1',
+          'add': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/12ac8476-5313-4e7d-a482-74f3a5a100e7'
+        },
+        'tpa': {
+          'getsubscribers-learn-more': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/13c63e13-c6ff-466c-9afa-553cdb111252',
+          'ProGallery': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/68ae0727-b1a6-4279-86c9-af92eb2dd70e',
+          'Music': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/0d640609-38ce-495d-8ddb-c633836aa973',
+          'Stores': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/26d203b2-c6e2-4719-8f0d-39e409a1db9a',
+          'Blog': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/b5128f77-cf34-47b3-bc05-874aaa1f8243',
+          'Bookings': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/d4804362-9575-4bff-bd61-0f0576e30327'
+        },
+        'text-manager': {
+          'dialog': 'https://support.wix.com/th/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/8343d861-8535-4c56-a7c4-521b7900eb0b'
+        },
+        'members': {
+          'privacy-policy': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/f283585-d102-4a93-8e4c-ccbf72aed087',
+          'login-panel': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/943ee4f8-278d-4af5-9b86-a241acabde14',
+          'pages-panel': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/a0ed50d7-31a4-49e2-a982-6689babaa25b',
+          'signup-settings-panel': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/631ca7d1-5162-4bf6-90c5-2142133b005a',
+          'terms-of-use': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/6e26476e-30a3-4340-9803-4078fcb2cd7c'
+        },
+        'pages': {
+          'seo': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/a9e484ea-4e67-4d05-8b37-8040087d7d4c',
+          'mobile': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/90610bac-40c1-4dc2-b8bd-abb94cf71b9a',
+          'page-settings': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/a9e484ea-4e67-4d05-8b37-8040087d7d4c',
+          'add': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/287e1255-34c8-418a-9a0b-f17b11d28199',
+          'menu': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/8764da11-da73-4b57-adb9-cee9be8d1c4e'
+        },
+        'app': {
+          'forum': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/432cee57-1584-4f91-9fd6-866c2630eb10',
+          'panel': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/5c451cc1-1e0e-4149-9f8d-480001902f47'
+        },
+        'social': {
+          'menu': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/9d302210-3a58-4696-b0b4-888d5f79e4dc'
+        },
+        'mediagallery': {
+          'singlevideo': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/3ec1b885-999d-4ec0-9269-8c0961800f45',
+          'singleimage': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/ed7428da-e7b2-4399-90df-76fc906c79ef',
+          'singleshape': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/0a1088b1-9488-4af5-8221-ae73f8802bbb',
+          'singleclipart': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/073a29ed-ad50-40db-aa10-72e0187ae0f9',
+          'imagegallery': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/b29e3020-a671-49c9-b8af-43767fae53ad'
+        },
+        'design': {
+          'fonts': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/fc38db82-b927-4dc1-9729-d96958756ef7',
+          'menu': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/d09a17cb-18a1-40aa-b49e-9e37b08403ba',
+          'font': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/43b0e22f-7916-4f82-9905-17876c5b2a31',
+          'coloration': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/fe18acc2-2087-483e-bf0f-1c16cf67f360',
+          'panel-kit': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/1db49cd1-700d-4f72-a400-e61ff7a93236',
+          'animations': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/d487d93e-5093-4f83-88cf-3731bd55bf0b'
+        },
+        'businessinfo': {
+          'edit': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/ee0dcdfa-f2f1-4448-9c3b-ace3317b65d2'
+        },
+        'organizemedia': {
+          'singleextvideo': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/9063d60d-f6ed-4c0f-99d1-b9985aeaa4bb',
+          'imagegallery': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/5a7fb24b-d999-4017-b337-7efbf5d63c5c'
+        },
+        'popup': {
+          'newPageAdded': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/fdc89dea-dc99-4a68-85f5-aed0367bffc5',
+          'moveSection': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/06f9d900-c568-4b26-a220-2771802cd86f',
+          'deleteSection': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/5a8e9bc0-0864-47f1-abc6-85a6185197db'
+        },
+        'home': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/e8a37e8c-3172-4636-b914-11724362ce21',
+        'switch-design': {
+          'mobile': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/b31c262d-dd90-493a-aad9-60faad07c192',
+          'header': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/a6a19742-24a9-40fc-bfee-d335827bb18f'
+        },
+        'form-builder': {
+          'form-panel': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/9efe4a0c-478f-46b7-a395-e73a9f39aa26'
+        },
+        'mediasettings': {
+          'bgVideo': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/a7147aff-a2da-4f12-87aa-b18b140a9614',
+          'shape': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/7776a3db-c4eb-49c7-9b28-bb452d487f24',
+          'image': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/f6e993e6-b64b-43fa-b103-fd39db251114',
+          'extVideo': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/a7147aff-a2da-4f12-87aa-b18b140a9614',
+          'clipart': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/e2536465-be1b-4df5-8f13-9fadea234eee'
+        },
+        'tooltip': {
+          'sectionTooltip': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/f79fe6a0-49a2-477b-80af-6d849ef1c954'
+        },
+        'get-feedback': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/45e59a56-28fb-4f84-975a-1e950fdf9ae3',
+        'connectDomain': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/49a67686-f8ca-4198-ae14-8ad7875a4632',
+        'publish': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/2abcf51e-0485-40df-8fce-ea6b306b25a0'
+      },
+      'builder': {
+        'pages-panel': {
+          'settings': {
+            'show': 'แสดง',
+            'delete': 'ลบ',
+            'subpage': 'หน้าเพจย่อย',
+            'hide': 'ซ่อน',
+            'rename': 'ตั้งชื่อใหม่',
+            'duplicate': 'ทำซ้ำ',
+            'page-seo': 'หน้าเพจ SEO',
+            'main-page': 'หน้าหลัก',
+            'set-as-homepage': 'ตั้งเป็นหน้าโฮมเพจ'
+          },
+          'sections': {
+            'settings': {
+              'design': 'ดีไซน์',
+              'delete': 'ลบ',
+              'edit': 'แก้ไข',
+              'manage': 'จัดการ',
+              'rename': 'ตั้งชื่อใหม่'
+            }
+          }
+        },
+        'section-name-in-menu': {
+          'title': 'แสดงชื่อในเมนู'
+        },
+        'html-editor': {
+          'url-text-box': {
+            'placeholder': 'วางที่นี่...',
+            'validate-error': 'กรอก HTTPS เว็บไซต์ที่ถูกต้องให้อยู่ในรูปแบบโครงสร้างนี้: https://',
+            'label': 'วางที่อยู่เว็บไซต์'
+          },
+          'height-slider': {
+            'label': 'ความสูง'
+          },
+          'analytics': {
+            'text': 'เพื่อเพิ่ม Facebook Pixel, Google Analytics และอื่นๆ <a href=\' https://www.wix.com/dashboard/{{MSID}}/manage-website/embeds/?referralInfo=ADI_embed_settings\' target=\'_blank\'> ไปที่เครื่องมือติดตาม & เครื่องมือวิเคระห์ </a>'
+          },
+          'app': {
+            'popup': {
+              'subtitle': 'คลิกตั้งค่าเพื่อเพิ่มรหัส HTML หรือที่อยู่เว็บไซต์',
+              'title': 'คุณได้เพิ่มการฝังตัว HTML'
+            },
+            'description': 'เพื่มรหัส HTML หรือเพจจากเว็บไซต์อื่น',
+            'name': 'ฝัง HTML'
+          },
+          'section': {
+            'name': 'ฝัง "Section"',
+            'settings-button-label': 'ตั้งค่า'
+          },
+          'title': 'ตั้งค่า HTML',
+          'width-slider': {
+            'label': 'ความกว้าง'
+          },
+          'select-type': 'ฝัง "ประเภท"',
+          'code-text-box': {
+            'label': 'วางรหัสของคุณ (HTTPS เท่านั้น)',
+            'placeholder': 'วางที่นี่...'
+          }
+        },
+        'site-menu': {
+          'page-title': {
+            'Events': 'อีเวนท์',
+            'Music_Widget': 'เพลง',
+            'Events_Multiple': 'อีเวนท์',
+            'Video_Widget': 'วิดีโอ',
+            'Instagram_Widget': 'Instagram',
+            'Forum': 'ฟอรัม',
+            'BandsInTown_Widget': 'วันออกทัวร์',
+            'Html_Embed': 'Html',
+            'Events_Single': 'อีเวนท์'
+          },
+          'seo-wiz': 'ให้ Google หาคุณพบ',
+          'feedback': 'ส่งข้อเสนอแนะให้เรา',
+          'settings': 'ตั้งค่า',
+          'get-feedback': 'รับข้อเสนอแนะ',
+          'connect-domain': 'เชื่อมต่อโดเมน',
+          'my-dashboard': 'แดชบอร์ดของฉัน',
+          'news': 'ข่าวและอัพเดต',
+          'start-new-site': 'สร้างหน้าเว็บไซต์ใหม่',
+          'change-business-details': 'Update Website Type',
+          'view-published-site': 'ดูเว็บไซต์ที่เผยแพร่',
+          'my-business-info': 'ข้อมูลธุรกิจของฉัน',
+          'history': 'ประวัติการเข้าเว็บไซต์',
+          'site-dashboard': 'แดชบอร์ด',
+          'view-live': 'ดูเว็บไซต์'
+        },
+        'progress-bar': {
+          'step-message': {
+            'building-homepage': 'กำลังปรับเว็บของคุณสำหรับมือถือ...',
+            'adding-applications': 'กำลังโหลดฟีเจอร์ของคุณ...',
+            'online-content': 'กำลังนำเข้าเนื้อความออนไลน์ของคุณ',
+            'sc-adding-site-colors': 'กำลังเพิ่มสีเว็บไซต์ของคุณ',
+            'finishing-touches2': 'กำลังเพิ่มการปรับแต่งปิดท้าย',
+            'adding-section': 'กำลังเพิ่มหมวด "{{type}}"',
+            'sc-adding-header-and-footer': 'กำลังเพิ่มเฮดเดอร์และส่วนท้าย',
+            'sc-adding-site-fonts': 'กำลังจัดสไตล์แบบอักษรของไซต์ของคุณ',
+            'adding-application': 'กำลังเพิ่มแอ็พ "{{type}}" ของคุณ',
+            'finishing-touches': 'กำลังเพิ่มการตกแต่งสุดท้าย',
+            'sc-arranging-text-images': 'กำลังจัดเรียงข้อความและรูปภาพ',
+            'header-and-footer': 'กำลังจัดเรียงส่วนหัวและส่วนท้ายของคุณ',
+            'adding-page': 'กำลังเพิ่มหน้าเพจ {{pageTitle}}'
+          }
+        },
+        'section-background': {
+          'background-settings': {
+            'image': {
+              'position': {
+                'center': 'กลาง',
+                'bottom_left': 'ล่างซ้าย',
+                'top_right': 'บนขวา',
+                'left': 'ซ้าย',
+                'bottom_right': 'ล่างขวา',
+                'top_left': 'บนซ้าย',
+                'right': 'ขวา',
+                'top': 'ด้านบน',
+                'bottom': 'ด้านล่าง'
+              },
+              'body': 'เลือกว่าให้แสดงส่วนใด<br/>ของรูปนี้',
+              'lower-title': 'ตำแหน่งภาพ',
+              'parallax-paragraph': '<a ng-click="$ctrl.goToPreview()" data-hook="goto-preview">ดูตัวอย่างไซต์ของคุณ</a> เพื่อดู<br />เอฟเฟกต์นี้',
+              'title': 'ตำแหน่งของรูปภาพ'
+            }
+          },
+          'panel-paragraph-text': 'Click to select your favorite background.',
+          'pattern-settings': 'เปลี่ยนสี',
+          'panel-headline-text-header': 'พื้นหลังของเฮดเดอร์',
+          'upload': {
+            'video': 'วิดีโอ',
+            'gallery': 'แกลเลอรี',
+            'image': 'รูปภาพ'
+          },
+          'gallery-settings': 'จัดระเบียบรูปภาพ',
+          'upload-button': 'อัพโหลดพื้นหลัง',
+          'categories': {
+            'color': 'สี',
+            'media': 'สื่อ',
+            'pattern': 'ลายแพทเทิร์น'
+          },
+          'image-settings': 'การตั้งค่ารูปภาพ',
+          'panel-headline-text': 'ลายแพทเทิร์น',
+          'panel-headline-text-list': 'พื้นหลังรายการ',
+          'show-background': 'แสดงพื้นหลัง'
+        },
+        'logoExtraction': {
+          'step3200': {
+            'title': '',
+            'skip': 'ไม่ล่ะ ขอบคุณ',
+            'button': 'ใช้สีเหล่านี้',
+            'content': 'นี่เป็นจานสีที่ไม่เหมือนใครที่ ADI<br/>สร้างขึ้นสำหรับคุณ',
+            'newPaletteFromLogo': {
+              'content': 'นี่เป็นจานสีที่ไม่เหมือนใครที่ ADI<br/>สร้างขึ้นสำหรับคุณ',
+              'title': ''
+            }
+          },
+          'step3100': {
+            'title': '',
+            'content': 'กำลังสร้างโทนสี...'
+          },
+          'step3000': {
+            'title': '',
+            'button': 'สร้างจานสี',
+            'content': 'คุณต้องการสร้าง<br/>จานสีจากโลโก้ของคุณหรือไม่?',
+            'skip': 'ไม่ล่ะ ขอบคุณ'
+          }
+        },
+        'edit-section-button': 'แก้ไข',
+        'preview-recommended': 'แนะนำ',
+        'menu-panel': {
+          'empty-name-error': 'Please fill out this field',
+          'actions': {
+            'subpage': 'รายการย่อย',
+            'delete': 'ลบรายการ',
+            'main-page': 'รายการหลัก',
+            'link-to': 'เชื่อมต่อไปยัง...',
+            'set-as-home-page': 'ตั้งเป็นหน้าโฮมเพจ',
+            'hide': 'ซ่อนรายการ',
+            'manage-pages': 'จัดการหน้าเพจ',
+            'rename': 'เปลี่ยนชื่อรายการ',
+            'show': 'แสดง'
+          },
+          'panel-title': 'เมนู',
+          'panel-description': 'ผู้เข้าชมเว็บไซต์สามารถไปยังที่เหล่านี้ได้จากเว็บไซต์ของคุณ จัดการเมนูของคุณที่นี่ หรือ <a>ไปที่เพจ</a>',
+          'panel-add-button': 'เพิ่มรายการเมนู',
+          'panel-back-button': 'ย้อนกลับ',
+          'input-placeholder': 'Enter Name',
+          'new-menu-item': 'New Item',
+          'help-tooltip': 'Help'
+        },
+        'account': {
+          'new-site-link': 'https://www.wix.com/new/vertical?ref=ADI',
+          'my-sites': 'ไซต์ของฉัน',
+          'settings-link': 'https://www.wix.com/account/settings',
+          'my-sites-link': 'https://www.wix.com/account/sites',
+          'billing': 'การเรียกเก็บเงินและการชำระเงิน',
+          'settings': 'การตั้งค่าบัญชี'
+        },
+        'section-design': {
+          'TPA_NAME': {
+            'Stores_Slider_Gallery_Widget': 'ตัวเลื่อนดูสินค้า',
+            'Bookings': 'จองเลย',
+            'Events_Multiple': 'รายการอีเวนท์',
+            'Forum': 'ฟอรัม',
+            'Blog_Post_Gallery': 'บล็อก',
+            'PaidPlans': 'การตั้งราคาแพ็กเกจ',
+            'Stores_Product_Widget': 'สินค้า',
+            'Stores_Grid_Gallery_Widget': 'แกลเลอรีสินค้า',
+            'Blog2_Custom_Feed_Widget': 'Blog Feed',
+            'Stores_Product_specific_Widget': 'สินค้าแนะนำ',
+            'ProGallery_Widget': 'Pro Gallery',
+            'Stores': 'ร้านค้าออนไลน์',
+            'Events_Single': 'อีเวนท์เดี่ยว',
+            'Bookings_Widget': 'รายชื่อบริการ',
+            'Chat': 'แช็ท',
+            'Members': 'พื้นที่สำหรับสมาชิก',
+            'Video_Widget': 'วิดีโอเพลเยอร์',
+            'Blog2': 'บล็อก',
+            'GetSubscribers_Widget': 'หาผู้สมัครรับข่าวสาร',
+            'Blog': 'บล็อก',
+            'BandsInTown_Widget': 'วันที่ออกทัวร์',
+            'Music_Widget': 'มิวสิคเพลเยอร์'
+          },
+          'panel-headline-text': 'การออกแบบเฉพาะส่วน',
+          'mobile-headline-text': 'คลิกเพื่อเลือกดีไซน์ส่วนบนมือถือที่คุณชื่นชอบ',
+          'panel-header-text-tpa': 'คลิกเพื่อเลือกแบบดีไซน์ {{TPA_NAME}} ที่คุณชอบ',
+          'panel-header-text-header': 'เฮดเดอร์ของคุณจะแสดงอยู่ทุกหน้าเพจ <br/>เลือกเฮดเดอร์โปรดของคุณและปรับแต่งเลย',
+          'change-colors': 'เปลี่ยนสี',
+          'menu': {
+            'animations': 'ภาพเคลื่อนไหว',
+            'height': 'ความสูง',
+            'font': 'ขนาดแบบอักษร',
+            'media': 'สื่อ',
+            'color': 'สี',
+            'headerbg': 'เฮดเดอร์',
+            'font-alignment': 'การตั้งค่าข้อความ',
+            'listbg': 'เรียงลำดับ'
+          },
+          'panel-footer-text': 'เลือกการจัดวางฟุตเตอร์ใหม่ <br />ไปที่ <a ng-click="$ctrl.goToDesignMode()" data-hook="goto-site-design">ธีม</a> เพื่อเปลี่ยนดีไซน์ของทั้งไซต์',
+          'panel-header-text': 'ปรับแต่งดีไซน์ของหมวดหรือลองการจัดวางอื่น <br />ไปที่ <a ng-click="$ctrl.goToDesignMode()" data-hook="goto-site-design">ธีม</a> เพื่อเปลี่ยนดีไซน์ของทั้งไซต์',
+          'panel-headline-text-header': 'ดีไซน์เฮดเดอร์ของไซต์',
+          'panel-headline-text-footer': 'ดีไซน์ฟุตเตอร์ของไซต์',
+          'customize-design': 'ปรับแต่งดีไซน์ของหมวด'
+        },
+        'apps-panel': {
+          'app': {
+            'title': {
+              'Music_Widget': 'เพลง',
+              'Stores': 'ร้านค้าออนไลน์',
+              'Members': 'พื้นที่สำหรับสมาชิก',
+              'Bookings': 'การจอง',
+              'Instagram_Widget': 'Instagram Feed',
+              'AllMembers': 'สมาชิก',
+              'Html_Embed': 'ฝัง HTML',
+              'PaidPlans': 'Paid Plans',
+              'Blog2': 'บล็อก',
+              'Chat_Widget': 'แช็ท',
+              'RestaurantsOrders': 'Restaurants Orders',
+              'Events': 'อีเวนท์',
+              'RestaurantsMenus': 'Restaurants Menus',
+              'StickySocialBar': 'แถบสื่อโซเชียล',
+              'BandsInTown_Widget': 'Bandsintown',
+              'Events_Single': 'อีเวนท์เดี่ยว',
+              'RestaurantsReservations_Widget': 'Restaurants Reservations',
+              'Events_Multiple': 'อีเวนท์',
+              'Video_Widget': 'วิดีโอ',
+              'Forum': 'ฟอรัม',
+              'Blog': 'บล็อก'
+            },
+            'description': {
+              'Stores': 'เริ่มขายออนไลน์โดยตรงจากเว็บไซต์ของคุณ',
+              'Blog': 'บล็อกเกี่ยวกับทุกสิ่ง<br>ที่คุณชื่นชอบ',
+              'RestaurantsReservations_Widget': 'TBD: Restaurants reservations',
+              'Bookings': 'เปิดรับจองและนัดหมายออนไลน์',
+              'Events_Multiple': 'สร้างอีเวนท์แล้วรวบรวมรายชื่อตอบรับ (RSVPs) และขายบัตรเข้าร่วม',
+              'Html_Embed': 'ฝังหน้าเพจ แอป และวิดเจ็ดจากเว็บไซต์อื่น',
+              'Music_Widget': 'สตรีมและขายเพลงของคุณ โดยไม่เสียค่าคอมมิชชัน',
+              'Chat_Widget': 'แชทกับผู้เข้าชมไซต์ ทุกที่ ทุกเวลา',
+              'Blog2': 'บล็อกเกี่ยวกับ <br>ทุกสิ่งที่คุณชอบ',
+              'Instagram_Widget': 'นำเสนอรูปภาพและวิดีโอจาก Instagram ของคุณ',
+              'StickySocialBar': 'ให้ผู้เข้าชมเว็บกดไซต์ไลก์ แชร์ และติดตามคุณบนโซเชียล',
+              'RestaurantsOrders': 'TBD: Restaurants orders',
+              'Events_Single': 'สร้างอีเวนท์แล้วรวบรวมการตอบรับ RSVP พร้อมขายบัตรเข้าร่วมงาน',
+              'BandsInTown_Widget': 'แสดงวันทัวร์คอนเสิร์ตที่กำลังมาถึงบนไซต์ของคุณ',
+              'Members': 'ให้ผู้เข้าชมลงชื่อเข้าใช้เป็นสมาชิกไซต์ของคุณ',
+              'Forum': 'สร้างคอมมิวนิตี้ออนไลน์บนไซต์ของคุณ',
+              'Video_Widget': 'ทุกอย่างที่คุณต้องการเพื่อจัดแสดงวิดีโอของคุณ',
+              'RestaurantsMenus': 'TBD: Restaurants menus',
+              'PaidPlans': 'เปิดสมัครสมาชิกแบบมีค่าใช้จ่ายสำหรับสินค้า บริการ และเนื้อหา'
+            }
+          },
+          'footer': {
+            'link': 'ไปที่ Wix Editor',
+            'text': 'กำลังหาแอ็พอื่น?'
+          },
+          'add-more': 'เพิ่ม',
+          'loader': 'Loading Apps',
+          'manage-app': 'จัดการ',
+          'recommended-label': 'แนะนำ',
+          'open-app': 'เปิด',
+          'remove': 'ลบ',
+          'subtitle': 'ส่งเสริมเว็บไซต์ของคุณด้วยแอ็พทรงประสิทธิภาพ',
+          'title': 'แอ็พ'
+        },
+        'design_description': 'เลือกธีมสำหรับไซต์ของคุณและทำการปรับแต่ง',
+        'field-editor': {
+          'list-item': 'รายการ {{text}}',
+          'social-paragraph': 'อัพเดตลิงก์สื่อโซเชียลของคุณ',
+          'single': {
+            'name': 'ชื่อ',
+            'form': 'แบบฟอร์ม',
+            'html': 'Html',
+            'freeze-header': 'ตรึงเฮดเดอร์',
+            'map': 'แผนที่',
+            'long': 'ย่อหน้า',
+            'title': 'ชื่อเรื่อง',
+            'subtitle': 'คำบรรยาย',
+            'address': 'ที่อยู่',
+            'site-email': 'อีเมลของไซต์',
+            'business-name': 'ชื่อธุรกิจ',
+            'button': 'ปุ่ม',
+            'tagline': 'แท็กไลน์',
+            'logo': 'โลโก้',
+            'menu': 'เมนู',
+            'media': 'สื่อ',
+            'description': 'คำบรรยาย',
+            'copyright-message': 'ข้อความแจ้งลิขสิทธิ์',
+            'form-ce': 'Form',
+            'fax': 'โทรสาร',
+            'phone-number': 'เบอร์โทรศัพท์',
+            'email': 'อีเมล'
+          },
+          'list-header': 'เฮดเดอร์ {{text}}',
+          'list-footer': 'ฟุตเตอร์ {{text}}',
+          'login-title': 'แถบล็อกอินสำหรับสมาชิก',
+          'list': {
+            'button': 'ปุ่ม',
+            'item': {
+              'title': 'ชื่อ',
+              'long': 'คำบรรยาย'
+            }
+          },
+          'social-title': 'บัญชีโซเชียล',
+          'subscribe': 'สมัครสมาชิก'
+        },
+        'social-panel': {
+          'link-input': {
+            'placeholder': 'วางลิ้งที่นี่'
+          },
+          'title': 'บัญชีโซเชียล'
+        },
+        'button-editor': {
+          'button': 'ลิงก์',
+          'add-button': 'เพิ่มปุ่ม'
+        },
+        'upgrade-banner': {
+          'button': 'อัพเกรดเลย',
+          'label': 'อัพเกรดเว็บไซต์เพื่อลบโฆษณา wix'
+        },
+        'add-section-basic': 'องค์ประกอบ',
+        'sections': {
+          'Html': 'ฝัง',
+          'PriceQuote': 'เสนอราคา',
+          'SalesLead': 'หัวหน้าฝ่ายขาย',
+          'Price': 'รายการราคา',
+          'Event': 'อีเวนท์',
+          'blank': 'ปล่อยให้ว่าง',
+          'Video': 'วิดีโอ',
+          'About': 'เกี่ยวกับ',
+          'Contact': 'รายละเอียดติดต่อ',
+          'FAQ': 'คำถามที่พบบ่อย',
+          'Music_Widget': 'มิวสิคเพลเยอร์',
+          'from-the-blog': 'จาก The Blog',
+          'footer': 'ส่วนท้าย',
+          'Bookings_Widget': 'รายชื่อบริการ',
+          'DeviantArt_Widget': 'DeviantArt',
+          'News': 'ข่าว',
+          'Instagram_Widget': 'Instagram',
+          'Feature': 'คุณลักษณะ',
+          'CV': 'CV',
+          'Support': 'ช่วยเหลือ',
+          'header': 'ส่วนหัว',
+          'Client': 'ลูกค้า',
+          'Portfolio': 'แฟ้มผลงาน',
+          'Gallery': 'แกลเลอรี',
+          'Blog2_Custom_Feed_Widget': 'Blog Feed',
+          'Events_Single': 'อีเวนท์เดี่ยว',
+          'Image': 'รูปภาพ',
+          'Files': 'ไฟล์',
+          'GetSubscribers_Widget': 'สมัครสมาชิก',
+          'List': 'รายการ',
+          'Feedback': 'แบบฟอร์มข้อเสนอแนะ',
+          'BandsInTown_Widget': 'วันที่ออกทัวร์',
+          'SignUp': 'แบบฟอร์มสมัครรับข่าวสาร',
+          'Blog_Post_Gallery': 'แกลเลอรีโพสต์บนบล็อก',
+          'Welcome': 'ยินดีต้อนรับ',
+          'OpeningHours': 'เวลาเปิดบริการ',
+          'SubmitTestimonials': 'แบบฟอร์มการติชม',
+          'ScheduleItem': 'ตารางเวลา',
+          'StickySocialBar': 'แถบสื่อโซเชียล',
+          'Service': 'บริการ',
+          'Stores_Product_specific_Widget': 'สินค้าแนะนำ',
+          'Chat_Widget': 'แช็ท',
+          'Stores': 'ร้านค้า',
+          'Widget': 'ผู้แสดงนำ',
+          'Past_Events': 'อีเวนท์ที่ผ่านไปแล้ว',
+          'Quote': 'คำคม',
+          'Stores_Grid_Gallery_Widget': 'แกลเลอรีสินค้า',
+          'ProGallery_Widget': 'แกลเลอรี่สื่อต่างๆ',
+          'Text': 'ข้อความ',
+          'Product': 'สินค้า',
+          'JobApplication': 'การสมัครงาน',
+          'Video_Widget': 'วิดีโอเพลเยอร์',
+          'TeamMember': 'สมาชิกทีมงาน',
+          'Testimonial': 'คำชม',
+          'Events_Multiple': 'รายการอีเวนท์',
+          'Stores_Slider_Gallery_Widget': 'ตัวเลื่อนดูสินค้า',
+          'Tpa_Header': 'ชื่อหมวด',
+          'Project': 'โครงการ'
+        },
+        'manage-tpa-PaidPlans': 'จัดการ Paid Plans',
+        'open-site-loader': {
+          'message1': 'It’s font-tastic! Choose from tons of beautifully crafted fonts designed to fit your style.',
+          'message3': 'New design suggestions are automatically generated for every Section after you edit text, images or video.',
+          'message2': 'The possibilities are endless! Play around with different design options for each section of your website.',
+          'message5': 'There\'s so much you can do. Add a store, blog, or start taking bookings from your site.',
+          'message4': 'When you\'re ready, click Publish to share your site with the world. It only takes a second.',
+          'message7': 'Swap out a photo for a video or image gallery wherever and whenever you like.',
+          'message6': 'Don\'t need that subtitle? Hide it! You can hide or show any field in any Section.',
+          'message9': 'Look stunning on any screen! ADI adapts your desktop design to mobile automatically.',
+          'message8': 'Want your site to get found on Google? Check out the SEO settings.',
+          'message10': 'Upgrade to connect a unique domain and publish your site ad-free.',
+          'message11': '',
+          'message12': '',
+          'message13': '',
+          'message14': '',
+          'message15': '',
+          'message16': '',
+          'message17': '',
+          'message18': '',
+          'message19': '',
+          'message20': '',
+          'video-title': 'กำลังโหลด...'
+        },
+        'preview-flags': {
+          'fix': 'เฮดเดอร์แบบตายตัว',
+          'slideshow': 'สไลด์โชว์'
+        },
+        'add-section-others': 'เพิ่มเติม',
+        'manage-tpa-sub-menu': {
+          'label': {
+            'all-apps': 'แอ็พทั้งหมด',
+            'music': 'เพลง',
+            'forum': 'ฟอรัม',
+            'video': 'วิดีโอ',
+            'bookings': 'การจอง',
+            'paidplans': 'Paid Plans',
+            'restaurantsOrders': 'Restaurants Orders',
+            'events': 'อีเวนท์',
+            'store': 'ร้านค้า',
+            'members': 'พื้นที่สำหรับสมาชิก',
+            'restaurantsMenus': 'Restaurants Menus',
+            'stickysocialbar': 'แถบสื่อโซเชียล',
+            'blog2': 'บล็อก',
+            'restaurantsReservations': 'Restaurants Reservations',
+            'blog': 'บล็อก',
+            'event': 'อีเวนท์'
+          }
+        },
+        'empty-page-title': 'เพิ่มหมวด',
+        'publish': 'เผยแพร่',
+        'manage-tpa-button': 'จัดการ',
+        'manage-apps': 'จัดการแอ็พ',
+        'manage-apps-small': 'แอ็พ',
+        'manage-tpa-Bookings': 'จัดการการจอง',
+        'edit_mode': {
+          'mobile': 'อุปกรณ์พกพา',
+          'desktop': 'เดสก์ท็อป'
+        },
+        'manage-tpa-Blog2': 'จัดการบล็อก',
+        'preview': 'ดูตัวอย่าง',
+        'section-override-warning': {
+          'animations': 'บางส่วนมีภาพเคลื่อนไหวที่ไม่เหมือนกัน',
+          'success': 'สไตล์ที่ใช้กับทุกส่วน',
+          'replace-sections': ' <a data-hook=\'section-override-link\' href="" ng-click="$ctrl.overrideSections()">ใช้สไตล์นี้</a> กับทุกส่วน',
+          'scroll-type': 'บางส่วนมีเอฟเฟกต์แบบ scroll ที่ต่างกัน',
+          'font-size': 'บางส่วนมีขนาดแบบอักษรที่ต่างกัน'
+        },
+        'list-items-title': 'รายการในลิสต์',
+        'preview-linked-content': 'จาก',
+        'fake-browser2': {
+          'choose-domain': 'เชื่อมต่อโดเมน'
+        },
+        'design': 'ดีไซน์ของไซต์',
+        'top-bar': {
+          'preview': {
+            'from-intro-msg': 'หากต้องการเริ่มปรับแต่งเอง คลิก \'แก้ไขไซต์\'',
+            'back-to-edit': 'กลับไปที่ ADI Editor',
+            'preview-msg': 'คุณกำลังอยู่ในโหมดดูตัวอย่าง',
+            'desktop': 'โหมดดูตัวอย่างบนเดสก์ท็อป',
+            'mobile': 'โหมดดูตัวอย่างบนมือถือ'
+          },
+          'add-app': 'แอ็พ',
+          'add-section': 'หมวดลงหน้าเพจ'
+        },
+        'empty-page-sub-title-active': 'เพียงลากและวางส่วนที่แนะนำ',
+        'mobile-panel-edit-notice': 'การเปลี่ยนแปลงที่คุณทำบนมือถือจะไม่มีผลกระทบกับหน้าตาของไซต์บนเดสก์ท็อป',
+        'seo-panel': {
+          'description': {
+            'label': 'คำบรรยายหน้าเพจ'
+          },
+          'keywords': {
+            'label': 'คำสำคัญ'
+          },
+          'page-url': {
+            'label': 'URL ของเพจ'
+          },
+          'page-title': {
+            'label': 'หัวเรื่องในเสิร์ชเอนจิน'
+          },
+          'title': 'SEO'
+        },
+        'site': 'เว็บไซต์',
+        'design-label': 'ดีไซน์',
+        'preview-linked-page-content': 'ถูกใช้ใน',
+        'fake-browser': {
+          'optimize-design': 'ปรับดีไซน์ให้เหมาะสม',
+          'manage-pages': 'จัดการหน้าเพจ',
+          'suggest-domain-button': 'เชื่อมต่อโดเมนของคุณ',
+          'use-advanced-editor': 'ใช้เครื่องมือแก้ไขขั้นสูง',
+          'choose-domain': 'เชื่อมต่อโดเมนของคุณ',
+          'suggest-domain-label': '<span ng-click="$ctrl.openConnectDomainDialog()" title="{{domainTitle}}" class="suggest-domain-address">{{domain}}</span> <span class="suggest-domain-message">ยังว่าง</span>'
+        },
+        'list-items-title-slideshow': 'รายการสไลด์โชว์',
+        'empty-page-title-active': 'เยี่ยมเลย ใกล้เสร็จละ',
+        'upgrade-dropdown': {
+          'compare-plans': 'เปรียบเทียบแพลน',
+          'sale-title': 'ข้อเสนอในเวลาจำกัด: อัพเกรดแพลน Popular Premium ตอนนี้และประหยัดถึง {{text}}%<br>',
+          'bullet-1': 'รับโดเมนฟรีเพื่อเชื่อมต่อเข้าสู่หน้าเว็บไซต์ของคุณ',
+          'bullet-3': 'เพิ่ม Google Analytics ไปที่ไซต์ของคุณ',
+          'bullet-2': 'รับแบนวิดท์แบบไม่จำกัดและพื้นที่เก็บข้อมูลเพิ่มเติม',
+          'upgrade-save': 'อัพเกรดและประหยัดถึง {{text}}%',
+          'title': 'อัพเกรดเป็น Unlimited รายปีและประหยัดให้จุใจ!',
+          'get-yearly-unlimited': 'สมัครสมาชิก Unlimited แบบรายปี'
+        },
+        'save-as-template': 'Save As Template',
+        'add-section': 'เพิ่มหมวด',
+        'save': 'บันทึก',
+        'manage-tpa-Events': 'จัดการอีเวนท์',
+        'pages': 'เพจ',
+        'manage-tpa-Members': 'จัดการพื้นที่สำหรับสมาชิก',
+        'adi-assistant': {
+          'title': 'ต้องการความช่วยเหลือ?'
+        },
+        'template-translation-drop-down': {
+          'send-translation': 'ส่งไปแปล',
+          'preview-translation': 'ดูตัวอย่าง'
+        },
+        'layout-control': {
+          'customize': 'Customize',
+          'change-design': 'แก้ไขดีไซน์เฉพาะส่วน'
+        },
+        'empty-page-sub-title': 'กด + ไอคอน เพื่อเพิ่มไอคอนบนเว็บไซต์เริ่ดๆ ได้ง่ายๆ-',
+        'saved': 'บันทึกแล้ว',
+        'media-editor': {
+          'edit-replace-button': 'แก้ไขและแทนที่',
+          'image-position': {
+            'title': 'ตำแหน่งของรูปภาพ'
+          },
+          'media-bg-warning': 'ต้องการแสดงสีหลังรูปภาพ? กรุณาลดความทึบแสงของภาพ',
+          'opacity-warning': 'หากมองไม่เห็นภาพนี้บนหน้าเพจของคุณ <a data-hook=\'opacity-warning-link\' ng-click=\'$ctrl.resetOpacity()\'>กรุณารีเซ็ต</a>'
+        },
+        'switch-color': {
+          'panel-paragraph': 'เลือกการจับคู่สีที่คุณชอบสำหรับส่วนนี้ <br />ไปที่ <a ng-click="$ctrl.goToColorationPanel()" data-hook="goto-site-colors">สี</a> เพื่อเปลี่ยนจานสีของไซต์ของคุณ',
+          'panel-headline-text': 'สีเฉพาะส่วน',
+          'panel-paragraph-only-one-option': 'ไม่มีตัวเลือกสีสำหรับดีไซน์นี้ <br /><a ng-click="$ctrl.goToDesignPanel()" adi-automation="no-color-switch-preset" data-hook="goto-switch-preset">เลือกดีไซน์อื่น</a> เพื่อดูตัวเลือกสีเพิ่มเติม'
+        },
+        'loading': 'กำลังโหลด',
+        'add-page': 'เพิ่มหน้าเพจ',
+        'drop-target-hint': 'ลากส่วนที่ต้องการมาที่นี่',
+        'manage-tpa-Forum': 'จัดการฟอรัม',
+        'manage-tpa-Blog': 'จัดการบล็อก',
+        'add-slide': '+ เพิ่มสไลด์',
+        'page-from-item': 'สร้างหน้าเพจจากรายการนี้',
+        'manage-tpa': 'จัดการ {{TPA}}',
+        'back-button': 'ย้อนกลับ',
+        'design-panel': {
+          'title': 'ธีม'
+        },
+        'unmerge': 'ยกเลิกการผสานหน้าเพจ',
+        'manage-tpa-Chat_Widget': 'Wix Inbox',
+        'merge': 'ผสานหน้าเพจ',
+        'manage-tpa-Stores': 'จัดการร้านค้า',
+        'upgrade': 'อัพเกรด',
+        'add-section-see-less': 'ดูน้อยลง',
+        'add-section-see-all': 'ดูทั้งหมด',
+        'saving': 'กำลังบันทึก',
+        'manage': 'จัดการ',
+        'add-section-recommended': 'แนะนำ',
+        'color-box': 'กล่อง',
+        'drop-target-drag-over': 'ปล่อยและวางส่วนที่กำหนดที่นี่',
+        'add-section-more': 'ส่วยย่อยเพิ่มเติม'
+      },
+      'seo_panel': {
+        'url': {
+          'validation': 'หน้าเพจ URL ต้องมีความยาว 1 ตัวอักษร หรือมากกว่า และต้องไม่มีอักขระพิเศษ (%, &, # เป็นต้น)'
+        },
+        'keywords': {
+          'validation': 'สามารถรองรับคำสำคัญได้ถึง 10 คำและ 250 ตัวอักษร (รวมถึงช่องว่าง)',
+          'launch': {
+            'title': 'ให้ Google หาคุณพบ',
+            'button': 'เริ่มกันเลย',
+            'note': 'Google ไม่ได้ใช้คำสำคัญเหล่านี้ แต่เสิร์ชเอนจินอื่นอาจใช้ก็ได้',
+            'description': 'เพิ่ม SEO ของเว็บไซต์ของคุณด้วย Wix SEO Wiz ไปที่แผนเป็นขั้นเป็นตอนตอนนี้เลย'
+          },
+          'placeholder': 'เพิ่มคำสำคัญที่คั่นด้วยเครื่องหมายจุลภาค'
+        },
+        'description': {
+          'validation': 'Description length must be 160 characters at most (including white spaces)',
+          'placeholder': 'อะไรทำให้เพจนี้ไม่เหมือนใคร? บรรยายธุรกิจและเนื้อหาบนเว็บไซต์ของคุณ...'
+        },
+        'title': {
+          'validation': 'หัวเรื่องมีความยาวได้ไม่เกิน 70 ตัวอักษร (รวมช่องว่าง)'
+        },
+        'search_results': {
+          'placeholder': 'ซ่อนเพจนี้จากผลการค้นหา'
+        }
+      },
+      'intro': {
+        'business-name': {
+          'label-ebookOrGuide': 'eBook หรือหน้งสือท่องเที่ยว<br> ของคุณ<br> ชื่ออะไร?',
+          'input-placeholder-store': 'เพิ่มชื่อร้านค้าของคุณ',
+          'label-forum': 'ฟอรัมออนไลน์<br> ของคุณ<br> ชื่ออะไร?',
+          'label-filmOrVideo': 'ภาพยนตร์หรือวิดีโอ<br> ของคุณ<br> ชื่ออะไร?',
+          'label-nameOrPractice': 'ชื่อ<br> ของคุณหรือ<br>ชื่อสถานประกอบการของคุณคืออะไร?',
+          'input-placeholder-school': 'เพิ่มชื่อโรงเรียนของคุณ',
+          'input-placeholder-singleEvent': 'เพิ่มชื่ออีเวนท์ของคุณ',
+          'input-placeholder-synagogue': 'เพิ่มชื่อโบสถ์ยิวของคุณ',
+          'label-stagename': 'ชื่อศิลปิน<br>ของคุณคืออะไร?',
+          'input-placeholder-onlineStore': 'เพิ่มชื่อร้านค้าออนไลน์ของคุณ',
+          'label-org': 'องค์กร<br> ของคุณ<br> ชื่ออะไร?',
+          'input-placeholder-website': 'เพิ่มชื่อของคุณหรือชื่อเว็บไซต์ของคุณ',
+          'input-placeholder-publication': 'เพิ่มชื่อสิ่งตีพิมพ์ของคุณ',
+          'input-placeholder-fullname': 'เพิ่มชื่อนามสกุลของคุณ',
+          'label-studio': 'สตูดิโอ<br> ของคุณ<br> ชื่ออะไร?',
+          'input-placeholder-hotelOrResort': 'เพิ่มชื่อโรงแรมหรือรีสอร์ทของคุณ',
+          'label-choir': 'วงร้องประสานเสียงของคุณ<br>ชื่อ<br>อะไร?',
+          'label': 'ธุรกิจหรือ<br>เว็บไซต์<br>ของคุณ<br>ชื่ออะไร?',
+          'input-placeholder-site': 'เพิ่มชื่อไซต์ของคุณ',
+          'label-camp': 'ค่าย<br> ของคุณ<br> ชื่ออะไร?',
+          'input-placeholder-blog': 'เพิ่มชื่อบล็อกของคุณ',
+          'input-placeholder-org': 'เพิ่มชื่อองค์กรของคุณ',
+          'label-show': 'ภาพยนตร์หรือรายการ<br> ของคุณ<br> ชื่ออะไร?',
+          'input-placeholder-studio': 'เพิ่มชื่อสตูดิโอของคุณ',
+          'label-fullname': 'ชื่อนามสกุล<br>ของคุณคืออะไร?',
+          'label-website': 'คุณ<br> หรือเว็บไซต์ของคุณ<br> ชื่ออะไร?',
+          'input-placeholder-project': 'เพิ่อชื่อโครงการของคุณ',
+          'label-zooOrPark': 'สวนสัตวหรือสวนสาธารณะ<br> ของคุณ<br> ชื่ออะไร?',
+          'label-fullOrStagename': 'ชื่อจริงหรือ<br> ชื่อศิลปินของคณ<br> คืออะไร?',
+          'label-artistOrBand': 'ชื่อศิลปิน<br>หรือชื่อวงของคุณ<br>คืออะไร?',
+          'label-school': 'โรงเรียน<br> ของคุณ<br> ชื่ออะไร?',
+          'label-band': 'วงของคุณ<br>ชื่อ<br>อะไร?',
+          'input-placeholder-forum': 'เพิ่มชื่อฟอรัมออนไลน์ของคุณ',
+          'input-placeholder-campaign': 'เพิ่มชื่อแคมเปญของคุณ',
+          'label-project': 'โครงการ<br> ของคุณ<br> ชื่ออะไร?',
+          'label-synagogue': 'สุเหร่ายิว<br> ของคุณ<br> ชื่ออะไร?',
+          'input-placeholder-pageLanding': 'เพิ่มชื่อหน้าเพจแรกของคุณ',
+          'label-pageLanding': 'หน้าเพจแรก<br> ของคุณ<br> ชื่ออะไร?',
+          'input-placeholder-choir': 'เพิ่มชื่อวงร้องประสานเสียงของคุณ',
+          'label-artist-or-band': 'ชื่อศิลปิน<br>หรือชื่อวงของคุณ<br>คืออะไร?',
+          'input-placeholder-venue': 'เพิ่มชื่อสถานที่ของคุณ',
+          'input-placeholder-team': 'เพิ่มชื่อทีมของคุณ',
+          'label-publication': 'สิ่งตีพิมพ์<br> ของคุณ<br> ชื่ออะไร?',
+          'empty': 'ชื่อธุรกิจ',
+          'input-placeholder-courseOrProgram': 'เพิ่มชื่อหลักสูตรหรือโปรแกรมของคุณ',
+          'input-placeholder-nameOrBand': 'เพิ่มชื่อศิลปินหรือชื่อวงของคณ',
+          'input-placeholder-radioShowStation': 'เพิ่มชื่อรายการวิทยุหรือสถานีวิทยุของคุณ',
+          'input-placeholder-app': 'เพิ่มชื่อแอ็พของคุณ',
+          'label-onlineStore': 'ร้านค้าออนไลน์<br> ของคุณ<br> ชื่ออะไร?',
+          'label-radioShowStation': 'รายการหรือสถานีวิทยุ<br> ของคุณ<br> ชื่ออะไร?',
+          'label-hotelOrResort': 'โรงแรมหรือรีสอร์ท<br> ของคุณ<br> ชื่ออะไร?',
+          'input-placeholder-filmOrVideo': 'เพิ่มชื่อภาพยนตร์หรือวิดีโอของคุณ',
+          'label-courseOrProgram': 'หลักสูตรหรือโปรแกรม<br> ของคุณ<br> ชื่ออะไร?',
+          'default': 'เว็บไซต์ของฉัน',
+          'input-placeholder-business': 'กรอกชื่อของคุณหรือชื่อธุรกิจของคุณ',
+          'input-placeholder-zooOrPark': 'เพิ่มชื่อสวนสัตว์หรือสวนสาธารณะของคุณ',
+          'label-team': 'ทีม<br> ของคุณ<br> ชื่ออะไร?',
+          'label-singleEvent': '<br>ชื่อของ<br>อีเวนท์ของคุณคืออะไร?',
+          'input-placeholder-ebookOrGuide': 'เพิ่มชื่อ eBook หรือหนังสือคู่มือของคุณ',
+          'input-placeholder-band': 'เพิ่มชื่อวงของคุณ',
+          'input-label': 'ธุรกิจหรือ<br>เว็บไซต์<br>ของคุณ<br>ชื่ออะไร?',
+          'label-store': 'ร้านค้า<br> ของคุณ<br> ชื่ออะไร?',
+          'label-venue': 'สถานที่จัดงาน<br> ของคุณ<br> ชื่ออะไร?',
+          'label-app': 'แอ็พ<br> ของคุณ<br> ชื่ออะไร?',
+          'label-blogWebsite': '<br>บล็อกหรือ<br>เว็บไซต์ของคุณชื่อ<br>อะไร?',
+          'label-nameOrBand': 'คุณ<br> หรือวงของคุณ<br> ชื่ออะไร?',
+          'label-businessName': 'ธุรกิจ<br> ของคุณ<br> ชื่ออะไร?',
+          'label-band2': 'ชื่อวง<br>ของคุณคืออะไร?',
+          'label-church': 'โบสถ์<br> ของคุณ<br> ชื่ออะไร?',
+          'label-business': '<br>ชื่อของคุณหรือ<br>ชื่อของธุรกิจคืออะไร?',
+          'input-placeholder-show': 'เพิ่มชื่อภาพยนตร์หรือรายการของคุณ',
+          'label-site': 'ไซต์<br> ของคุณ<br> ชื่ออะไร?',
+          'input-placeholder-businessName': 'เพิ่มชื่อธุรกิจของคุณ',
+          'label-campaign': 'แคมเปญ<br> ของคุณ<br> ชื่ออะไร?',
+          'input-placeholder-church': 'เพิ่มชื่อโบสถ์ของคุณ',
+          'label-blog': 'บล็อก<br> ของคุณ<br> ชื่ออะไร?',
+          'input-placeholder-nameOrPractice': 'กรุณากรอกชื่อหรือชื่อเล่นของคุณ',
+          'label-artist': 'ชื่อศิลปิน<br>ของคุณคืออะไร?',
+          'input-placeholder-fullOrStagename': 'กรอกชื่อเต็มหรือชื่อตามบัตรประชาชนของคุณ',
+          'input-placeholder': 'กรอกชื่อธุรกิจหรือเว็บไซต์ของคุณ',
+          'input-placeholder-camp': 'เพื่อชื่อค่ายของคุณ'
+        },
+        'business-card-editable': {
+          'email': {
+            'label': 'อีเมล'
+          }
+        },
+        'event-details': {
+          'name-label': 'ชื่ออีเวนท์',
+          'location-tbd': 'จะกำหนดสถานที่ทีหลัง',
+          'date': '{{date}} เวลา {{time}}',
+          'description-label': 'รายละเอียด (หากต้องการ)',
+          'description-placeholder': 'บอกผู้คนเพิ่มเติมเกี่ยวกับอีเวนท์ด้วยตัวอักษร 300 ตัวหรือน้อยกว่านั้น',
+          'address-label': 'ตำแหน่งที่ตั้ง',
+          'name-placeholder': 'กรอกชื่ออีเวนท์',
+          'from-date': 'ตั้งแต่ {{date}} เวลา {{time}}',
+          'to-date': 'ถึง {{date}} เวลา {{time}}',
+          'date-tbd': 'จะกำหนดวันที่ทีหลัง',
+          'dates-label': 'วันและเวลา'
+        },
+        'category-search': {
+          'import-site-content-tip': '<span class=\'label\'>เคล็ดลับ:</span> เราขอแนะนำขั้นตอนนี้หากคุณต้องการออกแบบเว็บไซต์ที่คุณมีใหม่<br> ADI จะสร้างเว็บไซต์ของคุณในเวอร์ชั่นใหม่เอี่ยมอ่อง<br>โดยที่ Wix จะใช้รูปภาพและข้อความของคุณ',
+          'search-label': 'ค้นหาประเภทของเว็บไซต์หรือธุรกิจของคุณ',
+          'example-category': {
+            'event-photographer': 'ช่างภาพตามงาน',
+            'news-blog': 'บล็อกข่าวสาร',
+            'music-example-5': 'ศิลปินฮิปฮอป',
+            'music-example-4': 'วงร็อค',
+            'music-example-3': 'นักดนตรี',
+            'music-example-2': 'สตูดิโอบันทึกเสียง',
+            'music-example-1': 'ดีเจ',
+            'birthday-party': 'Birthday Party',
+            'portfolio': 'แฟ้มผลงาน',
+            'photography-example-5': 'สตูดิโอถ่ายภาพ',
+            'photography-example-4': 'ช่างภาพ',
+            'photography-example-3': 'สตูดิโอถ่ายภาพแฟชั่น',
+            'photography-example-2': 'แฟ้มผลงานการถ่ายภาพ',
+            'photography-example-1': 'ช่างภาพตามงาน',
+            'restaurants-food-example-1': 'Wine Bar',
+            'restaurants-food-example-2': 'Bakery',
+            'restaurants-food-example-3': 'Chef',
+            'restaurants-food-example-4': 'Restaurant',
+            'restaurants-food-example-5': 'Cafe',
+            'online-hair-extensions-store': 'Online Hair Extensions Store',
+            'design-studio': 'สตูดิโอออกแบบ',
+            'health-blog': 'บล็อกสุขภาพ',
+            'author': 'ผู้เขียน',
+            'architecture-firm': 'บริษัทสถาปนิก',
+            'consulting-firm': 'Consulting Firm',
+            'photography-portfolio': 'แฟ้มผลงานการถ่ายภาพ',
+            'musician': 'นักดนตรี',
+            'graphic-designer': 'นักออกแบบกราฟิก',
+            'charity': 'การกุศล',
+            'skin-care-clinic': 'คลินิกดูแลผิวหนัง',
+            'business-blog': 'บล็อกด้านธุรกิจ',
+            'non-profit-organization': 'Non-Profit Organization',
+            'online-jewelry-store': 'Online Jewelry Store',
+            'nutritionist': 'นักโภชนาการ',
+            'elementary-school': 'Elementary School',
+            'dj': 'ดีเจ',
+            'cv': 'CV',
+            'hip-hop-artist': 'ศิลปินฮิปฮอป',
+            'massage-therapist': 'Massage Therapist',
+            'resume': 'ประวัติย่อ',
+            'events-example-1': 'งานแต่งงาน',
+            'events-example-2': 'อีเวนท์ที่ไม่แสวงหากำไร',
+            'events-example-3': 'การประชุม',
+            'events-example-4': 'งานรวมญาติ',
+            'events-example-5': 'การแข่งขันกีฬา',
+            'business-example-2': 'องค์กรไม่แสวงหากำไร',
+            'business-example-3': 'โค้ชให้คำปรึกษา',
+            'business-example-1': 'บริษัทที่ปรึกษา',
+            'business-example-4': 'บริการทำความสะอาด',
+            'business-example-5': 'บริษัทการตลาด',
+            'online-home-goods-store': 'ร้านออนไลน์ขายอุปกรณ์ในบ้าน',
+            'school': 'School',
+            'marketing-agency': 'Marketing Agency',
+            'photographer': 'ช่างภาพ',
+            'online-health-food-store': 'Online Health Food Store',
+            'fashion-blog': 'บล็อกแฟชั่น',
+            'unknown-example-1': 'บริษัทท่องเที่ยว',
+            'unknown-example-4': 'ร้านขายอุปกรณ์กีฬาออนไลน์',
+            'unknown-example-5': 'ช่างแต่งหน้า',
+            'unknown-example-2': 'โรงเรียนประถมศึกษา',
+            'unknown-example-3': 'บริษัทอสังหาริมทรัพย์',
+            'make-up-artist': 'ช่างแต่งหน้า',
+            'accommodation-example-1': 'Bed and Breakfast',
+            'actor': 'นักแสดง',
+            'accommodation-example-4': 'Campsite',
+            'accommodation-example-5': 'Vacation Home',
+            'accommodation-example-2': 'Boutique Hotel',
+            'accommodation-example-3': 'Hostel',
+            'marathon': 'Marathon',
+            'artist': 'ศิลปิน',
+            'salon': 'ซาลอน',
+            'travel-agency': 'Travel Agency',
+            'wedding': 'งานแต่งงาน',
+            'online-clothing-store': 'Online Clothing Store',
+            'meetup': 'Meetup',
+            'rock-band': 'วงร็อค',
+            'health-wellness-example-2': 'พนักงานนวด',
+            'health-wellness-example-3': 'ซาลอน',
+            'health-wellness-example-4': 'คลินิกดูแลผิว',
+            'health-wellness-example-5': 'นักโภชนาการ',
+            'health-wellness-example-1': 'ช่างแต่งหน้า',
+            'other-example-3': 'การกุศล',
+            'other-example-2': 'โรงเรียน',
+            'other-example-1': 'องค์กรไม่แสวงหากำไร',
+            'other-example-5': 'บล็อกเกอร์',
+            'other-example-4': 'นักเขียน',
+            'real-estate-agency': 'Real Estate Agency',
+            'stores-example-2': 'ร้านขายเครื่องประดับออนไลน์',
+            'stores-example-3': 'ร้านออนไลน์ขายอุปกรณ์ในบ้าน',
+            'stores-example-4': 'ร้านขายอาหารเพื่อสุขภาพออนไลน์',
+            'stores-example-5': 'ร้านขายส่วนต่อผมออนไลน์',
+            'stores-example-1': 'ร้านขายเสื้อผ้าออนไลน์',
+            'recording-studio': 'สตูดิโอบันทึกเสียง',
+            'cleaning-service': 'Cleaning Service',
+            'photography-studio': 'สตูดิโอถ่ายภาพ',
+            'blog-example-3': 'บล็อกเกอร์',
+            'blog-example-2': 'บล็อกข่าวสาร',
+            'blog-example-5': 'บล็อกด้านธุรกิจ',
+            'blog-example-4': 'บล็อกสุขภาพ',
+            'blog-example-1': 'บล็อกแฟชั่น',
+            'coaching-professional': 'Coaching Professional',
+            'design-example-1': 'นักออกแบบกราฟิก',
+            'design-example-3': 'แฟ้มผลงาน',
+            'design-example-2': 'ศิลปิน',
+            'design-example-5': 'สตูดิโอออกแบบ',
+            'design-example-4': 'บริษัทสถาปนิก',
+            'blog2-example-1': 'บล็อกแฟชั่น',
+            'blog2-example-2': 'บล็อกข่าวสาร',
+            'blogger': 'Blogger',
+            'blog2-example-3': 'บล็อกเกอร์',
+            'portfolio-cv-example-5': 'ประวัติย่อ',
+            'blog2-example-4': 'บล็อกสุขภาพ',
+            'portfolio-cv-example-4': 'ประวัติย่อ',
+            'blog2-example-5': 'บล็อกด้านธุรกิจ',
+            'fashion-photography-studio': 'สตูดิโอถ่ายภาพแฟชั่น',
+            'portfolio-cv-example-1': 'แฟ้มผลงาน',
+            'portfolio-cv-example-3': 'นักแสดง',
+            'portfolio-cv-example-2': 'ศิลปิน',
+            'online-sporting-goods-store': 'Online Sporting Goods Store',
+            'conference': 'Conference'
+          },
+          'example-label': 'เช่น <a ng-click=\'$ctrl.onExampleClick($event)\'>สำนักกฎหมาย</a>, <a ng-click=\'$ctrl.onExampleClick($event)\'>บริษัทนำเที่ยว</a>, <a ng-click=\'$ctrl.onExampleClick($event)\'>เมคอัพอาร์ทิสต์</a>',
+          'import-site-confirm': {
+            'validate-content': 'การคลิก "ถัดไป" หมายความว่าคุณยืนยันว่าคุณเป็นเจ้าของเนื้อหาของไซต์นี้',
+            'body': 'เพื่อให้คุณมีเว็บไซต์ที่ไม่ซ้ำใครเลย Wix ADI จำเป็นต้องยืนยันว่าคุณเป็นเจ้าของเนื้อหาในไซต์ที่คุณเสนออย่างแท้จริง',
+            'title': 'Wix ADI อยากสร้างเว็บไซต์ที่ไม่เหมือนใครให้กับคุณ'
+          },
+          'search-label-music': 'คุณต้องการสร้างเว็บไซต์เพลงประเภทใด?',
+          'example-label-portfolio-cv': 'เช่น <a ng-click=\'$ctrl.onExampleClick($event)\'>แฟ้มผลงานกราฟิกดีไซน์</a>, <a ng-click=\'$ctrl.onExampleClick($event)\'>ประวัติย่อ</a>, <a ng-click=\'$ctrl.onExampleClick($event)\'>แฟ้มผลงานการเขียน</a>',
+          'search-label-photography': 'คุณต้องการสร้างเว็บไซต์ภาพถ่ายประเภทใด?',
+          'label-design': 'คุณต้องการสร้างเว็บไซต์เพื่อจุดประสงค์ใด?',
+          'label-other': 'คุณต้องการสร้างเว็บไซต์เพื่อจุดประสงค์ใด?',
+          'no-result-popover-label': 'ไม่พบสิ่งที่คุณต้องการหา? ลองเริ่มด้วยคำต่อไปนี้:',
+          'example-label-Stores': 'เช่น <a ng-click=\'$ctrl.onExampleClick($event)\'>ร้านค้าเสื้อผ้าออนไลน์</a>, <a ng-click=\'$ctrl.onExampleClick($event)\'>ร้ายขายของประดับออนไลน์</a>, <a ng-click=\'$ctrl.onExampleClick($event)\'>ร้านค้าผลิตภัณฑ์ดูแลผิวออนไลน์</a>',
+          'no-result-label': 'เราไม่พบผลลัพธ์ที่ตรงกับคำค้นหาของคุณ <br> คุณอาจลองเริ่มด้วยคำค้นต่อไปนี้:',
+          'invalid-characters-label': 'กรุณากรอกข้อความเป็นภาษาอังกฤษ',
+          'label-Stores': 'คุณต้องการสร้างร้านค้าออนไลน์ประเภทใด?',
+          'examples-label': 'ตัวอย่าง',
+          'related-results-label': 'ผลลัพธ์ที่เกี่ยวข้อง',
+          'example-label-health-wellness': 'เช่น <a ng-click=\'$ctrl.onExampleClick($event)\'>เทรนเนอร์ส่วนตัว</a>, <a ng-click=\'$ctrl.onExampleClick($event)\'>เมคอัพอาร์ทิสต์</a>, <a ng-click=\'$ctrl.onExampleClick($event)\'>สตูดิโอสอนโยคะ</a>, <a ng-click=\'$ctrl.onExampleClick($event)\'>คลินิกทันตแพทย์</a>, <a ng-click=\'$ctrl.onExampleClick($event)\'>ร้านทำผม</a>',
+          'example-label-music': 'เช่น <a ng-click=\'$ctrl.onExampleClick($event)\'>นักดนตรีคลาสสิก</a>, <a ng-click=\'$ctrl.onExampleClick($event)\'>วงร็อค</a>, <a ng-click=\'$ctrl.onExampleClick($event)\'> ดีเจ</a>, <a ng-click=\'$ctrl.onExampleClick($event)\'>สตูดิโอบันทึกเพลง</a>, <a ng-click=\'$ctrl.onExampleClick($event)\'>นักร้องงานแต่งงาน</a>',
+          'example-label-Blog': 'เช่น <a ng-click=\'$ctrl.onExampleClick($event)\'>บล็อกส่วนตัว</a>, <a ng-click=\'$ctrl.onExampleClick($event)\'>บล็อกเดินทางท่องเที่ยว</a>, <a ng-click=\'$ctrl.onExampleClick($event)\'>บล็อกข่าวสาร</a>, <a ng-click=\'$ctrl.onExampleClick($event)\'>บล็อกแฟชั่น</a>, <a ng-click=\'$ctrl.onExampleClick($event)\'>บล็อกอาหาร</a>',
+          'search-label-Stores': 'คุณต้องการสร้างร้านค้าออนไลน์ประเภทใด?',
+          'label-health-wellness': 'คุณต้องการสร้างเว็บไซต์เพื่อจุดประสงค์ใด?',
+          'example-label-other': 'เช่น <a ng-click=\'$ctrl.onExampleClick($event)\'>โรงเรียนประถม</a>, <a ng-click=\'$ctrl.onExampleClick($event)\'>สโมสรกีฬา</a>, <a ng-click=\'$ctrl.onExampleClick($event)\'>โบสถ์</a>, <a ng-click=\'$ctrl.onExampleClick($event)\'>ร้านขายอุปกรณ์สำหรับกลางแจ้ง</a>, <a ng-click=\'$ctrl.onExampleClick($event)\'>ศูนย์ศิลปะ</a>',
+          'example-label-design': 'เช่น <a ng-click=\'$ctrl.onExampleClick($event)\'>แฟ้มผลงานเว็บดีไซน์</a>, <a ng-click=\'$ctrl.onExampleClick($event)\'>ครีเอทีฟเอเจนซี</a>, <a ng-click=\'$ctrl.onExampleClick($event)\'>แฟ้มผลงานภาพวาดประกอบ</a>',
+          'example-label-photography': 'เช่น <a ng-click=\'$ctrl.onExampleClick($event)\'>ช่างภาพงานแต่งงาน</a>, <a ng-click=\'$ctrl.onExampleClick($event)\'>นักถ่ายภาพเดินทาง</a>, <a ng-click=\'$ctrl.onExampleClick($event)\'>สตูดิโอถ่ายภาพเด็กทารก</a>',
+          'example-label-business': 'เช่น <a ng-click=\'$ctrl.onExampleClick($event)\'>สำนักกฎหมาย</a>, <a ng-click=\'$ctrl.onExampleClick($event)\'>ตัวแทนจำหน่ายอสังหาริมทรัพย์</a>, <a ng-click=\'$ctrl.onExampleClick($event)\'>เทรนเนอร์ส่วนตัว</a>, <a ng-click=\'$ctrl.onExampleClick($event)\'>บริษัทรับเหมาก่อสร้าง</a>',
+          'search-label-Blog': 'คุณต้องการสร้างบล็อกประะเภทใด?',
+          'label-photography': 'คุณต้องการสร้างเว็บไซต์ภาพถ่ายประเภทใด?',
+          'label-Blog': 'คุณต้องการสร้างบล็อกประะเภทใด?',
+          'label-portfolio-cv': 'คุณต้องการสร้างประวัติย่อหรือแฟ้มผลงานประเภทใด?',
+          'label-music': 'คุณต้องการสร้างเว็บไซต์เพลงประเภทใด?',
+          'label-business': 'เว็บไซต์ของคุณเป็นธุรกิจประเภทใด?',
+          'label-singleEvent': 'คุณกำลังวางแผนอีเวนท์ประเภทใด?',
+          'search-label-portfolio-cv': 'คุณต้องการสร้างแฟ้มผลงานหรือประวัติย่อประเภทใด?',
+          'input-placeholder': 'ใส่ชื่อธุรกิจหรือประเภทของเว็บไซต์ของคุณ',
+          'sublabel': 'เพื่อเริ่มดำเนินการ กรุณาเลือกธุรกิจหรือประเภทเว็บไซต์ของคุณ',
+          'search-tip': '<span class=\'label\'>เคล็ดลับ</span>: เลือกประเภทของธุรกิจหรือเว็บไซต์เพื่อให้ ADI เริ่มปรับแต่งเว็บไซต์ตามความต้องการของคุณโดยเฉพาะ',
+          'label': 'คุณต้องการสร้างเว็บไซต์ประเภทใด?',
+          'suggestions-label': 'คำแนะนำ‑'
+        },
+        'contentExperiment': {
+          'service': {
+            'Blog': 'สร้างบล็อก',
+            'GetSubscribers': 'หาผู้สมัครรับข่าวสาร',
+            'Blog2': 'สร้างบล็อก',
+            'Bookings': 'จองเวลาและการนัดหมาย',
+            'Stores': 'ขายของออนไลน์'
+          }
+        },
+        'import-site-legal': {
+          'google': 'ข้อมูลธุรกิจบน Google',
+          'confirm-message': 'การคลิก "ดำเนินการต่อ" หมายถึงคุณยืนยันว่าคุณเป็นเจ้าของสิทธิ์ทั้งหมดหรือได้รับอนุญาตให้ใช้เนื้อหาที่เลือกไว้ และจะรับผิดชอบต่อการใช้เนื้อหานั้น',
+          'review-images': 'ตรวจสอบรูปภาพ',
+          'skip-button': 'ไม่ล่ะ ขอบคุณ',
+          'and': 'และ ',
+          'content-imported-from': 'นำเข้าเนื้อหาของคุณจาก:',
+          'title2': 'นำเข้ารูปภาพไปยังไซต์ใหม่ของคุณ',
+          'title': 'นำเข้ารูปและข้อความมายังเว็บไซต์ใหม่ของคุณ',
+          'facebook': 'Facebook Page',
+          'confirm-message2': 'การคลิก "ดำเนินการต่อ" หมายถึงคุณยืนยันว่าคุณเป็นเจ้าของสิทธิ์ทั้งหมดหรือได้รับอนุญาตให้ใช้เนื้อหาที่เลือกไว้ และจะรับผิดชอบต่อการใช้เนื้อหานั้น',
+          'website': 'เว็บไซต์ปัจจุบัน',
+          'review-images2': 'ตรวจสอบรูปภาพ',
+          'next-button': 'นำเข้า',
+          'sub-title2': 'ADI พบเนื้อหาออนไลน์จาก {{sources}} ของคุณ'
+        },
+        'back-button': 'ย้อนกลับ',
+        'apps-recommendations': {
+          'paid-plans': {
+            'title': 'Paid Plans',
+            'subtitle': 'ขายการสมัครสมาชิกสินค้า บริการ และเนื้อหาแบบมี่ค่าใช้จ่าย'
+          },
+          'instagram': {
+            'title': 'Instagram Feed',
+            'subtitle': 'นำเสนอรูปภาพและวิดีโอจาก Instagram ของคุณ'
+          },
+          'forum': {
+            'title': 'ฟอรัม',
+            'subtitle': 'สร้างชุมชนบนเว็บไซต์ของคุณ'
+          },
+          'subscribe': {
+            'title': 'แบบฟอร์มสมัครสมาชิก',
+            'subtitle': 'ขยายรายชื่ออีเมลของคุณจากเว็บไซต์'
+          },
+          'bookings': {
+            'feature-name': 'การจอง',
+            'subtitle': 'เปิดรับจองและนัดหมายออนไลน์',
+            'title': 'การจอง'
+          },
+          'event-list': {
+            'title': 'อีเวนท์',
+            'subtitle': 'สร้างอีเวนท์แล้วเก็บ RSVPs พร้อมขายบัตรเข้าร่วม'
+          },
+          'online-store': {
+            'title': 'ร้านค้าออนไลน์',
+            'feature-name': 'ร้านค้าออนไลน์',
+            'subtitle': 'ขายผลิตภัณฑ์ & Digial Downloads'
+          },
+          'music': {
+            'title': 'เพลง',
+            'subtitle': 'สตรีมและขายเพลงของคุณโดยไม่เสียค่าคอมมิชชัน'
+          },
+          'bands-in-town': {
+            'subtitle': 'แสดงวันทัวร์คอนเสิร์ตที่กำลังมาถึงบนไซต์ของคุณ',
+            'title': 'Bandsintown'
+          },
+          'blog': {
+            'title': 'บล็อก',
+            'feature-name': 'บล็อก',
+            'subtitle': 'บล็อกเกี่ยวกับ <br>ทุกสิ่งที่คุณชอบ'
+          },
+          'video': {
+            'title': 'วิดีโอ',
+            'subtitle': 'อัปโหลดหรือเพิ่มวิดีโอจาก YouTube, Vimeo และ อื่น ๆ'
+          },
+          'chat': {
+            'subtitle': 'แชทสดกับผู้เข้าชมเว็บไซต์',
+            'title': 'แช็ท'
+          },
+          'event': {
+            'subtitle': 'สร้างอีเวนท์แล้วเก็บ RSVPs พร้อมขายบัตรเข้าร่วม',
+            'title': 'อีเวนท์เดี่ยว'
+          },
+          'members-area': {
+            'subtitle': 'ให้บัญชีส่วนตัวแก่สมาชิกแต่ละคน',
+            'title': 'พื้นที่สำหรับสมาชิก'
+          }
+        },
+        'business-location': {
+          'search-tip': 'คุณสามารถเปลี่ยนสถานที่ได้ภายหลัง',
+          'input-placeholder-singleEvent': 'ใส่ที่อยู่',
+          'input-placeholder': 'ใส่ที่อยู่',
+          'input-label': '<br>ธุรกิจของคุณ<br>ตั้งอยู่ที่ไหน?',
+          'subline': '<span class=\'link-button\' data-hook=\'no-address-skip\' ng-click=\'$ctrl.skip()\'>ข้าม</span>ส่วนนี้ หากธุรกิจของคุณไม่มีสถานที่ตั้ง',
+          'label-singleEvent': 'อีเวนท์ของคุณจัดขึ้นที่ไหน?',
+          'optional-label': 'เพิ่มเติม'
+        },
+        'general-categories': {
+          'general': {
+            'local-business': 'ธุรกิจท้องถิ่น',
+            'beauty-business': 'ธุรกิจความงาม',
+            'design-business': 'ธุรกิจออกแบบ',
+            'portfolio-and-cv': 'แฟ้มผลงาน & CV',
+            'photographer': 'ช่างภาพ',
+            'other': 'อื่นๆ',
+            'general-blog': 'บล็อกทั่วไป',
+            'online-store': 'ร้านค้าออนไลน์',
+            'music-business': 'ธุรกิจเพลง'
+          }
+        },
+        'search-confirm': {
+          'title-old': 'Wix ADI อยากรู้เกี่ยวกับคุณ:\n{{ businessName }}',
+          'title': 'ช่วย Wix ADI<br />ทำความรู้จัก:<br />{{ businessName }}',
+          'subline': 'เราจะไม่เผยแพร่ข้อมูลใดออนไลน์ก่อนที่จะผ่านการตรวจสอบและอนุมัติจากคุณ',
+          'details1': 'Wix ADI จะเริ่มต้นด้วยการรวบรวมข้อมูลจาก\nแหล่งข้อมูลอินเตอร์เน็ตสาธารณะ',
+          'details2': 'คุณจะสามารถตรวจทานและแก้ไขได้ทุกรายละเอียดก่อนที่จะออนไลน์',
+          'details': 'Wix ADI จะทำการค้นหาออนไลน์เพื่อรวบรวมข้อมูลสำหรับเว็บไซต์ของคุณ คุณสามารถตรวจทานและแก้ไขทุกรายละเอียดก่อนเผยแพร่เว็บไซต์ออนไลน์'
+        },
+        'apps-recommendation': {
+          'label': 'ต้องการอะไรในเว็บไซต์ใหม่ของคุณ?',
+          'more-features': 'ฟีเจอร์เพิ่มเติม',
+          'description': 'เราขอแนะนำฟีเจอร์เหล่านี้ให้คุณ',
+          'title': 'แนะนำ',
+          'installed-apps': {
+            'description': 'เว็บไซต์ของคุณมาพร้อมกับ <span class=\'hidden-installed-apps\'>{{installedAppsStr}}</span> เราขอแนะนำฟีเจอร์อื่นๆ เพื่อการใช้งานของคุณ',
+            'and-operator': 'และ ',
+            'indefinite-article-a': 'ก',
+            'indefinite-article-an': 'an'
+          }
+        },
+        'business-dates': {
+          'change-timezone': 'เปลี่ยน',
+          'date-label-from': 'เริ่ม',
+          'date-placeholder': 'เลือกวันที่',
+          'wrong-end-date': 'กรุณาเลือกวันสิ้นสุดอีเวนท์หลังจากวันที่อีเวนท์เริ่มต้น',
+          'time-placeholder': 'เลือกเวลา',
+          'add-date': 'วันและเวลาสิ้นสุด',
+          'date-label-to': 'สิ้นสุด',
+          'time-item': '{{hours}}:{{minutes}}',
+          'input-label': 'อีเวนท์ของคุณจะมีขึ้นเมื่อไหร่?',
+          'wrong-start-date': 'เลือกวันที่ในอนาคตสำหรับอีเวนท์นี้'
+        },
+        'recaptcha': {
+          'title': 'มายืนยัน<br> ว่าคุณไม่ใช่<br>โรบอทกันเถอะ',
+          'terms': 'การคลิก "ต่อไป" เป็นการยอมรับ <a href=\'https://www.wix.com/about/terms-of-use\' target=\'_blank\'>เงื่อนไขการใช้งาน</a><br>และรับทราบว่าคุณได้อ่าน <a href=\'https://www.wix.com/about/privacy\' target=\'_blank\'>นโยบายความเป็นส่วนตัว</a>ของเราเรียบร้อยแล้ว'
+        },
+        'change-link': 'เปลี่ยน',
+        'import-images-loading-text': 'กำลังโหลดรูปภาพของคุณ...',
+        'tour': {
+          'logoExtraction': {
+            'step3000': {
+              'title': 'ต้องการสร้างจานสีจากโลโก้ของคุณ?'
+            }
+          }
+        },
+        'service': {
+          'Blog': 'บล็อก',
+          'Bookings': 'การจองนัดออนไลน์',
+          'GetSubscribers': 'การสมัครสมาชิกของผู้ใช้',
+          'Stores': 'ร้านค้าออนไลน์',
+          'title': 'เว็บไซต์ของคุณ<br />ต้องการ<br />คุณฟีเจอร์ใดต่อไปนี้หรือไม่?'
+        },
+        'logo': {
+          'uploading': 'กำลังอัพโหลด…',
+          'replaceLogo': 'แทนที่โลโก้',
+          'upload': 'อัพโหลด<br>โลโก้',
+          'edit': 'แก้ไขโลโก้',
+          'error': 'เอ่อ… มันไม่โหลด กรุณาลองอีกครั้ง',
+          'replace': 'แทนที่',
+          'add': 'เพิ่มโลโก้',
+          'remove': 'ลบออก'
+        },
+        'import-button': 'นำเข้า',
+        'select-user': {
+          'name': 'ชื่อ',
+          'title-no-results': 'เราค้นหาธุรกิจของคุณไม่พบ',
+          'title': 'นี่เป็นหนึ่งในธุรกิจของคุณหรือไม่?',
+          'results-single': 'ผลลัพธ์ที่พบ',
+          'results-error': 'อย่างเกรงใจที่จะ <button ng-click=\'$ctrl.skip()\'>ข้าม</button> ไปเพิ่มรายละเอียดเอง',
+          'no-results': 'เราไม่พบธุรกิจออนไลน์ของคุณ',
+          'title-error': 'ลองค้นหาอีกครั้ง',
+          'results-none': 'ลองหาอีกครั้งหรือ <button ng-click=\'$ctrl.skip()\'>ข้าม</button> ไปเพิ่มรายละเอียดเอง',
+          'address': 'ที่อยู่',
+          'in': 'ใน',
+          'select-button': 'นั่นฉันเอง',
+          'results-multiple': 'ผลลัพธ์ที่พบ'
+        },
+        'no-images': 'ไม่พบรูปที่จะนำเข้า',
+        'import-site-content': {
+          'sublabel': 'หากคุณมีเว็บไซต์อยู่แล้ว กรุณากรอกที่อยู่เพื่อให้ ADI สามารถนำเข้าข้อความและรูปภาพของคุณ',
+          'address-does-not-exist': 'กรอกที่อยู่เว็บไซต์ตามตัวอย่าง: www.sitename.com และลองใหม่อีกครั้ง',
+          'address-could-not-found': 'ADI ไม่สามารถนำเข้าเนื้อหาจากไซต์นี้ได้ ข้ามส่วนนี้ และดำเนินการต่อ',
+          'address-message': 'กรอก URL ของเว็บไซต์ปัจจุบันของคุณ',
+          'title': 'ต้องการนำเข้า<br> เนื้อหาจากไซต์<br>ที่มีอยู่แล้ว?'
+        },
+        'business_card': {
+          'logo': {
+            'replace': 'แทนที่',
+            'delete': 'ลบ'
+          }
+        },
+        'first-time': {
+          'title1': 'ก้าวสู่โลกของ ADI',
+          'title2': 'มาออกแบบเว็บไซต์ที่เป็นของคุณเท่านั้นกันเลย'
+        },
+        'images-selection': {
+          'title': 'นำเข้ารูปภาพไปยังไซต์ใหม่ของคุณ',
+          'deselect-all': 'ยกเลิกการเลือกทั้งหมด',
+          'select-all': 'เลือกทั้งหมด'
+        },
+        'loading-message': 'เริ่มการค้นหาอย่างลึกซึ้ง…',
+        'blocked-category': {
+          'back-button': 'ไปที่ Wix Editor',
+          'title': 'Wix Editor<br /> คือตัวเลือก<br> ที่ดีที่สุดสำหรับคุณ!',
+          'description': 'ด้วยรูปแบบที่ตระการตาที่คุณเลือกได้กว่า 500 รูปแบบและคุณสมบัติการออกแบบขั้นสูงนับพันที่ใช้วิธีลากวางอย่างง่ายๆ Wix Editor จึงเป็นโปรแกรมสร้างเว็บไซต์ที่ดีที่สุดในจักรวาล'
+        },
+        'next-button': 'ถัดไป',
+        'optional-label': 'เพิ่มเติม',
+        'import-content': {
+          'skip-button-name': 'ข้าม',
+          'skip-content': 'ส่วนนี้ หากคุณยังไม่มีเว็บไซต์'
+        },
+        'import-youtube-url': {
+          'channel-does-not-exist': 'ช่องนี้ไม่แสดงให้เห็น ตรวจสอบ URL และลองอีกครั้ง '
+        },
+        'cancel-button': 'ยกเลิก',
+        'maybe-later': 'คราวหน้า',
+        'youtube-channel': {
+          'placeholder': 'วาง URL ของ YouTube channel',
+          'label': 'ต้องการซิงค์ช่อง YouTube ของคุณกับเว็บไซต์ของคุณหรือไม่?'
+        },
+        'start': {
+          'button': 'start'
+        },
+        'general': {
+          'copyright-message': '©{{YEAR}} by {{BUSINESS_NAME}}. Proudly created with Wix.com'
+        },
+        'skip-button': 'ข้าม',
+        'done-button': 'เสร็จแล้ว',
+        'skip-this-step': 'ข้าม'
+      },
+      'smart-assist': {
+        'tour': {
+          'unlinked-button': {
+            'button-hidden-step': {
+              'content-for-list-items': 'ซ่อนทุกปุ่มบนรายการนี้แล้ว',
+              'done-button-text': 'เสร็จแล้ว',
+              'content': 'ซ่อนปุ่มนี้แล้ว'
+            },
+            'button-linked-step': {
+              'done-button-text': 'เสร็จแล้ว',
+              'content': 'เชื่อมต่อปุ่มใช้งานเข้ากับลิงก์แล้ว'
+            },
+            'link-or-hide-step': {
+              'link-button-text': 'เชื่อมต่อเลย',
+              'hide-button-text': 'ซ่อนเลย',
+              'hide-button-text-for-list-items': 'ซ่อนทั้งหมด',
+              'content': 'เพิ่มลิงก์ไปที่ปุ่มหรือซ่อนจากส่วนนี้',
+              'content-for-list-items': 'เพิ่มลิงก์ไปที่ปุ่มหรือซ่อนปุ่มทั้งหมดบนรายการนี้'
+            }
+          },
+          'socials-default-link': {
+            'socials-cant-be-hidden-step': {
+              'content': 'ไม่สามารถซ่อนแผงโซเชียลบางอันได้',
+              'done-button-text': 'เข้าใจละ'
+            },
+            'socials-linked-step': {
+              'content': 'เยี่ยม! เชื่อมต่อ<br/>ทุกบัญชีแล้ว',
+              'done-button-text': 'เสร็จแล้ว'
+            },
+            'hide-socials-globally': {
+              'content': 'ไอคอนโซเชียลถูกซ่อนจากส่วนนี้ คุณสามารถซ่อนไอคอนโซเชียลทุกอันจากเว็บไซต์ของคุณได้ในหนึ่งคลิก',
+              'hide-all-button-text': 'ซ่อนทุกไอคอน'
+            },
+            'hide-or-update-step': {
+              'content': 'เชื่อมต่อบัญชีโซเชียลของคุณ เพื่อ<br>ให้ผู้คนติดตามคุณได้',
+              'hide-icons-button': 'ซ่อนจากไซต์',
+              'update-links-button': 'อัพเดตลิงก์'
+            },
+            'socials-globally-hidden': {
+              'done-button-text': 'เสร็จแล้ว',
+              'content': 'ซ่อนไอคอนโซเชียลแล้ว'
+            },
+            'link-socials-step': {
+              'content': 'อัปเดตและเพิ่มลิงก์เพื่อให้ผู้คนค้นคุณเจอออนไลน์และติดตามคุณบนโซเชียล'
+            }
+          },
+          'import-content': {
+            'text-manager-panel': {
+              'select': 'พบข้อความที่คุณชอบหรือไม่? ใช้ข้อความนั้นบนเว็บไซต์ของคุณ แทนที่ข้อความของคุณด้วยสิ่งใหม่ หรือ Add-on'
+            },
+            'done-use-text': 'เข้าใจละ'
+          }
+        },
+        'import-content-issue': {
+          'fix': 'ใช้ข้อความของคุณ',
+          'text': 'หาข้อความที่ ADI นำเข้าและใช้บนไซต์ของคุณ'
+        },
+        'empty-state': {
+          'after-suggestions': {
+            'description': 'รับแจ้งเมื่อเว็บไซต์ของคุณควรได้รับการอัพเดต',
+            'title': 'เก่งมาก! จัดการทุกอย่างเรียบร้อยแล้ว'
+          },
+          'go-to-assistant-bucket': 'ดำเนินการต่อ',
+          'before-suggestions': {
+            'description': 'คุณจะได้รับการแจ้งเตือนหากมีองค์ประกอบในเว็บไซต์ต้องได้รับการอัปเดต - เช่นลิงก์สำหรับโซเชียล ปุ่มต่างๆ และอื่นๆ',
+            'title': 'เคล็ดลับเจ๋งๆ จะปรากฏที่นี่'
+          },
+          'text': 'คุณจะได้รับการแจ้งเตือนหากมีองค์ประกอบในเว็บไซต์ต้องได้รับการอัปเดต - เช่นลิงก์สำหรับโซเชียล ปุ่มต่างๆ และอื่นๆ',
+          'header': 'การแจ้งเตือนจะปรากฏที่นี่'
+        },
+        'unlinked_button': {
+          'fix': 'เชื่อมต่อเลย',
+          'title': 'โปรดเชื่อมต่อปุ่มใช้งานเข้ากับลิงก์'
+        },
+        'divider': {
+          'general': 'หมายเหตุสำคัญเกี่ยวกับเว็บไซต์',
+          'imported-content': 'เนื้อหาที่คุณนำเข้า',
+          'upgrade': 'Upgrade',
+          'content': 'Site Content'
+        },
+        'image_upscale': {
+          'title': 'ปรับปรุงรูปภาพของคุณ',
+          'fix': 'ปรับปรุงรูปภาพ'
+        },
+        'better-layout-issue': {
+          'text': 'Try a new design for your {{sectionType}} section',
+          'fix': 'Change design'
+        },
+        'import-images-issue': {
+          'fix': 'ใช้รูปภาพของคุณ',
+          'text': 'หารูปภาพที่ ADI นำเข้าและใช้บนไซต์ของคุณ'
+        },
+        'better_layout': {
+          'fix': 'อัปเดต',
+          'title': 'better_layout'
+        },
+        'publish_site_interval': {
+          'title': 'เผยแพร่',
+          'fix': 'เผยแพร่'
+        },
+        'imported_images': {
+          'title': 'imported_images',
+          'fix': 'อัปเดต'
+        },
+        'notifications': {
+          'default': {
+            'fix': 'อัปเดต'
+          },
+          'headline': 'แจ้งเตือน'
+        },
+        'unlinked-button-issue': {
+          'text': 'เชื่อมต่อไปยัง {{buttonName}}',
+          'text-for-list-items': 'เชื่อมต่อไปยัง {{listItemName}}'
+        },
+        'dividers': {
+          'general': 'ทั่วไป',
+          'section': 'ส่วน {{sectionName}}',
+          'page': 'หน้า {{pageName}}'
+        },
+        'socials-default-links-issue': {
+          'text': 'เชื่อมต่อไปยังบัญชีโซเชียลของคุณ'
+        },
+        'publish_site_interval-issue': {
+          'fix': 'เผยแพร่เว็บไซต์ของคุณ',
+          'text': 'นี่เป็นเวลาที่ยอดเยี่ยมสำหรับเผยแพร่เว็บไซต์'
+        },
+        'image-upscale-issue': {
+          'text': 'ความคมชัดรูปที่ดีขึ้น',
+          'fix': 'ปรับปรุง'
+        },
+        'imported_content': {
+          'title': 'imported_content',
+          'fix': 'อัปเดต'
+        },
+        'issue': {
+          'fix': 'เริ่มกันเลย'
+        },
+        'publish-issue': {
+          'text': 'นี่เป็นเวลาที่ยอดเยี่ยมสำหรับออนไลน์',
+          'fix': 'เผยแพร่ไซต์ของคุณ'
+        },
+        'socials_default_links': {
+          'title': 'อัปเดตบัญชีโซเชียล',
+          'fix': 'อัปเดต'
+        }
+      },
+      'viewer': {
+        'contact-form': {
+          'attributes': {
+            'validationErrorMessage': 'กรุณากรอกข้อมูลในช่องที่จำเป็นทั้งหมด',
+            'errorMessage': 'กรุณาระบุอีเมลที่มีการใช้งานจริง',
+            'phoneFieldLabel': 'โทรศัพท์',
+            'successMessage': 'ส่งรายละเอียดเรียบร้อยแล้ว!',
+            'submitButtonLabel': 'ส่ง',
+            'messageFieldLabel': 'ข้อความ',
+            'nameFieldLabel': 'ชื่อ',
+            'addressFieldLabel': 'ที่อยู่',
+            'emailFieldLabel': 'อีเมล',
+            'subjectFieldLabel': 'ชื่อเรื่อง'
+          }
+        },
+        'drop-down-menu': {
+          'moreButtonLabel': 'เพิ่มเติม'
+        }
+      },
+      'media-organize': {
+        'clipart': {
+          'suggestions-title': 'คลิปอาร์ตอื่นที่แนะนำ เลือกคลิปอาร์ตเพื่อแทนที่คลิปอาร์ตที่อยู่ด้านบน',
+          'subtitle': 'เลือก \'คลิปอาร์ต\''
+        },
+        'custom-tab': {
+          'show-all': 'แสดงทั้งหมด',
+          'recommended-section': 'แนะนำเป็นพิเศษสำหรับส่วนนี้ของคุณ',
+          'free': 'ฟรีจาก Wix',
+          'title': 'แนะนำ',
+          'from-business': 'รูปภาพจากธุรกิจของคุณ'
+        },
+        'video': {
+          'subtitle': 'เลือกวิดีโอ',
+          'suggestions-title': 'วิดีโออื่นที่แนะนำ เลือกวิดีโอเพื่อแทนที่วิดีโอที่อยู่ด้านบน'
+        },
+        'shape': {
+          'subtitle': 'เลือก \'รูปร่าง\'',
+          'suggestions-title': 'รูปร่างอื่นที่แนะนำ เลือกรูปร่างเพื่อแทนที่รูปร่างที่อยู่ด้านบน'
+        },
+        'gallery': {
+          'subtitle': 'ลากและวางภาพของคุณในตำแหน่งเพื่อจัดระเบียบอัลบั้มภาพของคุณให้สวยงาม',
+          'title': 'จัดระเบียบรูปภาพในแกลเลอรีของคุณ'
+        },
+        'type': {
+          'title': 'Media Manager'
+        }
+      },
+      'editor': {
+        'media-settings': {
+          'ms-options': {
+            'gallery': {
+              'all': {
+                'button': 'เปลี่ยนแกลเลอรี'
+              }
+            },
+            'image': {
+              'uncropped': {
+                'button': 'ดีไซน์'
+              },
+              'backgroundheader': {
+                'button': 'ตำแหน่ง'
+              },
+              'stripheader': {
+                'button': 'ตำแหน่ง'
+              },
+              'backgroundfull': {
+                'button': 'ตำแหน่ง'
+              },
+              'strip': {
+                'button': 'ตำแหน่ง'
+              },
+              'background': {
+                'button': 'ตำแหน่ง'
+              },
+              'cropped': {
+                'button': 'ครอบตัด'
+              },
+              'backgroundlist': {
+                'button': 'ตำแหน่ง'
+              },
+              'column': {
+                'button': 'ตำแหน่ง'
+              },
+              'croppedheader': {
+                'button': 'ครอบตัด'
+              }
+            },
+            'stripheader': 'แถบเฮดเดอร์',
+            'box': 'กล่อง',
+            'backgroundlist': 'รายการพื้นหลัง',
+            'cropped': 'ครอบตัด',
+            'column': 'คอลัมน์',
+            'backgroundfull': 'พื้นหลังทั้งหมด',
+            'background': 'พื้นหลัง',
+            'uncropped': 'ภาพเต็ม',
+            'backgroundheader': 'พื้นหลังของเฮดเดอร์',
+            'strip': 'แถบแนวนอน',
+            'croppedheader': 'เฮดเดอร์ที่อยู่ในกล่อง'
+          },
+          'ext-video': {
+            'video-url': {
+              'placeholder': 'แปะ URL ของ YouTube หรือ Vimeo',
+              'label': 'url ของวิดีโอ'
+            },
+            'autoplay': {
+              'label': 'วิดีโอที่เล่นอัตโนมัติ'
+            },
+            'controls': {
+              'option': {
+                'always': 'เสมอ',
+                'never': 'ไม่เลย',
+                'on-hover': 'เมื่อเลื่อนเม้าส์'
+              },
+              'label': 'แสดงตัวควบคุมวิดีโอ'
+            },
+            'loop': {
+              'label': 'Play in loop'
+            }
+          },
+          'gallery-name': {
+            'grid2': 'กริดแบบ 2 คอลัมน์',
+            'grid3': 'กริดแบบ 3 คอลัมน์',
+            'grid4': 'กริดแบบ 4 คอลัมน์',
+            'grid6': 'กริดแบบ 6 คอลัมน์',
+            'thumbnails': 'สไลด์โชว์แบบภาพขนาดย่อ',
+            'stripslideshow': 'สไลด์โชว์กว้างแบบเต็มจอ',
+            'animatedgrid3': 'กริดภาพเคลื่อนไหว',
+            'stripshowcase': 'จัดแสดงแบบเต็มหน้าจอ',
+            'stripaccordion': 'สไลเดอร์แบบแอคคอร์เดียนเต็มหน้าจอ',
+            'masonry': 'เรียงต่อภาพ',
+            'collage': 'คอลลาจ',
+            'fullwidthcollage': 'คอลลาจแบบเต็มหน้าจอ',
+            'fullwidthcollage_b': 'คอลลาจแบบ 4 คอลัมน์เต็มหน้าจอ',
+            'fullwidthcollage_c': 'คอลลาจแบบ 3 คอลัมน์เต็มหน้าจอ',
+            'stripmasonry': 'ภาพแบบ masonry เต็มหน้าจอ',
+            'slider': 'สไลเดอร์',
+            'accordion': 'สไลเดอร์แบบแอคคอร์เดียน',
+            'slideshow': 'สไลด์โชว์'
+          },
+          'tabs': {
+            'image': 'รูปภาพ',
+            'gallery': 'แกลเลอรี',
+            'shape': 'รูปทรง',
+            'pattern': 'ลายแพทเทิร์น',
+            'video': 'วิดีโอ'
+          },
+          'description': {
+            'title': 'คำบรรยาย'
+          },
+          'image-upscale-message': {
+            'fix-title': 'ระวังนะ! รูปนี้มีความละเอียดต่ำ',
+            'fix-btn': 'ปรับปรุง',
+            'revert-title': 'ปรับปรุงคุณภาพของรูปภาพแล้ว',
+            'revert-btn': 'เลิกทำ'
+          },
+          'gallery': {
+            'organize-media': 'จัดระเบียบสื่อ',
+            'change-color': 'สี'
+          },
+          'types': {
+            'video': 'วิดีโอ',
+            'pattern': 'ลายแพทเทิร์น',
+            'shape': 'รูปทรง',
+            'gallery': 'แกลเลอรี',
+            'image': 'รูปภาพ'
+          },
+          'logo': {
+            'image': 'รูปภาพโลโก้',
+            'shape': 'รูปร่างของโลโก้'
+          },
+          'show-video-controls': {
+            'title': 'แสดงตัวควบคุมวิดีโอ'
+          },
+          'media-background': {
+            'label': 'สีหลังรูปภาพ'
+          },
+          'button-search': 'ค้นหา',
+          'title': 'การตั้งค่าสื่อ',
+          'ext-video-settings': {
+            'title': 'การตั้งค่าวีดีโอ'
+          },
+          'clipart-settings': {
+            'title': 'การตั้งค่าคลิปอาร์ต'
+          },
+          'video-menu': {
+            'free-wix-library': 'ฟรีจาก Wix',
+            'youtube-vimeo': 'YouTube / Vimeo',
+            'upload': 'อัพโหลดวิดีโอ'
+          },
+          'media-title': {
+            'title': 'ชื่อเรื่อง (ข้อความตัวเลือก)'
+          },
+          'description-placeholder': 'บรรยายภาพของคุณ',
+          'shape-settings': {
+            'title': 'การตั้งค่ารูปทรง'
+          },
+          'for-more-layouts': 'ไปที่ <a ng-click="$ctrl.goToSwitchPreset()" adi-automation="more-layouts-switch-preset" data-hook="goto-switch-preset">Section Design</a> เพื่อเลือกการจัดวางเพิ่มเติม',
+          'video-settings': {
+            'title': 'การตั้งค่าวีดีโอ'
+          },
+          'media-type': 'ชนิดของสื่อ',
+          'link-label': 'ลิงก์',
+          'button-replace': 'แทนที่',
+          'loop': {
+            'title': 'Play in loop'
+          },
+          'description-label': 'คำบรรยาย',
+          'media-opacity': {
+            'label': 'ความทึบแสงของภาพ'
+          },
+          'video-url': {
+            'title': 'url ของวิดีโอ'
+          },
+          'autoplay': {
+            'title': 'เล่นเองอัตโนมัติเมื่อโหลด'
+          },
+          'title-placeholder': 'ใส่หัวข้อของคุณที่นี่',
+          'title-label': 'ชื่อเรื่อง (ข้อความตัวเลือก)',
+          'image-position': {
+            'title': 'ตำแหน่งรูปภาพ'
+          },
+          'media-size': {
+            'label': 'การจัดวางสื่อ'
+          },
+          'image-settings': {
+            'title': 'การตั้งค่ารูปภาพ'
+          }
+        },
+        'catalog-styles': {
+          'buttons': {
+            'title': 'ดีไซน์ปุ่ม',
+            'description': 'เลือกสไตล์ที่คุณชอบ'
+          },
+          'sticky-social-bar': {
+            'title': 'เลือกดีไซน์'
+          }
+        }
+      },
+      'background-scroll': {
+        'parallax': 'พารัลแลกซ์',
+        'none': 'ไม่มี',
+        'zoom-in': 'ซูมเข้า',
+        'fade-in': 'เฟดอิน',
+        'reveal': 'เปิดเผย'
+      },
+      'tour': {
+        'change-layout': {
+          'step2': 'เลือกหน้าเพจ',
+          'step0': 'ตอนนี้ฉันจะแสดงวิธีเปลี่ยนดีไซน์ของแต่ละหมวดให้ดู',
+          'auto': {
+            'step3': 'คุณว่าดีไซน์ของใหม่ของส่วนนี้เป็นอย่างไร?',
+            'step2': 'กำลังเลือกดีไซน์ของแต่ละส่วนใหม่',
+            'step1': 'กำลังเปิด \'ดีไซน์เฉพาะส่วน\'',
+            'step0': 'Pick the section you want to change and I\'ll choose a new layout.'
+          },
+          'manual': {
+            'step5': 'คุณว่าดีไซน์ของใหม่ของหมวดนี้เป็นอย่างไร?',
+            'step3': 'คลิก \'แก้ไขดีไซน์เฉพาะส่วน\'',
+            'step4': 'เลือกดีไซน์ที่คุณชื่นชอบ',
+            'step1': 'เลือกหน้าเพจ',
+            'step2': 'คลิกส่วนที่คุณต้องการเปลี่ยนและ ADI จะแสดงตัวเลือกดีไซน์ใหม่ๆ ให้คุณ'
+          },
+          'manual-or-auto': 'ADI สามารถเลือกดีไซน์ใหม่สำหรับส่วนนี้ หรือแสดงวิธีการเปลี่ยนให้คุณได้'
+        },
+        'button': {
+          'dontlike': 'ลองอีกครั้ง',
+          'automatic': 'ทำให้ฉันเลย',
+          'try-another': 'ลองแบบอื่น',
+          'back': 'ย้อนกลับ',
+          'keep-it': 'เก็บไว้แบบนี้',
+          'done': 'เสร็จแล้ว',
+          'manual': 'แสดงวิธีใช้',
+          'keep-them': 'เก็บไว้แบบนี้',
+          'ok': 'ตกลง',
+          'gotit': 'เข้าใจละ',
+          'autoormanual': {
+            'title': 'คุณต้องการทำอย่างไร?'
+          },
+          'next': 'ถัดไป',
+          'like': 'เก็บไว้แบบนี้',
+          'continue': 'ดำเนินการต่อ',
+          'auto': 'ทำให้ฉันเลย'
+        },
+        'entire-website-design': {
+          'manual-or-auto': 'คุณเลือกที่จะเปลี่ยนดีไซน์ของเว็บไซต์ ADI สามารถเลือกธีมใหม่ให้คุณ หรือแสดงวิธีการเปลี่ยนให้คุณได้',
+          'manual': {
+            'step0c': 'คลิก \'ธีม\'',
+            'step0': 'คลิก \'ดีไซน์ของไซต์\'',
+            'step1': 'เลือกธีม'
+          },
+          'auto': {
+            'step0b': 'กำลังเปิดเมนูดีไซน์',
+            'step0c': 'กำลังเปิดธีม',
+            'step0': 'กำลังเปิดเมนูดีไซน์',
+            'step1': 'กำลังเลือกธีม'
+          },
+          'step2': 'What do you think of this design?'
+        },
+        'colors': {
+          'manual': {
+            'step3': 'เลือกจานสี',
+            'step2': 'คลิกเพื่อเปิดจานสี',
+            'step1': 'คลิกที่นี่เพื่อปรับแต่งสีของดีไซน์ของคุณ',
+            'step0': 'คลิก \'ดีไซน์ของไซต์\'',
+            'step4': 'คุณว่าสีชุดใหม่นี้เป็นอย่างไร?'
+          },
+          'auto': {
+            'step1': 'กำลังปรับแต่งสีของธีมของดีไซน์ของคุณ',
+            'step2': 'กำลังเปิดจานสี',
+            'step0': 'กำลังเปิดเมนูดีไซน์',
+            'step3': 'กำลังเลือกจานสี',
+            'step4': 'คุณว่าสีชุดใหม่นี้เป็นอย่างไร?'
+          },
+          'manual-or-auto': 'มาเปลี่ยนสีเว็บไซต์ของคุณกันเถอะ'
+        },
+        'welcome2': {
+          'step3000': {
+            'title': '',
+            'content': ''
+          },
+          'step4000': {
+            'button': 'สร้างเว็บไซต์ของฉัน',
+            'title': 'ตอนนี้ฉันจะสร้างหน้าโฮมเพจของคุณ',
+            'content': 'Wix ADI has gathered your info and prepared your design.<br/>Now, from billions of combinations including text, images and more,<br/>you’re about to get a website that’s uniquely yours.'
+          },
+          'step2000': {
+            'title': 'Pick a style you love',
+            'content': 'Here are a few designs you might like.\nYou can easily change it later.'
+          },
+          'complete': {
+            'content': 'อย่าเพิ่งหยุด ADI จะแสดงวิธีสร้างเว็บไซต์ที่เหลือให้ดู คลิกวงกลมด้านล่างเพื่อออกจากหน้า หรือกลับมาทำต่อเมื่อใดก็ได้',
+            'title': 'นี่เลย เวอร์ชั่นแรกของเว็บไซต์ของคุณ!',
+            'full-site-title': 'นี่เลย เวอร์ชั่นแรกของเว็บไซต์ของคุณ!'
+          },
+          'step1000': {
+            'title': 'สวัสดี ฉันคือ ADI หรือ Artificial Design Intelligence ของ Wix',
+            'content': 'โปรแกรมนี้ถูกพัฒนาขึ้นเพื่อแนะนำวิธีสร้างเว็บไซต์เริ่ดๆ โดยสามารถนำข้อความ ดีไซน์ รูปภาพ และอีกมากมายมารวมกันได้หลายร้อยล้านแบบ หลังจากฉันได้เรียนรู้ว่าคุณคือใคร ฉันจะใช้ข้อมูลดังกล่าวในการออกแบบเว็บไซต์สำหรับคุณโดยเฉพาะ'
+          },
+          'complete3': {
+            'content': 'เริ่มปรับแต่งเลย คลิกวงกลมด้านล่าง เพื่อดูว่าขั้นตอนต่อไปคืออะไร และรับเคล็ดลับสำหรับไซต์ของคุณ',
+            'title': 'ยินดีต้อนรับสู่เว็บไซต์ของคุณ!',
+            'full-site-title': 'มาปรับแต่งเว็บไซต์ของคุณกันเถอะ'
+          },
+          'preparing': {
+            'button': 'กำลังเตรียม...'
+          },
+          'edit-site': {
+            'title': 'คุณอยู่ในโหมด \'ดูตัวอย่าง\'<br/><br/> หากต้องการปรับแต่งแบบอักษร สี<br/>รูปภาพ และอีกมากมาย คลิก \'แก้ไขไซต์\''
+          }
+        },
+        'animation': {
+          'step1b': 'คลิก \'ภาพเคลื่อนไหว\'',
+          'step0b': 'กำลังเปิดเมนูดีไซน์',
+          'step3': 'ดูตัวอย่างภาพเคลื่อนไหวเพื่อดูว่าคุณชอบหรือไม่',
+          'step2': 'ADI สามารถทำให้เว็บไซต์ของคุณเคลื่อนไหวได้อัตโนมัติ เลือกสไตล์การเคลื่อนไหวจากรายการเลื่อนลง',
+          'step1': 'คลิก \'ปรับแต่งดีไซน์\'',
+          'step0': 'คลิก \'ดีไซน์ของไซต์\'',
+          'step5': 'นี่คือไซต์ที่ไม่มีภาพเคลื่อนไหว คุณต้องการลองดูแบบอื่นหรือคงแบบนี้ไว้?',
+          'step4': 'เลือนเม้าส์ลงเพื่อดูหน้าตาเว็บไซต์ของคุณ ชอบภาพเคลื่อนไหวนี้ไหม?',
+          'step2-2': 'ADI สามารถทำให้เว็บไซต์ของคุณเคลื่อนไหวได้อัตโนมัติ เลือกสไตล์ภาพเคลื่อนไหว',
+          'step2-1': 'คลิก \'แก้ไข\''
+        },
+        'welcome': {
+          'step1': {
+            'title': 'ช่วยให้ฉันเข้าใจสไตล์ของคุณ',
+            'content': 'เลือกรูปโฉมและอารมณ์ที่คุณชอบที่สุดเพื่อเว็บไซต์ของคุณ คุณสามารถเปลี่ยนได้ทุกเวลา'
+          },
+          'step4': 'กำลังเลือกดีไซน์สำหรับหมวด',
+          'step3': 'กำลังเปิดแผง \'เพิ่มส่วน\'',
+          'step2': 'หน้าโฮมเพจของคุณเป็นสิ่งที่ผู้ใช้ไซต์จะเห็น ตอนนี้ ฉันจะสร้างดีไซน์เริ่มแรกให้ดูทีละส่วน <br/><br/>อาจใช้เวลาสักครู่ ดูไปด้วยกัน เพื่อเรียนรู้วิธีทำด้วยตัวเอง',
+          'step5': {
+            'content': 'ตอนนี้ มาดูข้อมูลพื้นฐานในการสร้างเว็บไซต์ของคุณ คุณสามารถออกจากหน้านี้หรือกลับมาดูเรื่องนี้เมื่อไหร่ก็ได้ — เพียงคลิกที่วงกลมด้านล่าง',
+            'welcomeonly': {
+              'title': 'ฉันได้สร้างหน้าโฮมเพจของคุณเสร็จแล้ว',
+              'content': 'ตอนนี้ถึงเวลาเติมแต่งให้เป็นตัวคุณแล้ว เพิ่มหมวดใหม่ เพิ่มหน้าเพจ หรืออัพโหลดรูปของคุณ - อะไรก็ได้ที่คุณต้องการ'
+            },
+            'title': 'ฉันได้สร้างเวอร์ชันแรกของโฮมเพจของคุณเสร็จแล้ว'
+          },
+          'step0': {
+            'content': 'โปรแกรมนี้ถูกพัฒนาขึ้นเพื่อแนะนำวิธีสร้างเว็บไซต์เริ่ดๆ ให้คุณโดยเฉพาะ โดยสามารถนำข้อความ ดีไซน์ รูปภาพ และอีกมากมายมารวมกันได้หลายร้อยล้านแบบ <br/><br/>หลังจากฉันได้เรียนรู้ว่าคุณคือใคร ฉันจะใช้ข้อมูลดังกล่าวในการออกแบบเว็บไซต์สำหรับคุณโดยเฉพาะ',
+            'title': 'สวัสดี ฉันคือ ADI หรือ Artificial Design Intelligence ของ Wix'
+          }
+        },
+        'logoExtraction': {
+          'step3200': {
+            'newPaletteFromLogo': {
+              'title': 'นี่เป็นจานสีที่ไม่เหมือนใครสำหรับเว็บไซต์ของคุณ',
+              'content': 'คุณสามารถเปลี่ยนได้ง่ายๆ ทีหลัง'
+            },
+            'skip': 'ข้าม',
+            'content': 'คุณสามารถเปลี่ยนได้ง่ายๆ ทีหลัง',
+            'button': 'ใช้สีเหล่านี้',
+            'title': 'นี่เป็นจานสีที่ไม่เหมือนใครสำหรับเว็บไซต์ของคุณ'
+          },
+          'step3000': {
+            'content': 'Wix ADI สามารถใช้สีจากโลโก้ของคุณ<br>เพื่อสร้างจานสีสำหรับคุณโดยเฉพาะ',
+            'button': 'สร้างจานสี',
+            'title': 'ต้องการสร้างจานสี<br/>จากโลโก้ของคุณ?',
+            'skip': 'ข้าม'
+          },
+          'step3100': {
+            'title': 'กำลังสร้างจานสีของคุณ...',
+            'content': 'กำลังสร้างโทนสี...'
+          }
+        },
+        'coloration': {
+          'try-another': 'ไม่ เปลี่ยนเลย',
+          'step0c': 'คลิก \'สี\'',
+          'step0b': 'กำลังเปิดเมนูดีไซน์',
+          'step3': 'ADI เลือกสีเหล่านี้ให้คุณ เพื่อใช้กับทั้งเว็บไซต์',
+          'step2': 'คลิกเพื่อแก้ไข',
+          'step5': 'คุณชอบสีของเว็บไซต์หรือไม่?',
+          'step4': 'หากต้องการเปลี่ยนสีเว็บไซต์ของคุณ เลือกจานสีที่ ADI แนะนำหรือเลือกสีหลักใหม่',
+          'step1': 'คลิก \'ปรับแต่งดีไซน์\'',
+          'step0': 'คลิก \'ดีไซน์ของไซต์\'',
+          'keep-it': 'ชอบ แก้ไขเลย'
+        },
+        'newFonts': {
+          'manual': {
+            'step3': 'เลือกชุดแบบอักษรใหม่ หรือปรับแต่งขนาดชุดแบบอักษรที่คุณเลือกโดยการลากสไลเดอร์'
+          }
+        },
+        'add-section2': {
+          'step2': 'คลิก \'หมวดลงหน้าเพจ\''
+        },
+        'fonts': {
+          'manual': {
+            'font-size': {
+              'step4': 'คุณว่าขนาดแบบอักษรนี้เป็นอย่างไร?'
+            },
+            'step1b': 'คลิก \'แบบอักษร\'',
+            'step3': 'เลือกชุดแบบอักษร',
+            'step2': 'คลิกเพื่อเปิดชุดแบบอักษร',
+            'step1': 'คลิกที่นี่เพื่อปรับแต่งแบบอักษรของดีไซน์',
+            'step0': 'คลิก \'ดีไซน์ของไซต์\'',
+            'font-set': {
+              'step4': 'คุณว่าชุดแบบอักษรนี้เป็นอย่างไร?'
+            }
+          },
+          'auto': {
+            'step1b': 'กำลังเปิดแผงแบบอักษร',
+            'step3': 'กำลังเลือกชุดแบบอักษร',
+            'step0': 'กำลังเปิดเมนูดีไซน์',
+            'step1': 'กำลังปรับแต่งแบบอักษรของธีมของดีไซน์ของคุณ'
+          },
+          'new-font': {
+            'manual-or-auto': 'มาเปลี่ยนแบบอักษรของเว็บไซต์ของคุณกันเถอะ ADI สามารถเปลี่ยนชุดแบบอักษรใหม่ หรือแสดงวิธีการเปลี่ยนให้คุณได้'
+          }
+        },
+        'stepmanager': {
+          'title': 'ขั้นตอนต่อไป'
+        },
+        'add-new-page2': {
+          'step1': 'คลิก \'หน้าเพจ\''
+        },
+        'page-seo': {
+          'step5': 'เมื่อเสร็จแล้ว กรุณาคลิกด้านล่าง',
+          'step3': 'เลือก \'หน้าเพจ SEO\'',
+          'step4': 'SEO ที่ดีจะช่วยให้ผู้คนหาคุณพบบนเสิร์ชเอนจิน เช่น Google เลือกคำสำคัญที่เกี่ยวข้อง รวมถึงชื่อธุรกิจ ที่ตั้ง และบริการ',
+          'step1': 'เลือกหน้าเพจที่คุณต้องการแก้ไข',
+          'step2': 'คลิก \'การตั้งค่าหน้าเพจ\'',
+          'step0': 'เปิด \'ส่วนจัดการหน้าเพจ\''
+        },
+        'publish': {
+          'step1': 'เลือกโดเมน Wix ฟรี หรือเชื่อมต่อโดเมนของคุณเอง อย่าหยุดเพียงแค่นี้ — สร้างเว็บไซต์เริ่ดๆ ของคุณต่อ',
+          'step0': 'คลิก \'เผยแพร่\' เพื่อให้ผู้เข้าชมสามารถเห็นเว็บไซต์ของคุณออนไลน์'
+        },
+        'import-content-forbusiness-details-changed': {
+          'label': 'คลิก \'ดูตัวเลือกข้อความ\' เพื่อดูตัวเลือกทั้งหมด'
+        },
+        'add-section': {
+          'start-from-scratch': 'Here\'s a list of sections for your site. Click on the section you need and then choose a design you like.',
+          'step4': 'เมื่อเสร็จแล้ว กรุณาคลิกด้านล่าง',
+          'step3': 'I’ve listed possible sections by relevance for your type of business. Choose the section and layout you want and drag it to your website.',
+          'step2': 'คลิก \'เพิ่มส่วน\'',
+          'step1': 'เลือกหน้าเพจ',
+          'step0': 'ตอนนี้ฉันจะแสดงวิธีเพิ่มส่วน'
+        },
+        'add-new-page': {
+          'step2': 'เพิ่มหน้าเพจใหม่บนเว็บไซต์ของคุณ ใช้หน้าเพจที่ ADI แนะนำสำหรับธุรกิจของคุณ หรือเลือกจากรายการที่มี',
+          'step1': 'คลิก \'เพิ่มหน้าเพจ\'',
+          'step0': 'คลิก \'ส่วนจัดการหน้าเพจ\' ที่นี่ ใช้เปลี่ยนหน้าเพจได้ตลอดเวลา'
+        },
+        'wiz-seo': {
+          'click-get-found': 'คลิก \'ให้ Google หาคุณพบ\'',
+          'change-business-details': 'Click To Change Your Site Business type'
+        },
+        'when-done': 'เมื่อเสร็จแล้ว กรุณาคลิกด้านล่าง',
+        'import-images': {
+          'step1': 'คลิก แทนที่',
+          'step0': 'คลิก แก้ไขและแทนที่'
+        },
+        'business-details-changed-task': {
+          'btn': 'ปรับแต่งไซต์',
+          'manual': '<b>ยินดีต้อนรับสู่เว็บไซต์ของคุณ!</b><br/><br/>เริ่มการปรับแต่งด้วยข้อความที่เลือกให้คุณโดยเฉพาะ'
+        },
+        'preview': {
+          'step0': 'คลิก \'ดูหน้าตัวอย่าง\' เพื่อดูหน้าตาไซต์ที่ผู้เข้าชมจะเห็นบนเดสก์ท็อปหรืออุปกรณ์เคลื่อนที่'
+        },
+        'when-done2': 'เมื่อคุณทำเสร็จเรียบร้อยแล้ว กรุณากลับไปแก้ไขเว็บไซต์ของคุณ',
+        'connect-domain': {
+          'step0': 'เลือกที่อยู่ออนไลน์ที่จดจำง่ายสำหรับเว็บไซต์ของคุณ'
+        },
+        'edit-content': {
+          'step4': 'Edit your content here and I’ll update the changes in your website. You can hide or show text with one click.',
+          'step2': 'เลือกส่วนเพื่อแก้ไขเนื้อหา',
+          'step3': 'คลิก \'แก้ไข\'',
+          'step0': 'ตอนนี้ฉันจะแสดงวิธีแก้ไขเนื้อหา',
+          'step1': 'เลือกหน้าเพจ'
+        },
+        'import-content': {
+          'label': 'ข้อความทุกข้อความที่ ADI นำเข้ามาปรากฏที่นี่ คลิก "{{textManagerLabel}}" เพื่อดูตัวเลือกทั้งหมดของคุณ'
+        },
+        'customize-section-design': {
+          'step4': 'เมื่อคุณทำการปรับแต่งเสร็จ คลิกด้านล่าง',
+          'step3': 'เลือกสิ่งที่คุณต้องการปรับแต่ง',
+          'step2': 'คลิก \'ปรับแต่งดีไซน์\'',
+          'step1': 'คลิก \'แก้ไขดีไซน์เฉพาะส่วน\'',
+          'step0': 'คลิกส่วนที่คุณต้องการปรับแต่ง<br/>และ ADI จะแสดงวิธีการปรับแต่งให้คุณ'
+        }
+      },
+      'new-intro': {
+        'platforms-urls': {
+          'google-label-title': 'สถานที่บน Google',
+          'legal-message-next': 'การคลิก "ถัดไป" เป็นการยอมรับว่าคุณได้อนุญาตให้เราเข้าไปค้น นำเข้าเนื้อหา และยืนยันความเป็นเจ้าของ สิทธิการใช้งาน และสิทธิความรับผิดชอบจากการใช้เนื้อหานี้',
+          'google-placeholder-new': 'ค้นหาบน Google เพื่อใช้ในธุรกิจของคุณ',
+          'facebook-label-title': 'Facebook Business Page',
+          'website-label': 'เว็บไซต์ปัจจุบันของคุณ',
+          'subtitle-new': 'หากคุณมีพื้นที่ออนไลน์อยู่แล้ว<br/>นำเข้าเนื้อหาเหล่านั้นแล้วนำมาใช้ในเว็บไซต์ใหม่ของคุณ',
+          'youtube-label-title': 'YouTube channel',
+          'facebook-placeholder-example': 'ตัวอย่าง: facebook.com/pagename',
+          'website-label-new': 'เว็บไซต์ของคุณ',
+          'links-title': 'คัดลอกแล้ววางลิงก์ของคุณด้านล่าง:',
+          'facebook-placeholder-new': 'เช่น facebook.com/mypage',
+          'website-label-title': 'เว็บไซต์ของคุณ',
+          'website-placeholder-example': 'ตัวอย่าง: www.yourwebsite.com',
+          'google-placeholder-example': 'ค้นหาบน Google เพื่อใช้ในธุรกิจของคุณ',
+          'youtube-placeholder-new': 'เช่น youtube.com/user/mychannel',
+          'invalid-google-places': 'เราค้นหาธุรกิจนี้ไม่พบ ลองค้นหาอีกครั้ง',
+          'youtube-placeholder-example': 'ตัวอย่าง: youtube.com/channelname',
+          'invalid-website': 'เราค้นหาที่อยู่ของเว็บไซต์นี้ไม่พบ กรุณาตรวจสอบและลองอีกครั้ง',
+          'invalid-url-new': 'เราค้นหา URL นี้ไม่พบ',
+          'invalid-google-places-new': 'เราค้นหาธุรกิจนี้ไม่พบ',
+          'choose-your-content': 'Choose your content to import:',
+          'google-placeholder': 'ค้นหาบน Google เพื่อใช้ในธุรกิจของคุณ',
+          'review-images': 'ตรวจหารูปภาพ',
+          'sublabel-new': 'หากคุณมีพื้นที่ออนไลน์อยู่แล้ว<br/>นำเข้าเนื้อหาเหล่านั้นแล้วนำมาใช้ในเว็บไซต์ใหม่ของคุณ',
+          'youtube-label': 'YouTube channel',
+          'youtube-placeholder': 'วาง URL ของ YouTube channel',
+          'links-title-new': 'เพื่อนำเข้าเนื้อหา กรุณาคัดลอกแล้ววางลิงก์ของคุณ:',
+          'invalid-url': 'กรอก URL ที่ถูกต้อง',
+          'facebook-placeholder': 'วาง URL ของ Facebook page ของคุณ',
+          'sublabel': 'เนื้อหาที่นำเข้าจะสามารถนำไปใช้ในเว็บไซต์อันใหม่ของคุณ',
+          'legal-message': 'Wix ADI will search online to gather info for your website. You\'ll be able to review and edit everything before you go live.',
+          'title': 'คุณต้องการนำเข้าเนื้อหาหรือไม่?',
+          'website-placeholder': 'วาง URL ของเว็บไซต์ปัจจุบันของคุณ',
+          'title-new': 'คุณต้องการนำเข้าข้อความและรูปภาพของคุณหรือไม่?',
+          'facebook-label-new': 'Facebook Business Page',
+          'google-label': 'สถานที่บน Google',
+          'website-placeholder-new': 'เช่น www.mywebsite.com',
+          'facebook-label': 'Facebook Page',
+          'invalid-website-new': 'เราค้นหาที่อยู่ของเว็บไซต์นี้ไม่พบ'
+        }
+      },
+      'defaults': {
+        'contact': {
+          'address': '500 Terry Francois Street San Francisco, CA 94158',
+          'phone': '123-456-7890',
+          'fax': '456-789-1234',
+          'map-address': '500 Terry Francois Street San Francisco, CA 94158'
+        },
+        'general': {
+          'tagline': 'แท็กไลน์ของธุรกิจ',
+          'copyright-message': '©2023 โดย [ชื่อธุรกิจ] ภูมิใจสร้างสรรค์โดย Wix.com',
+          'button': 'ติดต่อ'
+        },
+        'footer': {
+          'address': 'ที่อยู่',
+          'follow': 'ติดตาม',
+          'contact': 'ติดต่อ'
+        }
+      },
+      'assistant-menu-bucket': {
+        'essentials': {
+          'name': 'สิ่งที่จำเป็นสำหรับเว็บไซต์',
+          'description-with-tpa': 'ดูตัวอย่างหน้าตาไซต์ของคุณที่ผู้เข้าชมเห็น มีการเปลี่ยนแปลง? เผยแพร่ให้ออนไลน์เลย',
+          'description-without-tpa': 'ดูตัวอย่างหน้าตาไซต์ของคุณที่ผู้เข้าชมเห็น เมื่อคุณพร้อม เผยแพร่ไซต์ออนไลน์เลย'
+        },
+        'change-site-design': {
+          'name': 'ปรับแต่งไซต์ของคุณ',
+          'description': 'ปรับแต่งดีไซน์ของไซต์ให้เป็นแบบที่คุณชื่นชอบ เปลี่ยนสี แบบอักษร และอีกมากมาย'
+        },
+        'imported-content': {
+          'name': 'เนื้อหาที่นำเข้า',
+          'description': 'หาข้อความและรูปภาพที่ ADI นำเข้าเพื่อใช้บนไซต์ของคุณ'
+        },
+        'publish': {
+          'description': 'เผยแพร่เว็บไซต์เพื่อให้ผู้คนสามารถหาคุณพบทางออนไลน์',
+          'name': 'เผยแพร่'
+        },
+        'change-section-design': {
+          'name': 'ออกแบบส่วนของคุณ',
+          'description': 'ปรับแต่งสี ข้อความ และภาพเคลื่อนไหวของแต่ละส่วน หรือลองใช้การจัดวางอื่น'
+        },
+        'change-content': {
+          'name': 'แก้ไขเนื้อหา',
+          'description': 'เปลี่ยนข้อความ รูปภาพ ลิงก์ และอีกมากมายในส่วนใดก็ได้'
+        },
+        'seo': {
+          'description': 'แจ้งให้เรารู้เกี่ยวกับเว็บไซต์ของคุณมากขึ้น เพื่อให้ผู้คนค้นหาไซต์ของคุณเจอ',
+          'name': 'ให้ Google หาคุณพบ'
+        },
+        'connect-domain': {
+          'description': 'ช่วยให้คนหาคุณเจอทางออนไลน์อย่างง่ายๆ ด้วยโดเมนของคุณเอง',
+          'name': 'เชื่อมต่อโดเมน'
+        }
+      },
+      'assistant-panel': {
+        'seen-tooltip-text': 'ดูแล้ว',
+        'article-url': 'https://wix.wixanswers.com/apps/widget/v1/wix/74e18825-9887-4be4-93c6-33f69432dc5c/view/en/article/',
+        'back': 'ย้อนกลับ',
+        'home': 'ย้อนกลับ',
+        'show-less': 'Show Less',
+        'stop-tour': 'สิ้นสุดทัวร์',
+        'no-results': 'ไม่พบผลการค้นหา',
+        'all-tours': 'ทัวร์ทั้งหมด',
+        'related-articles': 'บทความที่เกี่ยวข้อง',
+        'try-again': 'ลองใช้คำค้นอื่น',
+        'popular-articles': 'บทความยอดนิยม',
+        'search': {
+          'placeholder': 'ค้นหา: การออกแบบเว็บไซต์, เนื้อหา…'
+        },
+        'show-more': 'แสดงเพิ่ม',
+        'related-tours': 'ทัวร์ที่เกี่ยวข้อง',
+        'popular': {
+          '0': 'เริ่มจากหน้าเพจและ Section',
+          '1': 'การแก้ไขเนื้อหาเว็บไซต์ของคุณ',
+          '2': 'ดูตัวอย่างและเผยแพร่เว็บไซต์ของคุณ',
+          '3': 'อัปเกรดเว็บไซต์ของคุณเป็น Premium'
+        },
+        'take-tour': 'เริ่มเลย'
+      },
+      'new-tour': {
+        'welcome2': {
+          'step2000': {
+            'title': 'เลือกธีม<br> ที่คุณชอบ',
+            'content': 'เลือกฟอนต์และสีที่จะใช้สำหรับการออกแบบเว็บไซต์ของคุณ คุณเปลี่ยนเองได้ง่ายๆ คราวหลัง'
+          }
+        }
+      },
+      'toasters': {
+        'preview-in-manual-save': 'previews may not be fully updated in manual save mode.',
+        'list-item-media-type-changed': 'กำลังเปลี่ยนประเภทของสื่อสำหรับทุกรายการ',
+        'list-item-design-changed': 'กำลังอัพเดตรายการทั้งหมดในรายการนี้ด้วยดีไซน์ใหม่ของคุณ',
+        'section-deleted': 'ส่วนนี้ถูกลบออกแล้ว',
+        'list-item': {
+          'reset': 'Your item colors were reset.',
+          'apply-to-all': 'Your color was applied to all items.'
+        },
+        'list-item-added': 'เพิ่มรายการในลิสต์แล้ว',
+        'list-item-deleted': 'ลบรายการในลิสต์แล้ว',
+        'page-deleted': 'หน้าเพจนี้ถูกลบออกแล้ว',
+        'new-design-applied': 'คุณได้รับดีไซน์หน้าเพจที่ถูกปรับให้เหมาะสม',
+        'could-not-fit-text': 'อัพเดตดีไซน์ให้เหมาะกับข้อความของคุณแล้ว',
+        'section-moved': 'ส่วนนี้ถูกย้ายแล้ว',
+        'list-item-duplicated': 'ทำซ้ำรายการในลิสต์แล้ว',
+        'page-hidden': 'คุณได้ซ่อนรายการจากเมนูของคุณ'
+      },
+      'page-preset-previews': {
+        'preview-mode': {
+          'edit-site': 'แก้ไขเว็บไซต์'
+        },
+        'edit-site': 'แก้ไขเว็บไซต์',
+        'mobile-menu': {
+          'pages-list': {
+            'welcome': 'ยินดีต้อนรับ',
+            'about': 'เกี่ยวกับ',
+            'home': 'Home'
+          }
+        },
+        'description': 'คุณสามารถปรับแต่งสีและรูปภาพได้ง่าย ๆ และอีกมากมาย',
+        'pagination-has-more': 'ดูดีไซน์',
+        'title': 'เลือกดีไซน์โฮมเพจอันโปรดของคุณ',
+        'start-from-scratch': 'เริ่มจากเค้าโครง',
+        'back': 'ย้อนกลับ',
+        'skip': 'ข้าม'
+      },
+      'page-transition': {
+        'none': 'ไม่มี',
+        'out-in': 'นอกเข้าใน',
+        'cross-fade': 'ครอสเฟด',
+        'vertical': 'แนวตั้ง',
+        'horizontal': 'แนวนอน'
+      },
+      'general': {
+        'Blog': 'บล็อก',
+        'galleries': 'แกลเลอรี',
+        'done': 'เสร็จ',
+        'Section': 'Section',
+        'Stores': 'ร้านค้า',
+        'still-loading': 'We\'ll be ready soon.',
+        'add': 'เพิ่ม',
+        'skip': 'ข้าม',
+        'social': 'โซเชียล',
+        'logo': 'โลโก้',
+        'email': {
+          'invalid': 'ที่อยู่อีเมลไม่ถูกต้อง'
+        },
+        'adjust': 'ปรับ',
+        'size': 'ขนาด',
+        'Music': 'เพลง',
+        'customize': 'ปรับแต่ง',
+        'help': 'ช่วยเหลือ',
+        'page': 'หน้าเพจ',
+        'got-it': 'เข้าใจละ',
+        'maybe-later': 'ไว้คราวหน้า',
+        'map': 'แผนที่',
+        'Bookings': 'การจอง',
+        'YO': 'สวัสดี',
+        'no-thanks': 'ไม่ล่ะ ขอบคุณ',
+        'move': 'ย้าย',
+        'cancel': 'ยกเลิก',
+        'apply': 'ใช้',
+        'next': 'ถัดไป',
+        'new-page': 'หน้าใหม่',
+        'edit': 'แก้ไข',
+        'top': 'Top',
+        'imported-page': 'เพจที่ถูกนำเข้า',
+        'blank': 'หน้าเพจว่าง',
+        'leave-note': 'Note: Any unsaved changes will be lost.',
+        'delete': 'ลบ',
+        'no-link': 'ไม่ได้เชื่อมต่อ',
+        'replace': 'แทนที่',
+        'ProGallery': 'สื่อ',
+        'designs': 'ดีไซน์',
+        'layout': 'การจัดวาง',
+        'redo': 'ทำซ้ำ',
+        'sign-up': 'สมัครสมาชิก',
+        'continue': 'ดำเนินการต่อ',
+        'dont-show-again': 'ไม่ต้องแสดงอีก',
+        'undo': 'ยกเลิก'
+      },
+      'members-area': {
+        'propmote': {
+          'headline': {
+            'default': 'เปลี่ยนผู้เข้าชมเป็นสมาชิก<br> เว็บไซต์ของคุณ',
+            'stores': 'สร้างความไว้วางใจของลูกค้า<br> ในร้านของคุณ',
+            'bookings': 'สร้างความไว้วางใจของลูกค้า<br> ในธุรกิจของคุณ',
+            'blog': 'ขยายชุมชม<br>ให้บล็อกของคุณ'
+          },
+          'subtitle': {
+            'bookings': 'เปิดให้สมาชิกสร้างบัญชีของตัวเอง<br>เพื่อติดตามรายการจองของพวกเขาเองและเข้าถึงข้อเสนอพิเศษต่างๆ',
+            'stores': 'เปิดให้สมาชิกสร้างบัญชีของตัวเอง<br>เพื่อความรวดเร็วในการเช็คเอาท์และการใช้งานอื่นๆ',
+            'default': 'ให้สมาชิกแต่ละคนมีบัญชีเป็นของตัวเองบนเว็บไซต์ของคุณ',
+            'blog': 'เปิดให้สมาชิกสร้างบัญชีของตัวเอง<br>เพื่อติดตามเพื่อนสมาชิก แสดงความคิดเห็นในโพสต์ หรือการใช้งานอื่นๆ'
+          },
+          'cancel': 'ไว้คราวหน้า',
+          'add-app': 'เพิ่มพื้นที่สำหรับสมาชิก'
+        },
+        'signup-settings-panel': {
+          'termsOfUse': {
+            'label': 'ข้อกำหนดการใช้งาน',
+            'page-name': 'ข้อกำหนดในการใช้งาน'
+          },
+          'allow-social-login': {
+            'option': {
+              'google': 'Google',
+              'facebook': 'Facebook'
+            },
+            'label': 'อนุญาตให้ล็อกอินผ่านช่องทางโซเชียล'
+          },
+          'title': 'การตั้งค่าการสมัครสมาชิก',
+          'codeOfConduct': {
+            'page-name': 'แนวทางปฏิบัติ',
+            'label': 'หน้าเพจ "แนวทางปฏิบัติ"'
+          },
+          'privacyPolicy': {
+            'label': 'นโยบายคุ้มครองข้อมูลส่วนบุคคล',
+            'page-name': 'นโยบายส่วนบุคคล'
+          },
+          'description': 'เลือกว่าใครสามารถเป็นสมาชิกเว็บไซต์ของคุณ <br>หมายเหตุ: ตัวเลือกเหล่านี้ใช้ได้กับพื้นที่สำหรับสมาชิกเท่านั้น',
+          'who-can-be-member': {
+            'label': 'ใครสามารถขอเข้าเป็นสมาชิก?',
+            'option': {
+              'approved': 'คนที่ฉันอนุมัติ',
+              'everyone': 'ทุกคน'
+            }
+          },
+          'which-option-show-first': {
+            'option': {
+              'signup': 'การสมัครสมาชิกใหม่',
+              'login': 'ล็อกอินสำหรับผู้ที่เป็นสมาชิกอยู่แล้ว'
+            },
+            'label': 'ต้องการให้แสดงตัวเลือกใดก่อน?'
+          }
+        },
+        'login-bar-panel': {
+          'login-bar-show': {
+            'label': 'ต้องการให้แถบล็อกอินแสดงอะไร?',
+            'option': {
+              'pic': 'รูปโปรไฟล์',
+              'text': 'ข้อความ',
+              'pic-and-text': 'รูปโปรไฟล์และข้อความ'
+            }
+          },
+          'additional-text': {
+            'label': 'ข้อความ',
+            'option': {
+              'hello-member': 'สวัสดี สมาชิก',
+              'member-name': 'ชื่อสมาชิก',
+              'welcome': 'ยินดีต้อนรับ'
+            }
+          },
+          'signup-settings-button': {
+            'label': 'การตั้งค่าการสมัครสมาชิก'
+          },
+          'description': 'นี่เป็นที่ที่ผู้คนลงชื่อเข้าใช้และสมาชิกล็อกอินเข้าเว็บไซต์ของคุณ',
+          'title': 'แถบล็อกอินสำหรับสมาชิก'
+        },
+        'edit-field': {
+          'button': {
+            'add-to-site': 'เพิ่มลงเว็บไซต์'
+          },
+          'button-label': 'แก้ไข'
+        },
+        'open-signup-settings-panel': {
+          'label': 'การตั้งค่าการสมัครสมาชิก'
+        }
+      },
+      'error': {
+        'site-not-managed-by-ob': {
+          'text': 'หากยังต้องการแก้ไขเว็บไซต์เริ่ดๆ ของคุณ ไปที่ Wix Editor',
+          'ok-button': 'ไปที่ Wix Editor',
+          'heading': 'คุณมาทำอะไรที่นี่? :)'
+        },
+        'save-failure': {
+          'text': 'เกิดข้อผิดพลาดขณะกำลังบันทึกไซต์ของคุณ <br/>คลิก \'รีโหลด\' เพื่อดำเนินการต่อ',
+          'ok-button': 'โหลดซ้ำ'
+        },
+        'conflicting-changes': {
+          'ok-button': 'โหลดซ้ำ',
+          'text': 'คุณกำลังทำงานมากกว่าหนึ่งหน้าต่างหรือแถบ <br/>โหลดใหม่เพื่อดูการเปลี่ยนแปลงล่าสุดในไซต์ของคุณ'
+        },
+        'publish-disabled-on-server': {
+          'ok-button': 'ตกลง',
+          'text': 'เนื่องจากมีการบำรุงรักษาเซิร์ฟเวอร์ จึงปิดการใช้งาน \'การเผยแพร่\' ชั่วคราว กรุณาเปิดเครื่องมือแก้ไขเวลา และลองใหม่ในอีก 15 นาที'
+        },
+        'save-as-template': {
+          'text': 'There was an error saving your site as template.<br/>Click Reload to continue working.',
+          'ok-button': 'OK'
+        },
+        'session-expired': {
+          'text': 'You have been signed out of your account. Sign In again.',
+          'ok-button': 'ลงชื่อเข้าใช้'
+        },
+        'story-archived': {
+          'text': 'ไซต์ที่คุณกำลังมองหาถูกลบไปแล้วหรือไม่มีอีกต่อไป <br/><br/>แต่เราอาจช่วยคุณหา<br/>สิ่งที่คุณมองหาได้:<br/><br/><a href="http://wix.com">ไปที่ Wix.com</a><br/><a href="https://www.wix.com/new/vertical?ref=adi">สร้างไซต์ใหม่</a><br/><a href="https://www.wix.com/support/html5/">ติดต่อทีมสนับสนุนของเรา</a>'
+        }
+      },
+      'assistant-menu': {
+        'assistant-video-link': 'https://www.youtube.com/embed/U1d4B94KMeM?rel=0&autoplay=1&showinfo=0',
+        'assistant-video-description': 'ปฏิบัติตามขั้นตอนต่อไปนี้เพื่อสร้างไซต์ให้เสร็จ <br/> เริ่มจากการดู<span class=\'assistant-video-link\' ng-click=\'$ctrl.openAssistantVideo($event)\'>วิดีโอแนะนำ</span>สั้นๆ นี้',
+        'assistant-video-description-smartAssist': 'ปฏิบัติตามขั้นตอนต่อไปนี้เพื่อสร้างไซต์ให้เสร็จ <br/> เริ่มจากการดู<span class=\'assistant-video-link\' ng-click=\'$ctrl.openAssistantVideo($event)\'>วิดีโอแนะนำ</span>สั้นๆ นี้'
+      },
+      'tpa': {
+        'forum': {
+          'forum': 'ฟอรัม'
+        },
+        'blog': {
+          'blog': 'บล็อก',
+          'blog_single_post_widget': 'โพสต์เดี่ยว'
+        },
+        'subscribe': {
+          'subscribe': 'แบบฟอร์มสมัครรับข่าวสาร',
+          'stay-up-to-date': 'เกาะติดสถานการณ์',
+          'submit': 'ส่ง',
+          'lets-email-you': 'Let\'s E-mail you',
+          'so-youll-never-miss-an-update': 'จะไม่พลาดอัพเดตอีกเลย'
+        },
+        'blog2': {
+          'post': 'Single Post',
+          'blog': 'บล็อก'
+        },
+        'bookings': {
+          'book_checkout': 'Bookings Checkout',
+          'scheduler': 'จองออนไลน์',
+          'bookings_list': 'Services'
+        },
+        'settings': 'การตั้งค่า',
+        'stores': {
+          'product_page': 'หน้าสินค้า',
+          'thank_you_page': 'เพจขอบคุณ',
+          'shopping_cart': 'ตะกร้า',
+          'checkout': 'ขั้นตอนชำระเงิน',
+          'product_gallery': 'ร้านค้า'
+        },
+        'events': {
+          'events': 'ข้อมูลเกี่ยวกับอีเวนท์',
+          'callToAction': 'การตอบกลับ'
+        },
+        'members': {
+          'hello_member': 'Hello',
+          'welcome': 'Welcome'
+        },
+        'paidplans': {
+          'membership_plan_picker_tpa': 'แพ็กเกจ & การกำหนดราคา'
+        }
+      },
+      'link-details': {
+        'phone': {
+          'help': {
+            'cta': 'ศึกษาเพิ่มเติม',
+            'text': 'ผู้คนที่เข้าถึงเว็บไซต์ของคุณบนมือถือหรือแท็บเล็ต สามารถคลิกที่ลิงก์นี้เพื่อโทรหาคุณ'
+          },
+          'placeholder': 'i.e +1-234-5678910',
+          'error': 'เบอร์โทรศัพท์ไม่ถูกต้อง',
+          'label': 'โทรศัพท์',
+          'text': 'เบอร์โทรศัพท์'
+        },
+        'page': {
+          'label': 'หน้าเพจ',
+          'select-anchor': {
+            'text': 'ตำแหน่งบนหน้าเพจ',
+            'top-of-page': 'ด้านบนของหน้าเพจ'
+          },
+          'select-page': {
+            'text': 'เลือกเพจ'
+          }
+        },
+        'none': {
+          'label': 'ไม่มี',
+          'text': 'ไม่ได้เชื่อมต่อองค์ประกอบนี้'
+        },
+        'document': {
+          'select-file': {
+            'button': 'เลือกไฟล์'
+          },
+          'replace-file': {
+            'button': 'แทนที่ไฟล์'
+          },
+          'text': 'ลิงก์ไปที่',
+          'label': 'เอกสาร'
+        },
+        'web': {
+          'error': 'ที่อยู่เว็บไม่ถูกต้อง',
+          'label': 'ที่อยู่เว็บไซต์',
+          'text': 'ที่อยู่เว็บไซต์',
+          'placeholder': 'i.e. www.yourlink.com'
+        },
+        'email': {
+          'text': 'ที่อยู่อีเมล',
+          'placeholder': 'เช่น Info@mysite.com',
+          'error': 'ที่อยู่อีเมลไม่ถูกต้อง',
+          'label': 'อีเมล'
+        },
+        'dialog': {
+          'cancel': 'ยกเลิก',
+          'ok': 'เสร็จแล้ว',
+          'header': 'ลิงก์ไปที่'
+        },
+        'paypal': {
+          'amount': {
+            'label': 'จำนวนเงิน',
+            'validation': 'กรุณาระบุจำนวนที่ถูกต้อง'
+          },
+          'email': {
+            'placeholder': 'เช่น Info@mysite.com',
+            'label': 'ที่อยู่อีเมล PayPal'
+          },
+          'toggle': {
+            'label': 'จำนวนที่กำหนด'
+          },
+          'label': 'บริจาคผ่าน PayPal',
+          'currency': {
+            'label': 'สกุลเงิน'
+          }
+        }
+      },
+      'assistant-menu-task': {
+        'color-design': {
+          'label': 'เปลี่ยนสี',
+          'deprecated-label': 'แก้ไขสีเว็บไซต์'
+        },
+        'connect-domain': {
+          'deprecated-label': 'เชื่อมต่อโดเมนของคุณ',
+          'label': 'เชื่อมต่อโดเมนของคุณ'
+        },
+        'add-page': {
+          'deprecated-label': 'เพิ่มหน้าเพจใหม่',
+          'label': 'เพิ่มหน้าเพจใหม่'
+        },
+        'publish': {
+          'deprecated-label': 'เผยแพร่ไซต์ของคุณ',
+          'label': 'เผยแพร่ไซต์ของคุณ'
+        },
+        'entire-website-design': {
+          'label': 'เปลี่ยนธีม',
+          'deprecated-label': 'เปลี่ยนธีม'
+        },
+        'tpa': {
+          'label': 'จัดการ {{tpa}}'
+        },
+        'animation': {
+          'deprecated-label': 'เพิ่มภาพเคลื่อนไหว',
+          'label': 'เปลี่ยนภาพเคลื่อนไหว'
+        },
+        'change-layout': {
+          'label': 'เปลี่ยนการจัดวางส่วน',
+          'deprecated-label': 'เปลี่ยนการจัดวาง Section'
+        },
+        'page-seo': {
+          'deprecated-label': 'ปรับปรุง SEO ของหน้าเพจ',
+          'label': 'ปรับปรุง SEO สำหรับหน้าเพจนี้'
+        },
+        'change-business-details': {
+          'label': 'Change Business Type'
+        },
+        'font-panel': {
+          'label': 'เปลี่ยนแบบอักษร',
+          'deprecated-label': 'เปลี่ยนแบบอักษร'
+        },
+        'add-section': {
+          'deprecated-label': 'เพิ่มหมวดใหม่',
+          'label': 'เพิ่มหมวดใหม่'
+        },
+        'edit-content': {
+          'deprecated-label': 'แก้ไขหมวด',
+          'label': 'แก้ไขเนื้อหาส่วน'
+        },
+        'customize-section-design': {
+          'label': 'ปรับแต่งดีไซน์',
+          'deprecated-label': 'ปรับแต่งดีไซน์ของหมวด'
+        },
+        'preview': {
+          'label': 'ดูตัวอย่างหน้าเว็บไซต์ของคุณ',
+          'deprecated-label': 'ดูตัวอย่าง'
+        },
+        'wiz-seo': {
+          'label': 'รับแพลน SEO สำหรับไซต์ของคุณ'
+        },
+        'paid-plans': {
+          'tour-title': 'Paid Plans'
+        }
+      },
+      'preset-title': {
+        'click': 'คลิกหรือลากส่วนที่ต้องการ',
+        'click-or-drag': 'คลิกหรือลากส่วนที่ต้องการ',
+        'add': 'เพิ่มเพจนี้',
+        'switch-preset': 'ใช้การจัดวางนี้',
+        'change-color': 'ใช้สีเหล่านี้'
+      },
+      'logo-builder': {
+        'upgrade': {
+          'button-label': 'อัพเกรดเลย',
+          'description': 'Want to use your custom logo</br>on social, print, merch and more?'
+        }
+      },
+      'media': {
+        'image-alignment-options': {
+          'top': 'ด้านบน',
+          'center': 'กลาง',
+          'bottom': 'ด้านล่าง'
+        }
+      },
+      'business_card': {
+        'address': {
+          'placeholder': 'กรอกที่อยู่',
+          'label': 'ที่อยู่'
+        },
+        'website': {
+          'label': 'เว็บไซต์ที่มี'
+        },
+        'email': {
+          'placeholder': 'กรอกอีเมลของคุณ'
+        },
+        'phone': {
+          'label': 'โทรศัพท์',
+          'placeholder': 'กรอกหมายเลขโทรศัพท์'
+        },
+        'fax': {
+          'placeholder': 'กรอกเบอร์แฟ็กซ์',
+          'label': 'โทรสาร'
+        },
+        'name': {
+          'placeholder': 'กรอกชื่อธุรกิจของคุณ',
+          'label': 'ชื่อ'
+        },
+        'title': 'ตรวจสอบและแก้ไขข้อมูล',
+        'social': {
+          'placeholder': 'วางลิงก์สื่อโซเชียล'
+        },
+        'website_address': {
+          'placeholder': 'เช่น www.yoursite.com'
+        },
+        'add-social-network': {
+          'label': 'เพิ่มเครือข่ายโซเชียล'
+        },
+        'social-media': {
+          'label': 'บัญชีโซเชียล'
+        },
+        'contact-email': {
+          'label': 'อีเมลติดต่อ'
+        }
+      },
+      'assistant-tab-list': {
+        'smart-assist-tab-body-title': 'อัพเดตไซต์ของคุณตลอดเวลา นี่คือหัวข้อที่คุณต้องใส่ใจ',
+        'smart-assist-tab-header': 'เคล็ดลับเจ๋งๆ'
+      },
+      'tpa_add_product_button': 'Add a Product',
+      'animation-pattern': {
+        'none': 'ไม่มี',
+        'turn': 'หมุน',
+        'float': 'ลอย',
+        'fold': 'พับ',
+        'fade': 'จาง',
+        'slide': 'สไลด์',
+        'fly': 'บิน'
+      },
+      'go-to-editor-popup': {
+        'cancel': 'ทำงานต่อใน Wix ADI',
+        'editor-feature2': 'เปลี่ยนแบบอักษรหรือสี และปรับแต่งดีไซน์ของไซต์ของคุณ',
+        'editor-feature1': 'ลากและวางส่วนประกอบเพื่อให้ไซต์ของคุณมีหน้าตาแบบที่คุณต้องการ',
+        'editor-feature4': 'Add advanced Apps, stunning features and so much more.',
+        'editor-feature3': 'ปรับไซต์ของคุณให้ดูดีบนทุกอุปกรณ์',
+        'go-to-editor': 'ไปที่ Wix Editor',
+        'title': 'ปรับแต่งเว็บไซต์ของคุณได้เต็มที่ใน Wix Editor',
+        'spinner-message': 'กำลังสลับไป Wix Editor...',
+        'warning': 'หากคุณต้องการกลับมาที่ Wix ADI ทุกการเปลี่ยนแปลงที่คุณบันทึกใน Wix Editor จะไม่ถูกโอนย้าย'
+      },
+      'yair': {
+        'test': 'testing',
+        'test|abTranslate_1|custom': 'hi'
+      },
+      'text-manager': {
+        'field-editor': {
+          'use-imported-text': 'Use import text',
+          'link': 'ตัวเลือกข้อความ',
+          'imported-text': 'ใช้ข้อความของคุณ',
+          'use-imported-images': 'Use import images',
+          'your-text': 'ดูตัวเลือกข้อความ'
+        },
+        'dialog': {
+          'title': 'ตัวเลือกข้อความ'
+        },
+        'default-source': 'ADI'
+      },
+      'pages_panel': {
+        'import-page': 'นำเข้า',
+        'header': {
+          'menu-panel-link': 'จัดการเพจในเว็บไซต์ของคุณทั้งหมดได้ที่นี่ หากต้องการจัดการรายการเมูน กรุณาไปที่ <a href="#" ng-click="$ctrl.onMenuPanelLinkClick()">เมนู</a>'
+        },
+        'rename-page': {
+          'input': {
+            'placeholder': 'กรอกชื่อ'
+          }
+        },
+        'add-page': {
+          'mobile': {
+            'text': 'ต้องการเพิ่มหน้าเพจบนไซต์ของคุณ? ไปที่',
+            'target': 'เดสก์ท็อป'
+          },
+          'desktop': '+ เพิ่มหน้าเพจ'
+        },
+        'title': 'เพจ',
+        'page-name': {
+          'error': 'ชื่อหน้าเพจของคุณต้องมีความยาวระหว่าง 1 - 100 ตัวอักษร'
+        }
+      },
+      'url': {
+        'dashboard': 'https://www.wix.com/my-account'
+      },
+      'modelTree': {
+        'homepage': 'Home'
+      },
+      'go-to-editor-link': {
+        'sub-title': 'Get full customization control <br> in the Wix Editor. Add Apps, <br> advanced features and more.',
+        'sub-title-new': 'ไปที่ Wix Editor เพื่อใช้คุณสมบัติการออกแบบขั้นสูงเพื่อปรับแต่งไซต์เองทั้งหมด',
+        'button-new': 'ไปที่ Wix Editor',
+        'button': 'ไปที่ Wix Editor',
+        'title': 'ต้องการตัวเลือก<br>ดีไซน์อื่น?'
+      },
+      'text-manager-dialog': {
+        'adi': {
+          'description': 'ADI เลือกข้อความนี้เพื่อใช้บนเว็บไซต์ของคุณ'
+        },
+        'best-match-label': 'แนะนำ',
+        'description': 'ใช้ข้อความที่คุณนำเข้า หรือข้อความ\r\n ที่กำหนดเองจาก ADI',
+        'best-match-text': 'ข้อความแนะนำ',
+        'actions': {
+          'replace': 'แทนที่ข้อความ',
+          'append': 'เพิ่มข้อความ'
+        },
+        'best-match-description': 'ADI ได้สแกนข้อความที่คุณนำเข้า เพื่อหาข้อความที่เหมาะกับย่อหน้านี้ที่สุด',
+        'search-placeholder': 'ค้นหา',
+        'imported-text': {
+          'description': 'ใช้ข้อความที่คุณนำเข้า หรือหาข้อความ\r\n ที่กำหนดเองจาก ADI'
+        },
+        'no-text-found': 'ไม่พบข้อความ'
+      },
+      'init': {
+        'error': {
+          'redirecting': '{{error}} กำลังนำทางไปยัง...',
+          'load': 'ไม่สามารถโหลดไซต์นี้ได้',
+          'access': 'คุณไม่มีสิทธิ์เข้าสู่ไซต์นี้'
+        }
+      },
+      'forum-panel': {
+        'member-signup-settings': {
+          'description': 'เลือกวิธีลงชื่อเข้าใช้ในฐานะสมาชิกของ\nฟอรัม',
+          'button': 'สมัครสมาชิก',
+          'title': 'การตั้งค่าการสมัครสมาชิก'
+        },
+        'title': 'ฟอรัม',
+        'manage': {
+          'title': 'จัดการฟอรัมของคุณ',
+          'description': 'ไปที่ \'ดูตัวอย่าง\' หรือไซต์ออนไลน์ของคุณเพื่อตั้งค่าฟอรัม เลือกหมวดหมู่ เพิ่มโพสต์ และอีกมากมาย',
+          'button': 'ดูตัวอย่างและจัดการ'
+        }
+      },
+      'tpa_add_service_button': 'Create a Service',
+      'notifications': {
+        'version-info': 'Application version: {{staticsVersion}}. Content Version: {{contentVersion}}. Santa Version: {{santaVersion}}. Metadata version: {{metadataVersion}}'
+      },
+      'tpa_upgrade_button': 'อัพเกรดเลย',
+      'tpa_upgrade_text': 'Upgrade to premium to start accepting payments',
+      'business-details-changer': {
+        'main-title': 'Quick Start',
+        'secondary-title': {
+          'step-1': {
+            'title': 'ธุรกิจหรือเว็บไซต์ของคุณชื่ออะไร?'
+          },
+          'step-0': {
+            'title': 'คุณสร้างเว็บไซต์สำหรับ?'
+          }
+        }
+      },
+      'form-builder': {
+        'edit-field': {
+          'button-label': 'แก้ไข'
+        },
+        'form-bar-panel': {
+          'description': 'Form Builder Description',
+          'title': 'เครื่องมือสร้างแบบฟอร์ม'
+        }
+      },
+      'tpa_add_service_title': 'Add your first services to start getting booked',
+      'Intro': {
+        'import-youtube-URL': {
+          'channel-does-not-exist': 'ช่องนี้ไม่แสดงให้เห็น ตรวจสอบ URL และลองอีกครั้ง'
+        }
+      },
+      'full-page-design': {
+        'choose-page-design-description': 'การจัดวางเหล่านี้ออกแบบมาให้เข้ากับเนื้อหาในเพจนี้โดยเฉพาะ',
+        'choose-page-design-title': 'เลือกดีไซน์หน้าเพจที่ถูกปรับให้เหมาะสม',
+        'edit': 'ใช้ดีไซน์นี้'
+      },
+      'logo-picker': {
+        'button': {
+          'custom': {
+            'label': 'Customize Design'
+          },
+          'get': {
+            'label': 'Get Logo'
+          },
+          'description': 'Get a stunning custom logo</br>for use on your website.'
+        },
+        'title': 'Custom Logos',
+        'button-after-install': {
+          'get': {
+            'label': 'Open logos'
+          },
+          'description': 'See your custom logos'
+        },
+        'description': 'Pick a logo you like'
+      },
+      'dropdown': {
+        'site-pages': 'หน้าเพจเว็บไซต์',
+        'manage-pages': 'จัดการหน้าเพจ'
+      },
+      'image-upscale-modal': {
+        'enhance-description': 'ปรับปรุงรูปภาพ'
+      },
+      'go-to-editor-popup-new': {
+        'title': 'อิสระภาพในการออกแบบอย่างที่คุณต้องการกับ Wix Editor',
+        'buttons': {
+          'ok': 'ไปที่ Wix Editor',
+          'cancel': 'อยู่ที่ ADI ต่อไป'
+        },
+        'option': {
+          '1': 'ลาก & วาง ทุกองค์ประกอบ',
+          '2': 'ใช้เครื่องมือออกแบบขั้นสูง',
+          '3': 'ดูแอปพลิเคชันอื่นๆ'
+        }
+      },
+      'popover': {
+        'fpd-popup': {
+          'title': 'ลองใช้ดีไซน์ที่ปรับให้เหมาะสม',
+          'subtitle': 'เราปรับดีไซน์เพจให้ตอบโจทย์คุณมากที่สุด<br/>เพื่อรูปลักษณ์เพจในแบบที่คุณชื่นชอบ'
+        }
+      },
+      'spinner': {
+        'step': {
+          'out-of': 'จาก',
+          'step': 'ขั้นตอน'
+        },
+        'message': {
+          '0': 'Loading everything you need',
+          '1': 'ทุกอย่างเริ่มต้นที่เว็บไซต์สุดเริ่ดของคุณ',
+          '2': 'Loading everything you need to be stunning',
+          '3': 'รอสักครู่...',
+          '4': 'กำลังโหลด...',
+          '5': 'จะมาแล้ว...',
+          '6': 'กำลังเพิ่มฟีเจอร์...',
+          '7': 'กำลังโหลด...'
+        }
+      },
+      'dummy-key': 'หุ่นจำลอง',
+      'tpa_set_appointment_hours_button': 'Set Hours',
+      'site-converter': {
+        'default': {
+          'item-title': 'Item {{index}}'
+        }
+      },
+      'tpa_add_payment_button': 'เชื่อมต่อ',
+      'import-site': {
+        'import-page': {
+          'panel-header': 'นำเข้าหน้าเพจของคุณ',
+          'description': 'ADI นำเข้าหน้าเพจนี้จาก {{site}} เลือกหน้าเพจที่ต้องการเพิ่มไปยังไซต์ใหม่ของคุณ',
+          'loader': 'กำลังนำเข้าหน้าเพจ...'
+        }
+      },
+      'Tooltips': {
+        'members-area': {
+          'signup-settings-panel': {
+            'codeofConduct': {
+              'link': 'สร้างหน้า "แนวทางปฏิบัติ"? เชื่อมโยงหน้าดังกล่าวที่นี่เพื่อให้สมาชิกเห็นเมื่อสมัครใช้งาน'
+            }
+          }
+        }
+      },
+      'Stats_Overview_Tips_AddLogo_Header': '',
+      'regex': {
+        'email_format': '^(([^<>()\\[\\]\\\\.,;:\\s@"]+(\\.[^<>()\\[\\]\\\\.,;:\\s@"]+)*)|(".+"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$'
+      },
+      'floating-go-to-editor-link': {
+        'use-advanced-editor': 'ใช้เครื่องมือแก้ไขขั้นสูง',
+        'advanced-editor': 'เครื่องมือแก้ไขขั้นสูง'
+      },
+      'Stats_Overview_Tips_AddLogo_Button_Label': '',
+      'tpa_setup_shipping_button': 'Set Up',
+      'tpa_set_appointment_hours_title': 'Set your available hours so clients can book your time',
+      'tpa_setup_shipping_title': 'Set up your shipping & tax regions',
+      'tpa_add_product_title': 'Add your first product',
+      'tpa_add_payment_title': 'Connect a payment method to start getting paid',
+      'Stats_Overview_Tips_AddLogo_Text': '',
+      'assistant-menu-header': {
+        'description': 'เลือกจากตัวเลือกด้านล่าง และฉันจะ<br>แนะนำวิธีสร้างเว็บไซต์เต็มรูปแบบให้คุณเอง'
+      }
+    };
+    $translateProvider.translations('th', translations);
+    $translateProvider.translations(translations);
+    $translateProvider.preferredLanguage('th');
+  }
+]);

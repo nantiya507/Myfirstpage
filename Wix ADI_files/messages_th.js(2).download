@@ -1,0 +1,86 @@
+"use strict";
+
+try {
+    angular.module("organizeMediaTranslations");
+} catch (e) {
+    angular.module("organizeMediaTranslations", [ "pascalprecht.translate" ]);
+}
+
+angular.module("organizeMediaTranslations").config([ "$translateProvider", function($translateProvider) {
+    var translations = {
+        "change-clipart": {
+            button: "Change clipart"
+        },
+        "change-shape": {
+            button: "Change shape"
+        },
+        "search-bar": {
+            placeholder: "กรุณาใส่คำหรือประโยคเพื่อค้นหาวิดีโอ"
+        },
+        "Search-other-videos": {
+            button: "Search other videos"
+        },
+        "from-vimeo": {
+            title: "Vimeo"
+        },
+        "search-video": {
+            text: "Search to find {{ source }} videos",
+            "no-results": "ไม่พบผลการค้นหา ลองค้นหาอีกครั้ง"
+        },
+        "video-box": {
+            "play-settings": {
+                controls: {
+                    options: {
+                        always: "เสมอ",
+                        "on-hover": "เมื่อเลื่อนเม้าส์",
+                        never: "ไม่เลย"
+                    },
+                    title: "When are controls shown?"
+                },
+                loop: "In a loop",
+                autoplay: "เล่นเองอัตโนมัติเมื่อโหลด",
+                title: "How does your video play?"
+            }
+        },
+        "media-settings": {
+            "media-title": {
+                title: "ชื่อเรื่อง (ข้อความตัวเลือก)"
+            },
+            types: {
+                images: "Images"
+            },
+            "link-label": "ลิงก์",
+            "image-settings": {
+                title: "การตั้งค่ารูปภาพ"
+            },
+            "description-placeholder": "บรรยายภาพของคุณ",
+            description: {
+                title: "คำบรรยาย"
+            },
+            "title-placeholder": "ใส่หัวข้อของคุณที่นี่",
+            preview: "ตัวอย่าง"
+        },
+        search: {
+            from: "จาก:",
+            title: "ค้นหาวิดีโอ"
+        },
+        "from-youtube": {
+            title: "YouTube"
+        },
+        general: {
+            "add-more-button": "ใส่เพิ่ม",
+            "cancel-button": "ยกเลิก",
+            "no-link-hover": "เชื่อมต่อ",
+            "add-button": "เพิ่ม",
+            "save-button": "Save",
+            "no-link": "ไม่ได้เชื่อมต่อ",
+            "done-button": "เสร็จ",
+            "search-button": "ค้นหา"
+        }
+    };
+    $translateProvider.translations("th", translations);
+    $translateProvider.translations(translations);
+    if ($translateProvider.preferredLanguage) {
+        $translateProvider.preferredLanguage("th");
+    }
+} ]).value("preferredLanguage", "th");

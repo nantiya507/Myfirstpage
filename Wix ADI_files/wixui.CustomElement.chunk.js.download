@@ -1,0 +1,174 @@
+((typeof self !== 'undefined' ? self : this)["webpackJsonp_wix_ui_santa"] = (typeof self !== 'undefined' ? self : this)["webpackJsonp_wix_ui_santa"] || []).push([[38],{
+
+/***/ 1060:
+/*!*******************************************!*\
+  !*** ./components/CustomElement/index.js ***!
+  \*******************************************/
+/*! no static exports found */
+/*! all exports used */
+/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _CustomElement = __webpack_require__(/*! ./CustomElement */ 1062);
+
+var _constants = __webpack_require__(/*! ./constants */ 40);
+
+exports.default = {
+  componentType: _constants.COMP_TYPE,
+  santaComponent: _CustomElement.CustomElement
+};
+
+/***/ }),
+
+/***/ 1062:
+/*!***************************************************!*\
+  !*** ./components/CustomElement/CustomElement.js ***!
+  \***************************************************/
+/*! no static exports found */
+/*! all exports used */
+/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.CustomElement = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(/*! react */ 0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _santaComponents = __webpack_require__(/*! santa-components */ 15);
+
+var _constants = __webpack_require__(/*! ./constants */ 40);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+//TODO: change this to fetcher
+var iframeSrc = window.serviceTopology.scriptsLocationMap['wix-ui-santa'] + '/customElementIframe/index.html';
+
+var CustomElement = exports.CustomElement = function (_SantaComponent) {
+  _inherits(CustomElement, _SantaComponent);
+
+  function CustomElement(props) {
+    _classCallCheck(this, CustomElement);
+
+    var _this = _possibleConstructorReturn(this, (CustomElement.__proto__ || Object.getPrototypeOf(CustomElement)).call(this, props));
+
+    _this.state = { iframe: null };
+    if (!props.isInSSR) {
+      //TODO: move this logic to bolt fetchers
+      var scriptTag = window.document.createElement('script');
+      scriptTag.src = props.compData.url;
+      window.document.head.appendChild(scriptTag);
+    }
+    return _this;
+  }
+
+  _createClass(CustomElement, [{
+    key: 'render',
+    value: function render() {
+      var element = this.props.compData.tagName;
+      var attributes = this.props.compData.attributes || {};
+      if (this.props.isPreviewMode) {
+        return _react2.default.createElement(
+          'div',
+          this.getRequiredProps(),
+          _react2.default.createElement('iframe', { src: iframeSrc, id: 'my-iframe', style: { width: '100%', height: '100%' } })
+        );
+      }
+      return _react2.default.createElement(element, Object.assign(this.getRequiredProps(), attributes));
+    }
+  }, {
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      if (this.props.isPreviewMode) {
+        var iframe = document.getElementById('my-iframe');
+        iframe.onload = function () {
+          iframe.contentWindow.postMessage({
+            type: 'load',
+            element: _this2.props.compData.tagName,
+            attributes: _this2.props.compData.attributes,
+            style: {
+              width: _this2.getRequiredProps().style.width,
+              height: _this2.getRequiredProps().style.height
+            },
+            url: _this2.props.compData.url
+          }, '*');
+        };
+        this.setState({ iframe: iframe });
+      }
+    }
+  }, {
+    key: 'componentDidUpdate',
+    value: function componentDidUpdate() {
+      if (this.props.isPreviewMode) {
+        if (!this.state.iframe) {
+          return;
+        }
+        this.state.iframe.contentWindow.postMessage({
+          type: 'update',
+          attributes: this.props.compData.attributes
+        }, '*');
+      }
+    }
+  }]);
+
+  return CustomElement;
+}(_santaComponents.SantaComponent);
+
+CustomElement.displayName = _constants.COMP_NAME;
+CustomElement.propTypes = {
+  id: _santaComponents.santaTypesDefinitions.Component.id,
+  styleId: _santaComponents.santaTypesDefinitions.Component.styleId,
+  style: _santaComponents.santaTypesDefinitions.Component.style,
+  compData: _santaComponents.santaTypesDefinitions.Component.compData.isRequired,
+  compProp: _santaComponents.santaTypesDefinitions.Component.compProp.isRequired,
+  isInSSR: _santaComponents.santaTypesDefinitions.isInSSR.isRequired,
+  isPreviewMode: _santaComponents.santaTypesDefinitions.isPreviewMode
+};
+
+/***/ }),
+
+/***/ 40:
+/*!***********************************************!*\
+  !*** ./components/CustomElement/constants.js ***!
+  \***********************************************/
+/*! no static exports found */
+/*! all exports used */
+/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var COMP_TYPE = exports.COMP_TYPE = 'wixui.CustomElementComponent';
+var COMP_NAME = exports.COMP_NAME = 'CustomElement';
+
+/***/ })
+
+}]);
+//# sourceMappingURL=wixui.CustomElement.chunk.js.map

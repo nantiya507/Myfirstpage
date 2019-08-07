@@ -1,0 +1,123 @@
+"use strict";
+
+try {
+    angular.module("commonControlsTranslations");
+} catch (e) {
+    angular.module("commonControlsTranslations", [ "pascalprecht.translate" ]);
+}
+
+angular.module("commonControlsTranslations").config([ "$translateProvider", function($translateProvider) {
+    var translations = {
+        general: {
+            "no-link-hover": "เชื่อมต่อ",
+            "no-link": "ไม่ได้เชื่อมต่อ",
+            YO: "สวัสดี"
+        },
+        cc: {
+            "media-preview": {
+                "tab-label": {
+                    gallery: "แกลเลอรี",
+                    image: "รูปภาพ",
+                    shape: "รูปทรง",
+                    video: "วิดีโอ"
+                },
+                "button-text": {
+                    customize: "ปรับแต่ง",
+                    replace: "แทนที่",
+                    edit: "แก้ไข",
+                    "change-gallery": "เปลี่ยนแกลเลอรี"
+                },
+                label: {
+                    media: "สื่อ"
+                },
+                gallery: {
+                    change: "เปลี่ยนประเภทแกลเลอรี",
+                    select: "จัดระเบียบสื่อ"
+                }
+            },
+            "button-editor-link": {
+                "button-text-link": {
+                    label: "เพิ่มลิงก์"
+                }
+            },
+            "c6-list-item-menu": {
+                "item-to-show": {
+                    label: "รายการที่เพจ"
+                },
+                show: {
+                    label: "แสดง"
+                },
+                "delete": {
+                    label: "ลบ"
+                },
+                duplicate: {
+                    label: "ทำซ้ำ"
+                },
+                hide: {
+                    label: "ซ่อน"
+                },
+                edit: {
+                    label: "แก้ไข"
+                }
+            },
+            "button-editor": {
+                "button-text": {
+                    label: "ข้อความบนปุ่ม"
+                },
+                "button-link": {
+                    label: "ลิงก์"
+                }
+            },
+            "c6-list": {
+                "add-new-item": {
+                    title: "+ เพิ่มรายการ"
+                }
+            }
+        },
+        tooltips: {
+            image: "รูปภาพ",
+            "richtext_clear-formatting": "ลบการจัดรูปแบบ",
+            playground: {
+                "tab-tooltip": "my cool tab tooltip",
+                tooltip: "นี่เป็นเคล็ดลับ",
+                compile: '---&gt; <span class="cc-tooltip-link"><a data-hook="inline-tooltip-link" ng-click="$ctrl.compiledTooltipClick()" href="">คลิกที่นี่</a></span> &lt;---',
+                previous: "ก่อนหน้า",
+                simple: "นี่เป็นเคล็ดลับแจ้งข้อผิดพลาด",
+                complex: "Lorem ipsum dolor sit amet, elit sit sollicitudin enim, turpis pretium etiam immet, elit sit sollicitudin enim, turpis pretium etiam im met, elit sit sollicitudin enim, turpis pretium etiam im",
+                "tab-disabled-tooltip": "Baga, it`s disabled",
+                next: "ถัดไป"
+            },
+            C4_VIDEO: "เปลี่ยนไปที่วิดีโอ",
+            edit: "แก้ไข",
+            "richtext_add-link": "ลิงก์",
+            pattern: "แบบ",
+            C4_SHAPE: "เปลี่ยนไปที่รูปทรง",
+            "richtext_edit-link": "แก้ไขลิงก์",
+            settings: "การตั้งค่า",
+            video: "วิดีโอ",
+            hidden_item: "รายการถูกซ่อน",
+            richtext_bold: "กล้า",
+            help: "ช่วยเหลือ",
+            crop: "ครอบตัด",
+            disabled_item: "ซ่อนรายการนี้ไม่ได้",
+            C4_IMAGE: "เปลี่ยนไปที่รูปภาพ",
+            gallery: "แกลเลอรี",
+            "richtext_cannot-link": "ไฮไลท์ข้อความที่คุณต้องการใส่ลิงก์",
+            shape: "รูปทรง",
+            richtext_numbers: "ลำดับเลข",
+            richtext_bullets: "หัวข้อย่อย",
+            richtext_underline: "ขีดเส้นใต้",
+            back: "ย้อนกลับ",
+            C4_GALLERY: "เปลี่ยนไปที่แกลเลอรี่",
+            hide_item: "คลิกเพื่อซ่อน",
+            color: "สี",
+            richtext_italic: "เอียง",
+            show_item: "คลิกเพื่อแสดง"
+        }
+    };
+    $translateProvider.translations("th", translations);
+    $translateProvider.translations(translations);
+    if ($translateProvider.preferredLanguage) {
+        $translateProvider.preferredLanguage("th");
+    }
+} ]).value("preferredLanguage", "th");

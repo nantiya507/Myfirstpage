@@ -1,0 +1,36 @@
+'use strict';
+
+try {
+  angular.module('cartAppTranslations');
+} catch (e) {
+  angular.module('cartAppTranslations', ['pascalprecht.translate']);
+}
+
+angular.module('cartAppTranslations').config(['$translateProvider',
+  function ($translateProvider) {
+    var translations = {
+      'CART_WIDGET_CART_TITLE': 'ตะกร้า',
+      'cartWidget': {
+        'sr': {
+          'PRODUCT_WAS_REMOVED': '{{ productName }} ถูกลบออกจากตะกร้าสินค้า',
+          'PRODUCT_PRICE_BEFORE_DISCOUNT': 'ราคาปกติ',
+          'PRODUCT_PRICE_AFTER_DISCOUNT': 'ราคาขายลด',
+          'PRODUCT_PRICE_WHEN_THERE_IS_NO_DISCOUNT': 'ราคา'
+        }
+      },
+      'REMOVE_PRODUCT_BUTTON_TITLE': 'ลบรายการ',
+      'SKU_TITLE': 'SKU: {{ sku }}',
+      'CART_WIDGET_EMPTY_CART_MESSAGE': 'ตะกร้ายังว่าง',
+      'CART_WIDGET_QUANTITY_TITLE': 'ชิ้น: ',
+      'CART_WIDGET_CLOSE_CTA': 'ปิด',
+      'CART_WIDGET_VIEW_CART_BUTTON': 'ดูตะกร้า',
+      'OUT_OF_STOCK_TITLE': 'สินค้าหมด',
+      'CART_TABLE_TOTAL_TITLE': 'รวมทั้งสิ้น',
+      'CART_WIDGET_CLOSE_BUTTON_TITLE': 'ปิดวิดเจ็ตตะกร้า',
+      'SUBTOTAL_TITLE': 'ยอดรวมย่อย'
+    };
+    $translateProvider.translations('th', translations);
+    $translateProvider.translations(translations);
+    $translateProvider.preferredLanguage('th');
+  }
+]);
